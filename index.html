@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App HICIDsa</title>
+  <link rel="stylesheet" href="css/normalizev8.css">
+  <link rel="stylesheet" href="css/appHicid.css">
+</head>
+
+<body>
+  <main>
+    <h1 class="main-title">
+      <img src="img/logo.svg" alt="">
+    </h1>
+    <nav class="nav">
+<!---------------------------- COLEGIOS ------------------------------------>
+      <div class="colegios">
+        <label for="colegios">Selecciona el colegio:</label>
+        <select id="colegios">
+          <option value="">-- Pulsa aqui --</option>
+        </select>
+      </div>
+<!---------------------------- RUTAS ------------------------------------>
+      <div class="rutas" id="rutas-container" style="display:none">
+        <label for="rutas">Selecciona la ruta:</label>
+        <select id="rutas">
+          <option value="">-- Pulsa aqui --</option>
+        </select>
+      </div>
+<!---------------------------- HORARIO ------------------------------------>
+      <div class="horario" id="horario-container" style="display:none">
+        <label for="horario">Selecciona el horario:</label>
+        <select id="horario">
+          <option value="">-- Pulsa aquí --</option>
+          <option value="manana">Mañana</option>
+          <option value="tarde">Tarde</option>
+        </select>
+      </div>
+      <button class="button" id="reset-button">Reset</button>
+    </nav>
+    
+<!---------------------------- CONTENIDO ------------------------------------>
+
+    <div class="contenido"></div>
+
+<!---------------------------- FOOTER ------------------------------------>
+
+<footer>
+  <p>Autor: Iker Rodriguez</p>
+  <p><code>versión beta 3.1</code></p>
+</footer>
+
+  </main>
+  <script src="js/script3.js"></script>
+</body>
+
+</html>
