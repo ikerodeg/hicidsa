@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --headers: hsl(238, 100%, 24%);
+    --bxsdw: 0.2em 0.2em 0.5em black;
+    --rdlbg: radial-gradient(#606c88, #3f4c6b);
+    --othrbg: hsl(220, 21%, 66%);
+    --h2clr:  hsl(0, 0%, 100%);
+    --txtsdw: 1px 1px 3px orangered;
+}
+
+html {
+    background: var(--rdlbg);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main{
+    inline-size: clamp(320px, 40vw, 500px);    /*width*/
+    margin-block-start: clamp(1.5rem, 2vw, 4rem);
+    margin-inline: auto;
+}
+
+/*------------------------ UTILS ----------------------------*/
+
+.separador {
+    margin-block-end: 8rem;
+}
+
+/*------------------------ TITULO PRINCIPAL ----------------------------*/
+
+.main-title{
+    margin-block-end: 2rem;
+    text-align: center;
+}
+
+.main-title > img {
+    inline-size: 100%;
+}
+
+/*------------------------ SELECCIONES ----------------------------*/
+
+
+.nav{
+    margin-inline: auto;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+.colegios, .rutas, .horario {
+    border-radius: 0.5rem;
+    margin-inline: auto;
+    text-align: center;
+    margin-block-end: 2rem;
+    box-shadow: var(--bxsdw);
+}
+
+
+label {
+    display: block;
+    inline-size: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding-block: 0.5rem;
+    background-color: var(--headers);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--h2clr);
+    text-shadow: 1px 1px 3px orangered;
+}
+
+select{
+    inline-size: 100%;
+    border-radius: 0 0 0.5rem 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+    padding-block: 0.5rem;
+    background-color: var(--othrbg);
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+button{
+    display: block;
+    inline-size: 100%;
+    block-size: 4rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--bxsdw);
+    background-color: var(--othrbg);
+}
+
+button:hover {
+    background: crimson;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+/*------------------------ SECTION ----------------------------*/
+
+section {
+    background-color: var(--headers);
+    margin-block: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--bxsdw);
+}
+
+section > h2{
+    padding-block-start: 1rem;
+    margin-block-end: 1rem;
+    text-align: center;
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 3px orangered;
+    color: var(--h2clr);
+}
+
+section > .cuerpo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-block: 2rem;
+    padding-inline: 1rem;
+    background-color: var(--othrbg);
+    font-size: 1.2rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+    text-align: center;
+    gap: 3vw;
+}
+
+/*------------------------ ELECCION ----------------------------*/
+
+.eleccion span {
+    font-weight: 800;
+}
+
+.colegio {
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-shadow: var(--txtsdw);
+}
+
+
+/*------------------------ GUIA ----------------------------*/
+
+.nombre-guia {
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-shadow: var(--txtsdw);
+}
+
+.hora-guia {
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 2px red,
+                1px 1px 2px red,
+                1px 1px 2px red,
+                -1px -1px 2px red;
+                font-weight: 800;
+}
+
+
+/*------------------------ PARADAS ----------------------------*/
+
+.paradas__ol{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    font-size: 1rem;
+    text-align: left;
+    margin-inline-start: 1.5rem;
+}
+
+
+/*------------------------ RUTA ----------------------------*/
+
+/* .ruta > .cuerpo {
+
+} */
+
+/*------------------------ DATOS ----------------------------*/
+
+.datos .cuerpo{
+    display: block;
+}
+
+.datos p{
+    width: fit-content;
+    margin-inline: auto;
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+.datos p:first-child{
+    margin-block-end: 2rem;
+}
+
+.datos span {
+        font-weight: 800;
+}
+
+/*------------------------ LINKS ----------------------------*/
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: orangered;
+}
+
+/*------------------------ FOOTER ----------------------------*/
+
+footer {
+    text-align: center;
+    width: fit-content;
+    margin-inline: auto;
+    margin-block: 4rem;
+    
+}
+

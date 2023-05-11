@@ -1,0 +1,12 @@
+unica:Ruta única
+rutaA:Ruta A
+rutaB:Ruta B
+rutaC:Ruta C
+ruta1:Ruta 1
+ruta2:Ruta 2
+ruta3:Ruta 3
+ruta4:Ruta 4
+ruta5:Ruta 5
+ruta6:Ruta 6
+ruta7:Ruta 7
+puerto:Puerto
