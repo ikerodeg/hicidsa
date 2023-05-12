@@ -1,0 +1,420 @@
+/******************* CUSTOM PROPERTIES *******************************/
+:root {
+    --otherFnt: 'Edu TAS Beginner', cursive;
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --bxsdw: 0.2em 0.2em 0.8em var(--black);           /*BoxShadow*/
+    --bxbrdrad: 0.3em;                                 /*BorderRadius*/
+
+    --main-bgclr: hsl(211, 80%, 8%);                 /*BGColor*/
+    --main-fntfmly: 'Patrick Hand', cursive;           /*FontFamily*/
+    --main-clr: hsl(0, 0%, 72%);                     /*FontColor*/
+    --main-txtsdw: 0.1px 0.1px 1px hsl(0, 0%, 0%);   /*TextShadow*/
+    --main-width: clamp(300px, 60vw, 60em);           /*MainWidth*/
+
+    --h1-fntsiz: clamp(2.5rem, 8.18vw + 0.45rem, 7rem);/*Fontsize*/
+    --h1-clr: hsl(206, 100%, 50%);                   /*FontColor*/
+    --h1-resalto: hsl(206, 100%, 72%);               /*Highlight*/
+    --h1-txtsdw: 0.3vw 0.3vw 0.4vw black,            /*TextShadow*/
+                 0.2vw 0.2vw 4vw var(--h1-resalto),
+                -0.2vw -0.2vw 4vw var(--h1-resalto);
+
+    --h2-margnbtm: clamp(0.8rem, 4vw + -0.2rem, 3rem); /*Margin*/
+    --h2-fntsiz: clamp(2.5rem, 2.73vw + 1.82rem, 4rem);/*FontSize*/
+    --h2-clr: hsl(0, 0%, 0%);                        /*FontColor*/
+    --h2-resalto: hsl(206, 100%, 72%);               /*Highlight*/
+    --h2-txtsdw: 1px 1px 3px var(--h2-resalto),        /*TexShadow*/
+                -1px -1px 3px var(--h2-resalto),
+                1px 1px 3px var(--h2-resalto),
+                -1px -1px 3px var(--h2-resalto);
+    
+    --h3-margnbtm: clamp(0.8rem, 4vw + -0.2rem, 3rem); /*Margin */
+    --h3-fntsiz: clamp(1.4rem, 2vw + 0.9rem, 2.5rem);  /*FontSize*/
+    --h3-clr: hsl(0, 0%, 0%);                        /*FontColor*/
+    --h3-clrcode: hsl(23, 100%, 50%);                /*ColorCode*/
+    --h3-txtsdw: 1px 1px 3px var(--white),             /*TexShadow*/
+                -1px -1px 3px var(--white),
+                 1px 1px 3px var(--white),
+                -1px -1px 3px var(--white);
+    --h3-txtsdwcode: 1px 1px 3px var(--h3-clrcode),    /*TexShadow*/
+                -1px -1px 3px var(--h3-clrcode),
+                 1px 1px 3px var(--h3-clrcode),
+                -1px -1px 3px var(--h3-clrcode);
+    
+    --p-margnbtm: clamp(0.8rem, 4vw + -0.2rem, 3rem);  /*Margin*/
+    --p-fntsiz: clamp(1rem, 0.91vw + 0.77rem, 1.5rem); /*FontSize*/
+    --p-fntsdw: 0.5px 0.5px 1px var(--black);    /*FontShadow*/
+    --p-resalto: hsl(105, 100%, 50%);                /*Highlight*/
+    --p-bgcode: hsla(210, 100%, 4%, 0.326);          /*BGCode*/
+    --p-fntfmlycode: 'Share Tech Mono', monospace;     /*FontFamilyCode*/
+
+    --cnsl-margnbtm: clamp(1.8rem, 4vw + 0.8rem, 4rem);   /*Margin*/
+    --cnsl-bgclr: hsl(209, 100%, 5%);                /*BGColor*/
+    --cnsl-fntfmly: 'Handlee', cursive;                /*FontFamily*/
+    --cnsl-fntsiz: clamp(0.9rem, 0.55vw + 0.76rem, 1.2rem);/*FontSize*/
+    --cnsl-fntclr: hsl(0, 100%, 50%);                /*FontColor*/
+
+    --clr-resalto: hsl(105, 100%, 50%);
+    --clr-comment: hsl(0, 0%, 27%);
+    --clr-tag: hsl(1, 70%, 47%);
+    --clr-class: hsl(105, 100%, 36%);
+    --clr-property: hsl(185, 68%, 54%);
+    --clr-htmlvalor: hsl(56, 78%, 46%);
+    --clr-cssvalor: hsl(16, 83%, 59%);
+    --clr-numbers: hsl(283, 60%, 55%);
+    --clr-units: hsl(337, 78%, 49%);
+    }
+
+/********************************** HMTL *****************************/
+
+html{
+    background: var(--main-bgclr);
+    background-image: url("data:image/svg+xml,%3Csvg width='84' height='48' viewBox='0 0 84 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h12v6H0V0zm28 8h12v6H28V8zm14-8h12v6H42V0zm14 0h12v6H56V0zm0 8h12v6H56V8zM42 8h12v6H42V8zm0 16h12v6H42v-6zm14-8h12v6H56v-6zm14 0h12v6H70v-6zm0-16h12v6H70V0zM28 32h12v6H28v-6zM14 16h12v6H14v-6zM0 24h12v6H0v-6zm0 8h12v6H0v-6zm14 0h12v6H14v-6zm14 8h12v6H28v-6zm-14 0h12v6H14v-6zm28 0h12v6H42v-6zm14-8h12v6H56v-6zm0-8h12v6H56v-6zm14 8h12v6H70v-6zm0 8h12v6H70v-6zM14 24h12v6H14v-6zm14-8h12v6H28v-6zM14 8h12v6H14V8zM0 8h12v6H0V8z' fill='%23001a32' fill-opacity='0.16' fill-rule='evenodd'/%3E%3C/svg%3E");
+    font-family: var(--main-fntfmly);
+    color: var(--main-clr);
+}
+
+/**************************** MAIN **********************************/
+
+main {
+    width: var(--main-width);
+    margin-inline: auto;
+}
+
+/************************ UTIL CLASSES ******************************/
+
+.separador{margin-bottom: 6vw;}
+.comment {color: var(--clr-comment);}
+.html-tag {color: var(--clr-tag);}
+.css-class {color: var(--clr-class);}
+.css-property {color: var(--clr-property);}
+.html-valor {color: var(--clr-htmlvalor);}
+.css-valor {color: var(--clr-cssvalor);}
+.css-numbers {color: var(--clr-numbers);}
+.css-units {color: var(--clr-units);}
+u {text-decoration: underline;}
+
+/**************************** HEADERS **********************************/
+
+.main-title {
+    /* height: 100dvh; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--h1-fntsiz);
+    color: var(--h1-clr);
+    text-shadow: var(--h1-txtsdw);
+    text-align: center;
+}
+
+.h2-title {
+    margin-bottom: var(--h2-margnbtm);
+    position: relative;
+    border-bottom: 0.1em dotted var(--h2-resalto);
+    color: var(--h2-clr);
+    font-size: var(--h2-fntsiz);
+    text-align: center;
+    text-shadow: var(--h2-txtsdw);
+}
+
+.section__title {
+    margin-bottom: var(--h3-margnbtm);
+    position: relative;
+    color: var(--h3-clr);
+    font-size: var(--h3-fntsiz);
+    text-shadow: var(--h3-txtsdw);
+}
+
+.section__title::before {
+    position: absolute;
+    content: "▸";
+    left: -0.8em;
+}
+
+.section__title > .resalto {
+    color: var(--h3-clr);
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    text-shadow: var(--h3-txtsdwcode);
+}
+
+/*************************** NAV ********************************/
+
+.main-nav{
+    width: var(--main-width);
+    margin-inline: auto;
+    background-color: blueviolet;
+}
+
+.nav__ul {
+    column-count: 4;
+    background-color: darkslateblue;
+}
+
+.nav__sub-ul {
+    background-color: darkblue;
+    margin-left: 1vw;
+}
+
+
+/*************************** PARRAFOS ********************************/
+.section__parraf {
+    margin-bottom: var(--p-margnbtm);
+    margin-left: 0.2em;
+    position: relative;
+    font-size: var(--p-fntsiz);
+    text-shadow: var(--p-fntsdw);
+    line-height: 2.3rem;
+}
+
+.section__parraf::before {
+    position: absolute;
+    content: "∘";
+    left: -1em;
+    top: 0.1em;
+}
+
+.section__parraf > code {
+    background-color: var(--cnsl-bgclr);
+    margin-inline: 0.2em;
+    padding: 0.1em 0.2em 0.1em 0.15em;
+    border-radius: var(--bxbrdrad);
+    font-size: calc(var(--p-fntsiz) - 0.2vw);
+    color: var(--clr-property);
+    border: 2px double hsla(0, 0%, 100%, 0.112);
+    font-family: var(--p-fntfmlycode);
+}
+
+.section__parraf > mark {
+    background-color: inherit;
+    color: hsla(119, 60%, 67%, 0.929);
+    text-shadow: 2px 2px 2px black,
+                 1px 1px 12px hsla(80, 100%, 50%, 0.4), 
+                -1px -1px 12px hsla(80, 100%, 50%, 0.4),
+                 1px 1px 12px hsla(80, 100%, 50%, 0.4),
+                 -1px -1px 12px hsla(80, 100%, 50%, 0.4);
+    margin-inline: 0.2em;
+}
+
+/*************************** CONSOLA ********************************/
+
+.console {
+    width: 90%;
+    margin-bottom: var(--cnsl-margnbtm);
+    position: relative;
+    background-color: hsl(209, 100%, 5%);
+    padding-left: clamp(0.8rem, 5.36vw + -0.54rem, 3.75rem);
+    border-radius: var(--bxbrdrad);
+    margin-inline: auto;
+    box-shadow: var(--bxsdw);
+    overflow-x: scroll;
+}
+
+.console::before {
+    position: absolute;
+    content: " .";
+    height: 100%;
+    width: clamp(2.5rem, 4.55vw + 1.36rem, 5rem);
+    left: 0;
+    top: 0;
+    background-color: hsl(211, 53%, 10%);
+    color: hsl(211, 53%, 10%);
+    border-radius: 0.3em 0em 0em 0.3em;
+}
+
+.console > code {
+    font-family: var(--cnsl-fntfmly);
+    font-size: var(--cnsl-fntsiz);
+    font-weight: 600;
+    line-height: 1.8rem;
+}
+
+
+
+/*************************** IMAGENES ********************************/
+
+.section__wrap-img > figcaption {
+    margin-left: 1.5em;
+    margin-top: 0.2em;
+}
+
+.section__wrap-img {
+    width: fit-content;
+    margin-inline: auto;
+}
+
+.section__wrap-img > .section__img {
+    max-width: 90%;
+    max-height: 70vh;
+    object-fit: contain;
+    margin-bottom: clamp(0.8rem, 4vw + -0.2rem, 3rem);
+    margin-inline: auto;
+    border-radius: var(--bxbrdrad);
+    box-shadow: var(--bxsdw);
+}
+
+.gallery{
+    margin-top: 2em;
+    margin-inline: auto;
+    width: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/**************************** LINKS **********************************/
+
+.section__parraf > a:link, .section__parraf > a:visited {
+    color: hsl(211, 100%, 41%);
+}
+
+.section__parraf > a:hover {
+    color: var(--black);
+    text-shadow: var(--h2-txtsdw);
+}
+
+/**************************** FILTROS **********************************/
+
+.blur{filter: blur(3px);}
+.brightness{filter: brightness(220%);}
+.contrast{filter: contrast(220%);}
+.grayscale{filter: grayscale(140%);}
+.huerotate{filter: hue-rotate(190deg);}
+.invert{filter: invert(150%);}
+.opacity{filter: opacity(20%);}
+.saturate{filter: saturate(7);}
+.sepia{filter: sepia(100%);}
+.shadow{filter: drop-shadow(8px 8px 10px green);}
+
+/***************************** FOOTER ****************************/
+
+
+footer {
+    text-align: center;
+}
+  
+footer .links-flechas {
+    display: inline-block;
+    color: var(--h3-clrcode);
+    font-size: var(--h3-fntsiz);
+    margin-bottom: clamp(0.8rem, 4vw + -0.2rem, 3rem);
+}
+
+/********************************** TRANSITION *******************************/
+
+.transi {
+    height: 8vw;
+    width: 8vw;
+    background-color: #FF5000;
+    border: 0.2em solid white;
+    border-radius: 0.5em;
+    margin-inline: auto;
+    transition-property: width, background-color;
+    transition-duration: 5s;
+    transition-timing-function: ease;
+    
+  }
+  
+  .transi:hover {
+    width: 100%;
+    background-color: darkmagenta;
+  }
+
+
+/******************************** ANIMACIONES *******************************/
+
+.box-anim1{
+    width: 8vw;
+    height: 8vw;
+    position: relative;
+    margin-inline: auto;
+    border-radius: 1vw;
+    border: 0.2vw solid white;
+    background-color: crimson;
+    animation-name: example1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes example1 {
+    from {
+        background-color: crimson;
+        left: -20vw;
+        transform: scale(0, 0);
+    }
+    to {
+        background-color: black; 
+        left: 20vw;
+        transform: scale(100%, 100%);        
+    }
+  }
+  
+  .box-anim2 {
+    width: 8rem;
+    height: 8rem;
+    position: relative;
+    margin-inline: auto;
+    border-radius: 1vw;
+    border: 0.2vw solid white;
+    background-color: crimson;
+    animation-name: example2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes example2 {
+   0% {background-color: crimson; left:0px; top: 0px;} 
+   25% {background-color: black; left:100px; top: 0px;} 
+   50% {background-color: yellow; left:-100px; top: 0px;}
+   75% {background-color: green; left:150px; top: 0px;}
+   100% {background-color: purple; left:0px; top: 0px;}
+  }
+
+/******************************** TABLAS *******************************/
+
+table {
+    width: 100%;
+    border: 1px solid var(--white);
+    border-collapse: collapse;
+    box-shadow: var(--bxsdw);
+    margin-bottom: var(--cnsl-margnbtm);
+}
+
+thead {
+    background-color: hsl(211, 80%, 25%);
+    font-size: 1.2em;
+}
+
+th {
+    padding: 0.3em;
+    border: 1px solid var(--white);
+    text-shadow: var(--p-fntsdw);    
+}
+
+tr:nth-of-type(2n) {
+    background-color: hsl(211, 80%, 5%);
+    
+}
+
+td {
+    border: 1px solid var(--white);
+    padding: 0.4em;
+    font-size: 1.1em;
+    
+}
+
+td:nth-child(1){
+    color: hsl(196, 100%, 50%);
+    font-weight: 800;
+}
+
+td:nth-child(2){
+    color: hsl(24, 100%, 50%);
+    font-weight: 800;
+}
+
+a.red, li.red {
+    color: red;
+}

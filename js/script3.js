@@ -26,6 +26,11 @@ colegios.addEventListener('change', function() {
   console.log(`Se ha seleccionado ${colegios.value}`);
   multiSelection = colegios.value;
   rutasContainer.style.display = 'block';
+  if (rutasContainer.style.display == 'block'){
+    const animatedElement = document.querySelector('.slct-colegios');
+    animatedElement.style.animationPlayState = 'paused';
+    animatedElement.style.borderColor = 'blue';
+  }
 });
 
 fetch('assets/rutas.txt')
@@ -47,6 +52,11 @@ rutas.addEventListener('change', function() {
   console.log(`Se ha seleccionado ${rutas.value}`);
   multiSelection += '-' + rutas.value;
   horarioContainer.style.display = 'block';
+  if (horarioContainer.style.display == 'block'){
+    const animatedElement = document.querySelector('.slct-rutas');
+    animatedElement.style.animationPlayState = 'paused';
+    animatedElement.style.borderColor = 'blue';
+  }
 });
 
 horario.addEventListener('change', function() {
@@ -82,13 +92,20 @@ horario.addEventListener('change', function() {
           const contenido = document.querySelector(".contenido");
           contenido.appendChild(article);
           console.log(`El elemento ${article.id} se ha añadido a la página web.`);
+          if (contenido){
+
+            const animatedElement = document.querySelector('.slct-hora');
+            animatedElement.style.animationPlayState = 'paused';
+            animatedElement.style.borderColor = 'blue';
+          }
         }
       });
     })
     .catch(error => console.error(error));
+    
+  });
 
-});
-
+  
 const resetButton = document.getElementById('reset-button');
 
 resetButton.addEventListener('click', function() {
@@ -110,6 +127,8 @@ resetButton.addEventListener('click', function() {
   } else {
     console.log("No se ha encontrado ningún elemento article.");
   }
+
+  location.reload();
   
 });
 
