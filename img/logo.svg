@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg3087"
+   width="58.639267mm"
+   height="18.591845mm"
+   viewBox="0 0 221.62871 70.268388"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs3091" />
+  <sodipodi:namedview
+     id="namedview3089"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="1.1022181"
+     inkscape:cx="45.816703"
+     inkscape:cy="-49.445748"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g3093"
+     units="mm"
+     inkscape:document-units="mm" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g3093"
+     transform="translate(-215.86252,-94.035973)">
+    <rect
+       style="opacity:1;fill:#000080;stroke:none;stroke-width:1.23591;stroke-linejoin:round;stroke-dasharray:1.23591, 3.70772"
+       id="rect54494"
+       width="221.62872"
+       height="70.268387"
+       x="215.86252"
+       y="94.035973"
+       ry="10.6834" />
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:900;font-stretch:normal;font-size:50.6667px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Heavy Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ff6600"
+       x="230.43578"
+       y="147.94524"
+       id="text45610-6"><tspan
+         id="tspan45608-0"
+         x="230.43578"
+         y="147.94524"
+         sodipodi:role="line">HICIDsa</tspan><tspan
+         x="230.43578"
+         y="211.27861"
+         id="tspan45612-2"
+         sodipodi:role="line" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:900;font-stretch:normal;font-size:50.6667px;line-height:1.25;font-family:Lato;-inkscape-font-specification:'Lato, Heavy Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff"
+       x="229.07829"
+       y="145.0024"
+       id="text45610"><tspan
+         id="tspan45608"
+         x="229.07829"
+         y="145.0024"
+         sodipodi:role="line">HICIDsa</tspan><tspan
+         x="229.07829"
+         y="208.33577"
+         id="tspan45612"
+         sodipodi:role="line" /></text>
+  </g>
+</svg>
