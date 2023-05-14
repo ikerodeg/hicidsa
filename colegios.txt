@@ -1,0 +1,7 @@
+betxi:IES Betxi (Eslida - Artana)
+gilabert:IES Gilabert (Villavieja - Moncofa) **no disponible**
+jaumei:IES Jaume I (Alqueries)
+calatrava:CEIP Novenes de Calatrava (Burriana) **no disponible**
+penyagolosa:CEIP Peñagolosa (Burriana)
+torremiral:Fomento Torrenova - Miralvent **no disponible**
+ravaluni: Raval - Universitari
