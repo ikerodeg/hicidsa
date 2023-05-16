@@ -30,6 +30,9 @@ main{
     margin-block-end: 2rem;
 }
 
+.break {
+    margin-block-end: 2rem;
+}
 /*------------------------ TITULO PRINCIPAL ----------------------------*/
 
 .main-title{
@@ -79,8 +82,12 @@ select{
     font-weight: 800;
 }
 
-.pulsa{
-    text-align: center;
+select option{
+    text-align: left;
+}
+
+select option:first-child{
+    text-align: center !important;
 }
 
 select:hover {
@@ -137,6 +144,11 @@ section > .cuerpo {
 }
 
 /*------------------------ ELECCION ----------------------------*/
+
+.vari-hora{
+    text-align: right;
+    padding-inline-end: 5%;
+}
 
 .eleccion span {
     font-weight: 800;
@@ -196,7 +208,6 @@ section > .cuerpo {
     width: fit-content;
     margin-inline: auto;
     font-size: 1.3rem;
-    text-align: justify;
 }
 
 .datos p:first-child{
@@ -251,4 +262,12 @@ footer {
     animation-name: slctanim;
     animation-duration: 1s;
     animation-iteration-count: infinite;
+}
+
+/*------------------------ LISTAS ----------------------------*/
+
+.status{
+    margin-block-start: 8rem;
+    margin-block-end: 4rem;
+    text-align: left;
 }
