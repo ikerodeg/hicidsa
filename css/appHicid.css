@@ -26,9 +26,13 @@ main{
 /*------------------------ UTILS ----------------------------*/
 
 .separador {
-    margin-block-end: 8rem;
+    border-block-start: 1px solid black;
+    margin-block-end: 2rem;
 }
 
+.break {
+    margin-block-end: 2rem;
+}
 /*------------------------ TITULO PRINCIPAL ----------------------------*/
 
 .main-title{
@@ -45,7 +49,6 @@ main{
 
 .nav{
     margin-inline: auto;
-    text-align: center;
     border-radius: 0.5rem;
 }
 
@@ -73,10 +76,18 @@ label {
 select{
     inline-size: 100%;
     border-radius: 0 0 0.5rem 0.5rem;
-    text-align: center;
     font-size: 1rem;
     padding-block: 0.5rem;
     background-color: var(--othrbg);
+    font-weight: 800;
+}
+
+select option{
+    text-align: left;
+}
+
+select option:first-child{
+    text-align: center !important;
 }
 
 select:hover {
@@ -97,6 +108,9 @@ button:hover {
     cursor: pointer;
     font-size: 2rem;
 }
+
+
+
 
 /*------------------------ SECTION ----------------------------*/
 
@@ -130,6 +144,11 @@ section > .cuerpo {
 }
 
 /*------------------------ ELECCION ----------------------------*/
+
+.vari-hora{
+    text-align: right;
+    padding-inline-end: 5%;
+}
 
 .eleccion span {
     font-weight: 800;
@@ -189,7 +208,6 @@ section > .cuerpo {
     width: fit-content;
     margin-inline: auto;
     font-size: 1.3rem;
-    text-align: justify;
 }
 
 .datos p:first-child{
@@ -220,3 +238,36 @@ footer {
     
 }
 
+/*------------------------ ANIMACION ----------------------------*/
+
+@keyframes slctanim {
+    from {
+        
+    }
+
+    to {
+        text-shadow: 1px 1px 2px white,
+        -1px -1px 2px white,
+        -1px 1px 2px white,
+        1px -1px 2px white,
+         2px 2px 2px white,
+        -2px -2px 2px white;
+        border-color: blue;
+    }
+
+    
+}
+
+.slct-colegios, .slct-rutas, .slct-hora {
+    animation-name: slctanim;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+/*------------------------ LISTAS ----------------------------*/
+
+.status{
+    margin-block-start: 8rem;
+    margin-block-end: 4rem;
+    text-align: left;
+}
