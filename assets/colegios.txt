@@ -1,5 +1,5 @@
 betxi:IES Betxi (Eslida - Artana)
-gilabert:IES Gilabert (Villavieja - Moncofa) **no disponible**
+gilabert:IES Gilabert (Villavieja - Moncofa)
 jaumei:IES Jaume I (Alqueries)
 calatrava:CEIP Novenes de Calatrava (Burriana) **no disponible**
 penyagolosa:CEIP Peñagolosa (Burriana)
