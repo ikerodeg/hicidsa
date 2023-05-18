@@ -1,12 +1,6 @@
 unica:Ruta única
-rutaA:Ruta A **no disponible**
 rutaB:Ruta B
 rutaC:Ruta C
 ruta1:Ruta 1
-ruta2:Ruta 2 **no disponible**
-ruta3:Ruta 3 **no disponible**
 ruta4:Ruta 4
-ruta5:Ruta 5 **no disponible**
-ruta6:Ruta 6 **no disponible**
-ruta7:Ruta 7 **no disponible**
-puerto:Puerto **no disponible**
+ruta7:Ruta 7
