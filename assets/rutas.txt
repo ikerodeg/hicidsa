@@ -3,5 +3,6 @@ rutaB:Ruta B
 rutaC:Ruta C
 rutaE:Ruta E
 ruta1:Ruta 1
+ruta3:Ruta 3
 ruta4:Ruta 4
 ruta7:Ruta 7
