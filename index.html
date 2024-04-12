@@ -1,85 +1,20 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>App HICIDsa</title>
-  <link rel="stylesheet" href="css/normalizev8.css">
-  <link rel="stylesheet" href="css/appHicid.css">
+  <title>HICID APP</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/index.css">
 </head>
-
 <body>
-  <main>
-    <h1 class="main-title">
-      <img src="img/logo.svg" alt="">
-    </h1>
-    <nav class="nav">
-<!---------------------------- COLEGIOS ------------------------------------>
-      <div class="colegios">
-        <label for="colegios">Selecciona el colegio:</label>
-        <select class="slct-colegios" id="colegios">
-          <option class="pulsa" value="">-- Pulsa aqui --</option>
-        </select>
-      </div>
-<!---------------------------- RUTAS ------------------------------------>
-      <div class="rutas" id="rutas-container" style="display:none">
-        <label for="rutas">Selecciona la ruta:</label>
-        <select class="slct-rutas" id="rutas">
-          <option class="pulsa" value="">-- Pulsa aqui --</option>
-        </select>
-      </div>
-<!---------------------------- HORARIO ------------------------------------>
-      <div class="horario" id="horario-container" style="display:none">
-        <label for="horario">Selecciona el horario:</label>
-        <select class="slct-hora" id="horario">
-          <option class="pulsa" value="">-- Pulsa aquí --</option>
-          <option value="manana">Mañana</option>
-          <option value="tarde">Tarde</option>
-        </select>
-      </div>
-      <button class="button" id="reset-button">Reset</button>
-    </nav>
-    
-<!---------------------------- CONTENIDO ------------------------------------>
-
-    <div class="contenido"></div>
-
-<!---------------------------- FOOTER ------------------------------------>
-
-<footer>
-  <ul class="status">Disponibles:
-    <li>Betxi - B - Mañana, Tarde.</li>
-    <li>Betxi - C - Mañana, Tarde</li>
-    <li>Jaume I - R1 - Mañana</li>
-    <li>Jaume I - R1 - Tarde</li>
-    <li>Peñagolosa - Tarde</li>
-    <li>Raval Universitari - Tarde</li>
-    <li>Villavieja Nules - R4 - Mañana, Tarde</li>
-  </ul>
-  <p>Autor: Iker Rodriguez</p>
-  <p><code>versión beta 5.2</code></p>
-</footer>
-
+  <header class="header-main">
+    <h1 class="header-main__h1"><img src="assets/img/logo.svg" alt=""></h1>
+  </header>
+  <main class="main">
+    <section class="colegios__section"><a href="./htmls/colegios.html">COLEGIOS</a></section>
+    <section class="urbanas__section"><a href="./htmls/urbanas.html">URBANAS</a></section>
   </main>
-  <script src="js/script3.js"></script>
+  
 </body>
-
-</html>
-<!---------------------------- CONTENIDO ------------------------------------>
-
-    <div class="contenido"></div>
-
-<!---------------------------- FOOTER ------------------------------------>
-
-<footer>
-  <p>Autor: Iker Rodriguez</p>
-  <p><code>versión beta 5.0</code></p>
-</footer>
-
-  </main>
-  <script src="js/script3.js"></script>
-</body>
-
 </html>

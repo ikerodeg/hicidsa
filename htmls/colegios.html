@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colegios</title>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/colegiosHtml.css">
+</head>
+
+<body>
+  <header class="header-main">
+    <h1 class="header-main__h1"><img src="../assets/img/logo.svg" alt=""></h1>
+    <div class="version">
+      <span class="emoji">📱</span>
+      <span class="text-version">mobile version</span>
+    </div>
+  </header>
+  <main class="main">
+    <nav class="main-nav__main" id="main-nav__main">
+      <select name="colegioNameSelect" id="colegioNameSelect">
+        <option name="default" value="default" id="default">Selecciona un colegio</option>
+      </select>
+      <select name="rutaNameSelect" id="rutaNameSelect">
+        <option name="default" value="default" id="default">Selecciona ruta</option>
+      </select>
+      <select name="turnoNameSelect" id="turnoNameSelect">
+        <option name="default" value="default" id="default">Selecciona turno</option>
+        <option value="entrada" id="entrada">Entrada (Mañana)</option>
+        <option value="salida" id="salida">Salida (Tarde)</option>
+      </select>
+    </nav>
+    <section class="colegioInfo__main" id="colegioInfo">
+      <!-- Aquí se mostrará la información del colegio -->
+    </section>
+    <section class="buttons_zone" id="buttons_zone">
+      <button type="reset" class="resetBttn" id="resetBttn">RESET</button>
+    </section>
+  </main>
+  <script src="../js/colegiosHtml.js" type="module"></script>
+</body>
+
+</html>
