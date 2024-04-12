@@ -1,0 +1,18 @@
+html {
+  background-color: black;
+  color: white;
+}
+
+.header-main__h1 img {
+  display: block;
+  margin-inline: auto;
+}
+
+section {
+  text-align: center;
+  margin-block-end: 3vh;
+}
+
+a:any-link {
+  color: white;
+}

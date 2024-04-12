@@ -1,0 +1,198 @@
+/* ------------------------- variables personalizadas ------------------------- */
+:root{
+  --main-bg-clr: hsl(0, 0%, 0%);
+  --main-bg-img: linear-gradient(477deg, rgba(213, 213, 213, 0.01) 0%, rgba(213, 213, 213, 0.01) 14.286%,rgba(140, 140, 140, 0.01) 14.286%, rgba(140, 140, 140, 0.01) 28.572%,rgba(52, 52, 52, 0.01) 28.572%, rgba(52, 52, 52, 0.01) 42.858%,rgba(38, 38, 38, 0.01) 42.858%, rgba(38, 38, 38, 0.01) 57.144%,rgba(159, 159, 159, 0.01) 57.144%, rgba(159, 159, 159, 0.01) 71.42999999999999%,rgba(71, 71, 71, 0.01) 71.43%, rgba(71, 71, 71, 0.01) 85.71600000000001%,rgba(88, 88, 88, 0.01) 85.716%, rgba(88, 88, 88, 0.01) 100.002%),linear-gradient(614deg, rgba(25, 25, 25, 0.01) 0%, rgba(25, 25, 25, 0.01) 12.5%,rgba(150, 150, 150, 0.01) 12.5%, rgba(150, 150, 150, 0.01) 25%,rgba(84, 84, 84, 0.01) 25%, rgba(84, 84, 84, 0.01) 37.5%,rgba(85, 85, 85, 0.01) 37.5%, rgba(85, 85, 85, 0.01) 50%,rgba(188, 188, 188, 0.01) 50%, rgba(188, 188, 188, 0.01) 62.5%,rgba(80, 80, 80, 0.01) 62.5%, rgba(80, 80, 80, 0.01) 75%,rgba(73, 73, 73, 0.01) 75%, rgba(73, 73, 73, 0.01) 87.5%,rgba(219, 219, 219, 0.01) 87.5%, rgba(219, 219, 219, 0.01) 100%),linear-gradient(480deg, rgba(233, 233, 233, 0.01) 0%, rgba(233, 233, 233, 0.01) 25%,rgba(114, 114, 114, 0.01) 25%, rgba(114, 114, 114, 0.01) 50%,rgba(164, 164, 164, 0.01) 50%, rgba(164, 164, 164, 0.01) 75%,rgba(228, 228, 228, 0.01) 75%, rgba(228, 228, 228, 0.01) 100%),linear-gradient(594deg, rgba(139, 139, 139, 0.02) 0%, rgba(139, 139, 139, 0.02) 16.667%,rgba(44, 44, 44, 0.02) 16.667%, rgba(44, 44, 44, 0.02) 33.334%,rgba(166, 166, 166, 0.02) 33.334%, rgba(166, 166, 166, 0.02) 50.001000000000005%,rgba(2, 2, 2, 0.02) 50.001%, rgba(2, 2, 2, 0.02) 66.668%,rgba(23, 23, 23, 0.02) 66.668%, rgba(23, 23, 23, 0.02) 83.33500000000001%,rgba(21, 21, 21, 0.02) 83.335%, rgba(21, 21, 21, 0.02) 100.002%),linear-gradient(605deg, rgba(3, 3, 3, 0.03) 0%, rgba(3, 3, 3, 0.03) 12.5%,rgba(116, 116, 116, 0.03) 12.5%, rgba(116, 116, 116, 0.03) 25%,rgba(214, 214, 214, 0.03) 25%, rgba(214, 214, 214, 0.03) 37.5%,rgba(217, 217, 217, 0.03) 37.5%, rgba(217, 217, 217, 0.03) 50%,rgba(68, 68, 68, 0.03) 50%, rgba(68, 68, 68, 0.03) 62.5%,rgba(118, 118, 118, 0.03) 62.5%, rgba(118, 118, 118, 0.03) 75%,rgba(200, 200, 200, 0.03) 75%, rgba(200, 200, 200, 0.03) 87.5%,rgba(198, 198, 198, 0.03) 87.5%, rgba(198, 198, 198, 0.03) 100%),linear-gradient(374deg, rgba(195, 195, 195, 0.03) 0%, rgba(195, 195, 195, 0.03) 16.667%,rgba(177, 177, 177, 0.03) 16.667%, rgba(177, 177, 177, 0.03) 33.334%,rgba(170, 170, 170, 0.03) 33.334%, rgba(170, 170, 170, 0.03) 50.001000000000005%,rgba(158, 158, 158, 0.03) 50.001%, rgba(158, 158, 158, 0.03) 66.668%,rgba(121, 121, 121, 0.03) 66.668%, rgba(121, 121, 121, 0.03) 83.33500000000001%,rgba(146, 146, 146, 0.03) 83.335%, rgba(146, 146, 146, 0.03) 100.002%),linear-gradient(545deg, rgba(103, 103, 103, 0.03) 0%, rgba(103, 103, 103, 0.03) 25%,rgba(112, 112, 112, 0.03) 25%, rgba(112, 112, 112, 0.03) 50%,rgba(4, 4, 4, 0.03) 50%, rgba(4, 4, 4, 0.03) 75%,rgba(227, 227, 227, 0.03) 75%, rgba(227, 227, 227, 0.03) 100%),linear-gradient(367deg, hsl(98,0%,0%),hsl(98,0%,0%));
+  --main-txt-clr: hsl(0, 0%, 100%);
+  --bg-clr-sct: #14137c;
+  --bg-img-slct: radial-gradient(circle at 29% 55%, rgba(50,68,170, 0.05) 0%, rgba(50,68,170, 0.05) 4%,transparent 4%, transparent 44%,transparent 44%, transparent 100%),radial-gradient(circle at 85% 89%, rgba(50,68,170, 0.05) 0%, rgba(50,68,170, 0.05) 51%,transparent 51%, transparent 52%,transparent 52%, transparent 100%),radial-gradient(circle at 6% 90%, rgba(50,68,170, 0.05) 0%, rgba(50,68,170, 0.05) 53%,transparent 53%, transparent 64%,transparent 64%, transparent 100%),radial-gradient(circle at 35% 75%, rgba(50,68,170, 0.05) 0%, rgba(50,68,170, 0.05) 6%,transparent 6%, transparent 98%,transparent 98%, transparent 100%),radial-gradient(circle at 56% 75%, rgba(50,68,170, 0.05) 0%, rgba(50,68,170, 0.05) 16%,transparent 16%, transparent 23%,transparent 23%, transparent 100%),radial-gradient(circle at 42% 0%, rgba(50,68,170, 0.05) 0%, rgba(50,68,170, 0.05) 3%,transparent 3%, transparent 26%,transparent 26%, transparent 100%),radial-gradient(circle at 29% 28%, rgba(50,68,170, 0.05) 0%, rgba(50,68,170, 0.05) 51%,transparent 51%, transparent 75%,transparent 75%, transparent 100%),radial-gradient(circle at 77% 21%, rgba(50,68,170, 0.05) 0%, rgba(50,68,170, 0.05) 35%,transparent 35%, transparent 55%,transparent 55%, transparent 100%),radial-gradient(circle at 65% 91%, rgba(50,68,170, 0.05) 0%, rgba(50,68,170, 0.05) 46%,transparent 46%, transparent 76%,transparent 76%, transparent 100%),linear-gradient(45deg, rgb(20,19,124),rgb(0,0,0));
+  --txt-sdw: 0 0 3px black,
+            1px 1px 1px black,
+            1px 1px 2px orangered;
+  --brdr-styl: solid 1px orangered;
+  --sz-bx: clamp( calc(0.7 * 412px), 70vw, 640px);
+  --mrgn-btwn: clamp(30px, 8vw, 500px);
+}  
+
+/* ------------------------- html ------------------------- */
+
+html {
+  block-size: 100%;
+  background-image: var(--main-bg-img);
+  background-repeat: no-repeat;
+}
+
+
+body {
+  background-image: var(--main-bg-img);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--main-txt-clr);
+
+}
+
+a:any-link {
+  color: var(--main-txt-clr);
+  text-decoration: none;
+}
+
+/* ------------------------- título header h1 ------------------------- */
+.header-main {
+  position: relative;
+  inline-size: var(--sz-bx);
+  margin-inline: auto;
+  padding-block-start: 5vh;
+  
+  img {
+    background-color: var(--bg-clr-sct);
+    border: var(--brdr-styl);
+    border-radius: 0.3em;
+    display: block;
+    inline-size: 100%;
+  }  
+}  
+
+/* ----------------------------- main ----------------------------- */
+.main {
+  margin-block-start: 8vh;
+}
+
+/* ------------------------- zona selects ------------------------- */
+.main-nav__main {
+  display: flex;
+  flex-direction: column;
+  inline-size: var(--sz-bx);
+  margin-inline: auto;
+  margin-block-start: var(--mrgn-btwn);
+
+  select {
+    border-radius: 0.3em;
+    background-color: var(--bg-clr-sct);
+    background-image: var(--bg-img-slct);
+    block-size: 4rem;
+    margin-block-end: var(--mrgn-btwn);
+    text-align: center;
+    color: var(--main-txt-clr);
+  }
+
+  :last-of-type {
+    margin-block-end: 1vh;
+  }
+}
+
+/* ------------------------- zona infoColegios ------------------------- */
+h2 {
+  text-shadow: var(--txt-sdw);
+  padding-block-end: clamp(8px, 3vw, 20px);
+  border-block-end: 1px solid orangered;
+}  
+
+
+.colegioInfo__main {
+  inline-size: var(--sz-bx);
+  margin-inline: auto;
+  margin-block: var(--mrgn-btwn);
+  text-align: center;
+  
+  header, section {
+    border-radius: 0.3em;
+    border: var(--brdr-styl);
+    padding-inline: 2vw;
+    margin-block-end: 5vh;
+    background-color: var(--bg-clr-sct);
+    background-image: var(--bg-img-slct);
+  }
+
+  .horas__p{
+    margin-block: 2vh;
+    font-size: 2rem;
+    font-weight: 800;
+    text-shadow: var(--txt-sdw);
+  }  
+
+  .section-parteTrabajo {
+
+    p:nth-of-type(odd) {
+      margin-block: 1vh;
+    }
+
+  }
+
+  .section-stops{
+
+    ol {
+      inline-size: fit-content;
+      margin-inline: auto;
+      padding: 0;
+    }  
+
+    li {
+      inline-size: 100%;
+      margin-inline: auto;
+      margin-block-end: 8vh;
+      padding-block-end: 4vh;
+      font-size: 0.9rem;
+      text-align: justify;
+      line-height: 1.8em;
+      border-block-end: 1px solid gray;
+    }
+
+    :last-of-type {
+      margin-block-end: inherit;
+    }
+  }
+
+  .section-obser {
+
+    ul {
+      margin: 0;
+      padding: 0 0.3em 1em 1.5em;
+    }
+
+    li {
+      color: yellow;
+      line-height: 1.7rem;
+      text-align: left;
+    }
+  }
+  
+}  
+
+/* --------------------------- botón de reset -------------------------- */
+.buttons_zone {
+  margin-block-start: 8vh;
+  padding-block-end: 8vh;
+}
+
+.resetBttn {
+  display: block;
+  inline-size: var(--sz-bx);
+  block-size: 7vh;
+  margin-inline: auto;
+  border-radius: 0.3em;
+  border: 1px solid hsl(0, 0%, 16%);
+  background-color: var(--bg-clr-sct);
+  background-image: var(--bg-img-slct);
+  color: grey;
+}
+
+/* ---------------------------- version ---------------------------- */
+
+.version {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  z-index: 100;
+  top: 4vh;
+  left: -7vw;
+  transform: rotate(-45deg);
+
+  .emoji {
+    font-size: 2rem;
+  }
+
+  .text-version {
+    font-size: 0.5rem;
+  }
+}
