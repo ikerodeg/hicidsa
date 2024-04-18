@@ -2,7 +2,7 @@ const COLE_NAMES_ARR = [
   {
     id: 'ies_betxi',
     name: 'IES Betxi',
-    address: 'C/ Sant Francesc 2 [Betxi]',
+    address: 'C/ Sant Francesc, 2 [Betxi]',
     linkMaps: 'https://maps.app.goo.gl/KnjhdLZp6BGzgYxE9',
     contact: '964738930',
     rutas: [
@@ -13,24 +13,32 @@ const COLE_NAMES_ARR = [
       {
         id: 'ruta_b',
         rutaName: 'Ruta B',
+        rangoDias: ['Lunes y Martes', 'Miércoles, Jueves y Viernes'],
       },
       {
         id: 'ruta_c',
         rutaName: 'Ruta C',
+        rangoDias: ['Lunes, Martes y Miércoles', 'Jueves y Viernes'],
       },
     ]
   },
   {
     id: 'ceip_regina_violant',
     name: 'CEIP Regina Violant',
+    address: 'C/ San Ildefonso, 55 [Almassora]',
+    linkMaps: 'https://maps.app.goo.gl/nhP2ywpMmcKALRoD6',
+    contact: '964738865',
     rutas: [
       {
         id: 'ruta_r1',
         rutaName: 'Ruta R1',
+        rangoMeses: ['Septiembre y Junio', 'Resto del año'],
+        rangoDias: ['Lunes, Martes y Jueves', 'Miércoles y Viernes'],
       },
       {
         id: 'ruta_r2',
         rutaName: 'Ruta R2',
+        rangoDias: ['Lunes, Martes y Jueves', 'Miércoles y Viernes'],
       },
       {
         id: 'ruta_r3',
