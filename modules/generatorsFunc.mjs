@@ -1,44 +1,155 @@
-function coleStructure(GLOBAL_V) {
-  const stopsRuta = GLOBAL_V.COLE_FULL_MATCH.stops.map ( (parada, index) => `<li><a href="${GLOBAL_V.COLE_FULL_MATCH.stops[index].linkMaps}">${GLOBAL_V.COLE_FULL_MATCH.stops[index].name}<br>${GLOBAL_V.COLE_FULL_MATCH.stops[index].descript}</a></li>`).join('');
+function headerColeBaseInfo(coleBaseInfoMatch) {
   return  `
-    <header>
-      <h2>${GLOBAL_V.COLE_MATCH.name}</h2>
-      <p><a target="_blank" href='${GLOBAL_V.COLE_MATCH.linkMaps}'>${GLOBAL_V.COLE_MATCH.address} 🔗</a></p>
-      <p>${GLOBAL_V.COLE_MATCH.contact}</p>
-    </header>
-    <section class="section-rutaInfo" id="sectionRutaInfo">
-      <h2>${GLOBAL_V.COLE_FULL_MATCH.rutaName}</h2>
-      <p id='entrada_p'>Entrada mañanas</p>
-      <p id='salida_p'>Salida tardes</p>
-      <p class="horas__p" id='hInOutCole'>${GLOBAL_V.COLE_FULL_MATCH.hInOutCole}</p>
+    <section class="section-infoCole">
+      <h2>${coleBaseInfoMatch.info.name}</h2>
+      <p class="section__p"><a target="_blank" href='${coleBaseInfoMatch.info.linkMaps}'>${coleBaseInfoMatch.info.address} 🔗</a></p>
+      <p>☎️ ${coleBaseInfoMatch.info.contact}</p>
     </section>
-    <section class="section-guia">
-      <h2>Recogida Guía</h2>
-      <h3>${GLOBAL_V.COLE_FULL_MATCH.zonaGuia.nameGuia}</h3>
-      <p><a target="_blank" href='${GLOBAL_V.COLE_FULL_MATCH.zonaGuia.linkPlaceTakeGuia}'>${GLOBAL_V.COLE_FULL_MATCH.zonaGuia.placeTakeGuia}</a></p>
-      <p class="horas__p">${GLOBAL_V.COLE_FULL_MATCH.zonaGuia.hTakeGuia}</p>
-    </section>
+  `
+};
+
+function articleNombreRutaHora(globalObject, coleBaseInfoMatch){
+  return `
+    <article>
+      <h2>${coleBaseInfoMatch.rutas[globalObject.SELECTED_RUTA_id].value}</h2>
+      <p class="section__p" id='inOut_h4'>${coleBaseInfoMatch.rutas[globalObject.SELECTED_RUTA_id].turno[globalObject.SELECTED_TURNO_id].value}</p>
+    </article>
+  `
+};
+
+function articleRutaMesDias(globalObject, coleBaseInfoMatch){
+  if (coleBaseInfoMatch.rutas[globalObject.SELECTED_RUTA_id].turno[globalObject.SELECTED_TURNO_id].mes) {
+    return `
+    <article>
+      <h4 class="mes_h4" id='mes_h4'>${coleBaseInfoMatch.rutas[globalObject.SELECTED_RUTA_id].turno[globalObject.SELECTED_TURNO_id].mes[globalObject.SELECTED_MES_VARIANT_id].value}</h4>
+      <h4 class="dias" id='dias'>${coleBaseInfoMatch.rutas[globalObject.SELECTED_RUTA_id].turno[globalObject.SELECTED_TURNO_id].mes[globalObject.SELECTED_MES_VARIANT_id].dias[globalObject.SELECTED_DIAS_id].value}</h4>
+    </article>
+  `
+  } else {
+    console.log(`NO hay mes ni dias disponibles`);
+    return ``
+  }
+
+};
+
+function articleRutaHoras(globalObject, coleBaseInfoMatch){
+
+  if (coleBaseInfoMatch.rutas[globalObject.SELECTED_RUTA_id].turno[globalObject.SELECTED_TURNO_id].mes) {
+    return `
+      <article>
+        <p class="horas__p">${coleBaseInfoMatch.rutas[globalObject.SELECTED_RUTA_id].turno[globalObject.SELECTED_TURNO_id].mes[globalObject.SELECTED_MES_VARIANT_id].dias[globalObject.SELECTED_DIAS_id].hrSalida}</p>
+      </article>
+    `
+  } else {
+    return `
+      <article>
+        <p class="horas__p">${coleBaseInfoMatch.rutas[globalObject.SELECTED_RUTA_id].turno[globalObject.SELECTED_TURNO_id].hrEntrada}</p>
+      </article>
+    `
+
+  }
+};
+
+function sectionRutaInfo(coleBaseInfoMatch, globalObject) {
+  if (coleBaseInfoMatch.rutas[globalObject.SELECTED_RUTA_id].turno[globalObject.SELECTED_TURNO_id].mes) {
+    return `
+      <section class="section-rutaInfo" id="sectionRutaInfo">
+        ${articleNombreRutaHora(globalObject, coleBaseInfoMatch)}
+        ${articleRutaMesDias(globalObject, coleBaseInfoMatch)}
+        ${articleRutaHoras(globalObject, coleBaseInfoMatch)}
+      </section>
+    `
+  } else {
+    return `
+      <section class="section-rutaInfo" id="sectionRutaInfo">
+        ${articleNombreRutaHora(globalObject, coleBaseInfoMatch)}
+        ${articleRutaHoras(globalObject, coleBaseInfoMatch)}
+      </section>
+    `
+  }
+
+};
+
+function sectionGuiaInfo(coleBaseInfoMatch, globalObject){
+  if (coleBaseInfoMatch.rutas[globalObject.SELECTED_RUTA_id].turno[globalObject.SELECTED_TURNO_id].mes) {
+    return `
+      <section class="section-guia">
+        <h2>Recogida Guía</h2>
+        <h3>${coleBaseInfoMatch.rutas[globalObject.SELECTED_RUTA_id].turno[globalObject.SELECTED_TURNO_id].mes[globalObject.SELECTED_MES_VARIANT_id].dias[globalObject.SELECTED_DIAS_id].guia.nameGuia}</h3>
+        <p class="section__p"><a target="_blank" href='linkMaps'>${coleBaseInfoMatch.rutas[globalObject.SELECTED_RUTA_id].turno[globalObject.SELECTED_TURNO_id].mes[globalObject.SELECTED_MES_VARIANT_id].dias[globalObject.SELECTED_DIAS_id].guia.lgRecoGuia}</a></p>
+        <p class="horas__p">${coleBaseInfoMatch.rutas[globalObject.SELECTED_RUTA_id].turno[globalObject.SELECTED_TURNO_id].mes[globalObject.SELECTED_MES_VARIANT_id].dias[globalObject.SELECTED_DIAS_id].guia.hrRecoGuia}</p>
+      </section>
+    `
+  } else {
+    return `
+      <section class="section-guia">
+        <h2>Recogida Guía</h2>
+        <h3>${coleBaseInfoMatch.rutas[globalObject.SELECTED_RUTA_id].turno[globalObject.SELECTED_TURNO_id].guia.nameGuia}</h3>
+        <p class="section__p"><a target="_blank" href='linkMaps'>${coleBaseInfoMatch.rutas[globalObject.SELECTED_RUTA_id].turno[globalObject.SELECTED_TURNO_id].guia.lgRecoGuia}</a></p>
+        <p class="horas__p">${coleBaseInfoMatch.rutas[globalObject.SELECTED_RUTA_id].turno[globalObject.SELECTED_TURNO_id].guia.hrRecoGuia}</p>
+      </section>
+    `
+  }
+};
+
+function sectionStops(globalObject, rutasObject){
+  const stopsRuta = rutasObject[globalObject.SELECTED_COLEGIO_id][globalObject.ALL_SELECTIONS].stops.map ( (parada, index) => `<li><a href="${parada.linkMaps}">${index + 1}. ${parada.name}<br></a>${parada.descript}</li>`).join('');
+
+  return `
     <section class="section-stops">
       <h2>Paradas Ruta</h2>
-      <ol>${stopsRuta}</ol>
+      <ul>${stopsRuta}</ul>
     </section>
-    <section class="section-rutaMaps">
-      <h2>Ruta Google Maps</h2>
-      <p><a target="_blank" href='${GLOBAL_V.COLE_FULL_MATCH.linkRutaMaps}'>Enlace a ruta Maps 🔗</a></p>
+  `
+
+};
+
+function  sectionLinkRuta(globalObject, rutasObject){
+  return `
+  <section class="section-linkRuta">
+    <h2>Ruta Google Maps</h2>
+    <p class="section__p"><a href="${rutasObject[globalObject.SELECTED_COLEGIO_id][globalObject.ALL_SELECTIONS].linkRutaMaps}"> Enlace a ruta Maps 🔗</a></p>
+  </section>
+  `
+};
+
+function sectionObservaciones(globalObject, rutasObject){
+  if (rutasObject[globalObject.SELECTED_COLEGIO_id][globalObject.ALL_SELECTIONS].observaciones) {
+    return `
+    <section class="section-observaciones">
+      <h2>Observaciones</h2>
+      <p class="section__p">${rutasObject[globalObject.SELECTED_COLEGIO_id][globalObject.ALL_SELECTIONS].observaciones}</p>
     </section>
-    <section class='section-obser' id='section_obser'>
-      <h2>Observaciones ⚠️</h2>
-      <ul>
-        <li id='obser_p'>${GLOBAL_V.COLE_FULL_MATCH.observaciones}</li>
-      </ul>
+    `
+  } else {
+    return ``
+  }
+};
+
+function sectionPartesTrabajo(globalObject, rutasObject){
+  return `
+    <section class="section-partesTrabajo">
+      <h2>Parte de trabajo</h2>
+      <p class="section__p">Hora inicio</p>
+      <p class="horas__p">${rutasObject[globalObject.SELECTED_COLEGIO_id][globalObject.ALL_SELECTIONS].parteTrabajo.hrInicio}</p>
+      <p class="section__p">Hora fin</p>
+      <p class="horas__p">${rutasObject[globalObject.SELECTED_COLEGIO_id][globalObject.ALL_SELECTIONS].parteTrabajo.hrFin}</p>
     </section>
-    <section class="section-parteTrabajo">
-      <h2>Datos parte trabajo</h2>
-      <p>Inicio</p>
-      <p class="horas__p">${GLOBAL_V.COLE_FULL_MATCH.parteHr[0]}</p>
-      <p>Final</p>
-      <p class="horas__p">${GLOBAL_V.COLE_FULL_MATCH.parteHr[1]}</p>
-    </section>
+  
+  `
+};
+
+function coleStructure(coleBaseInfoMatch, globalObject, rutasObject) {
+
+  return  `
+    ${headerColeBaseInfo(coleBaseInfoMatch)}
+    ${sectionRutaInfo(coleBaseInfoMatch, globalObject)}
+    ${sectionGuiaInfo(coleBaseInfoMatch, globalObject)}
+    ${sectionStops(globalObject, rutasObject)}
+    ${sectionLinkRuta(globalObject, rutasObject)}
+    ${sectionObservaciones(globalObject, rutasObject)}
+    ${sectionPartesTrabajo(globalObject, rutasObject)}
+
     `
 }
 
