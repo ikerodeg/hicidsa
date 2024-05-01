@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colegios</title>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/colegios.css">
+</head>
+
+<body>
+  <header class="header-main">
+    <div class="header-main__img"></div>
+    <div class="version">
+      <span class="emoji">📱</span>
+      <span class="text-version">mobile version</span>
+    </div>
+  </header>
+  <main class="main">
+    <nav class="main-nav__main" id="main-nav__main">
+      <select class="colegioNameSelect" name="colegioNameSelect" id="colegioNameSelect">
+        <option name="default" value="default" id="default">SELECCIONA COLEGIO</option>
+      </select>
+      <select name="rutaNameSelect" id="rutaNameSelect" style="display: none;">
+        <option name="default" value="default" id="default">SELECCIONA RUTA</option>
+      </select>
+      <select name="turnoNameSelect" id="turnoNameSelect" style="display: none;">
+        <option name="default" value="default" id="default">SELECCIONA TURNO</option>
+      </select>
+      <select name="mesNameSelect" id="mesNameSelect" style="display: none;">
+        <option name="default" value="default" id="default">SELECCIONA MES</option>
+      </select>
+      <select name="diasNameSelect" id="diasNameSelect" style="display: none;">
+        <option name="default" value="default" id="default">SELECCIONA DIAS</option>
+      </select>
+    </nav>
+    <section class="colegioInfo__main" id="colegioInfo">
+      <!-- Aquí se mostrará la información del colegio -->
+    </section>
+    <section class="buttons_zone" id="buttons_zone">
+      <button type="reset" class="resetBttn" id="resetBttn" disabled>RESET</button>
+    </section>
+  </main>
+  <script src="../js/colegios.js" type="module"></script>
+</body>
+
+</html>
