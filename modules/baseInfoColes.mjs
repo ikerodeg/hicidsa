@@ -1,4 +1,343 @@
 const coleBaseInfo_ARR = {
+  'ceip_mestre_canos': {    //R1
+    info: {
+      name: 'CEIP Mestre Canos',
+      address: 'Av. Del Mar 35<br>[Castellón]',
+      linkMaps: 'https://maps.app.goo.gl/NQy22sJ8FsGhcoU29',
+      contact: '636 41 81 48',
+    },
+    rutas: {
+      ruta_r1: {
+        value: 'Ruta R1',
+        turno: {
+          entrada: {
+            value: 'Turno mañana<br>(Entrada)',
+            hrEntrada:'09:00',
+            guia: {
+              nameGuia: 'Silvia',
+              hrRecoGuia: '08:45',
+              lgRecoGuia: 'Va ella al Colegio',
+            },
+          },
+          salida: {
+            value: 'Turno tarde<br>(Salida)',
+            mes: {
+              rangoMes1: {
+                value: 'Septiembre',
+                dias: {
+                  rangoDias1: {
+                    value: 'Todos los días',
+                    hrSalida: '15:00',
+                    guia: {
+                      nameGuia: 'Silvia',
+                      hrRecoGuia: '14:15',
+                      lgRecoGuia: 'Av. Hermanos Bou 61 [Castellón]<br>Parada Bus Parque Infantil "La Fuente"',
+                    },
+                  },
+                },
+              },
+              rangoMes2: {
+                value: 'Resto del año',
+                dias: {
+                  rangoDias1: {
+                    value: 'Todos los días',
+                    hrSalida: '16:20',
+                    guia: {
+                      nameGuia: 'Silvia',
+                      hrRecoGuia: '16:15',
+                      lgRecoGuia: 'Av. Hermanos Bou 61 [Castellón]<br>Parada Bus Parque Infantil "La Fuente"',
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+    }
+  },
+  'ceip_penyagolosa': {   //COMPLETO
+    info: {
+      name: 'CEIP Penyagolosa',
+      address: 'C/ Rio Mijares 1<br>[Burriana]',
+      linkMaps: 'https://maps.app.goo.gl/9Yuuj7sxzKodRhge9',
+      contact: '964 73 83 55',
+    },
+    rutas: {
+      ruta_r1: {
+        value: 'Ruta R1',
+        turno: {
+          entrada: {
+            value: 'Turno mañana<br>(Entrada)',
+            hrEntrada:'09:00',
+            guia: {
+              nameGuia: 'Lourdes',
+              hrRecoGuia: '08:00',
+              lgRecoGuia: 'En el IES Jaume I<br>[Burriana]',
+            },
+          },
+          salida: {
+            value: 'Turno tarde<br>(Salida)',
+            mes: {
+              rangoMes1: {
+                value: 'Septiembre y Junio',
+                dias: {
+                  rangoDias1: {
+                    value: 'Todos los días',
+                    hrSalida: '13:00',
+                    guia: {
+                      nameGuia: 'Lourdes',
+                      hrRecoGuia: '12:45',
+                      lgRecoGuia: 'Parada Bus IES Llombai<br>[Burriana]',
+                    },
+                  },
+                },
+              },
+              rangoMes2: {
+                value: 'Resto del año',
+                dias: {
+                  rangoDias1: {
+                    value: 'Todos los días',
+                    hrSalida: '17:00',
+                    guia: {
+                      nameGuia: 'Lourdes',
+                      hrRecoGuia: '16:45',
+                      lgRecoGuia: 'Parada Bus IES Llombai<br>[Burriana]',
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+    }
+  },
+  'ceip_regina_violant': //R1
+  {
+    info: {
+      name: "CEIP Regina Violant",
+      address: "C/ San Ildefonso, 55<br>[Almassora]",
+      linkMaps: "https://maps.app.goo.gl/nhP2ywpMmcKALRoD6",
+      contact: "964738865",
+    },
+    rutas: {
+      ruta_r1: {
+        value: 'Ruta R1',
+        turno: {
+          entrada: {
+            value: 'Turno mañana<br>(Entrada)',
+            hrEntrada:'09:00',
+            guia: {
+              nameGuia: 'Verónica',
+              hrRecoGuia: '07:50',
+              lgRecoGuia: "En el IES VILA-ROJA",
+            },
+          },
+          salida: {
+            value: 'Turno tarde<br>(Salida)',
+            mes: {
+              rangoMes1: {
+                value: 'Septiembre y Junio',
+                dias: {
+                  rangoDias1: {
+                    value: 'Lunes y Martes',
+                    hrSalida: '15:00',
+                    guia: {
+                      nameGuia: 'Verónica',
+                      hrRecoGuia: '14:45',
+                      lgRecoGuia: "C/ San Fernando 44 [Parada bus Telepizza]",
+                    },
+  
+                  },
+                  rangoDias2: {
+                    value: 'Miércoles, Jueves y Viernes',
+                    hrSalida: '16:30',
+                    guia: {
+                      nameGuia: 'Verónica',
+                      hrRecoGuia: '16:15',
+                      lgRecoGuia: "C/ San Fernando 44 [Parada bus Telepizza]",
+                    },
+                  },
+                },
+              },
+              rangoMes2: {
+                value: 'Resto del año',
+                dias: {
+                  rangoDias1: {
+                    value: 'Lunes Martes y Jueves',
+                    hrSalida: '16:30',
+                    guia: {
+                      nameGuia: 'Verónica',
+                      hrRecoGuia: '16:15',
+                      lgRecoGuia: "C/ San Fernando 44 [Parada bus Telepizza]",
+                    },
+                  },
+                  rangoDias2: {
+                    value: 'Miércoles y Viernes',
+                    hrSalida: '16:30',
+                    guia: {
+                      nameGuia: 'Verónica',
+                      hrRecoGuia: '16:15',
+                      lgRecoGuia: "C/ San Fernando 44 [Parada bus Telepizza]",
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+      ruta_r2: {
+        value: 'Ruta R2',
+        turno: {
+          entrada: {
+            value: 'Turno mañana<br>(Entrada)',
+            hrEntrada: '09:00',
+            guia: {
+              nameGuia: 'Elena Mar.',
+              hrRecoGuia: '08:00',
+              lgRecoGuia: "Viene del IES",
+            },
+          },
+          salida: {
+            value: 'Turno tarde<br>(Salida)',
+            mes: {
+              rangoMes1: {
+                value: 'Septiembre y Junio',
+                dias: {
+                  rangoDias1: {
+                    value: 'Lunes, Martes y Jueves',
+                    hrSalida: '15:00',
+                    guia: {
+                      nameGuia: 'Elena Mar.',
+                      hrRecoGuia: '14:45',
+                      lgRecoGuia: "Va ella al colegio",
+                    },
+                  },
+                  rangoDias2: {
+                    value: 'Miércoles y Viernes',
+                    hrSalida: '15:00',
+                    guia: {
+                      nameGuia: 'Elena Mar.',
+                      hrRecoGuia: '15:00',
+                      lgRecoGuia: "Va ella al colegio",
+                    },
+                  },
+                },
+              },
+              rangoMes2: {
+                value: 'Resto del año',
+                dias: {
+                  rangoDias1: {
+                    value: 'Todos los días',
+                    hrSalida: '16:30',
+                    guia: {
+                      nameGuia: 'Elena Mar.',
+                      hrRecoGuia: '16:10',
+                      lgRecoGuia: "Va ella al colegio",
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+      ruta_r3: {
+        value: 'Ruta R3',
+        turno: {
+          entrada: {
+            value: 'Turno mañana<br>(Entrada)',
+            hrEntrada: '09:00',
+            guia: {
+              nameGuia: 'Elena Lob.',
+              hrRecoGuia: '07:50',
+              lgRecoGuia: "En el IES VILA-ROJA",
+            },
+          },
+          salida: {
+            value: 'Turno tarde<br>(Salida)',
+            mes: {
+              rangoMes1: {
+                value: 'Septiembre y Junio',
+                dias: {
+                  rangoDias1: {
+                    value: 'Todos los días',
+                    hrSalida: '15:00',
+                    guia: {
+                      nameGuia: 'Elena Lob.',
+                      hrRecoGuia: '14:50',
+                      lgRecoGuia: "Va ella al colegio",
+                    },
+                  },
+                },
+  
+              },
+              rangoMes2: {
+                value: 'Resto del año',
+                dias: {
+                  rangoDias1: {
+                    value: 'Todos los días',
+                    hrSalida: '16:30',
+                    guia: {
+                      nameGuia: 'Elena Mar.',
+                      hrRecoGuia: '16:20',
+                      lgRecoGuia: "Va ella al colegio",
+                    },
+                  },
+                },
+  
+              },
+            },
+          },
+        },
+      },
+    },
+  },
+  'citd_penyeta_roja': {    //C
+    info: {
+      name: 'CITD Penyeta Roja',
+      address: 'C/ Penyeta Roja Oest (210)',
+      linkMaps: 'https://maps.app.goo.gl/L9GFDuhrzBE9nVfc8',
+      contact: '964 35 98 37',
+    },
+    rutas: {
+      ruta_r3: {
+        value: 'Ruta C',
+        turno: {
+          entrada: {
+            value: 'Turno mañana<br>(Entrada)',
+            hrEntrada:'08:30',
+            guia: {
+              nameGuia: 'Isabel Ram',
+              hrRecoGuia: '07:00',
+              lgRecoGuia: 'Av. Barcelona 20<br>Enfrente parada bus<br>Residencia ancianos',
+            },
+          },
+          salida: {
+            value: 'Turno tarde<br>(Salida)',
+            mes: {
+              rangoMes1: {
+                value: 'Todo el año',
+                dias: {
+                  rangoDias1: {
+                    value: 'Todos los días',
+                    hrSalida: '15:30',
+                    guia: {
+                      nameGuia: 'Isabel Ram',
+                      hrRecoGuia: '15:00',
+                      lgRecoGuia: 'Recoge todas las guias 1 bus, preguntar',
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+    }
+  },
   'ies_betxi':  //COMPLETO
   {
     info: {
@@ -127,188 +466,6 @@ const coleBaseInfo_ARR = {
         },
       },
     }
-  },
-  'ceip_regina_violant': //R1
-  {
-    info: {
-      name: "CEIP Regina Violant",
-      address: "C/ San Ildefonso, 55<br>[Almassora]",
-      linkMaps: "https://maps.app.goo.gl/nhP2ywpMmcKALRoD6",
-      contact: "964738865",
-    },
-    rutas: {
-      ruta_r1: {
-        value: 'Ruta R1',
-        turno: {
-          entrada: {
-            value: 'Turno mañana<br>(Entrada)',
-            hrEntrada:'09:00',
-            guia: {
-              nameGuia: 'Verónica',
-              hrRecoGuia: '07:50',
-              lgRecoGuia: "En el IES VILA-ROJA",
-            },
-          },
-          salida: {
-            value: 'Turno tarde<br>(Salida)',
-            mes: {
-              rangoMes1: {
-                value: 'Septiembre y Junio',
-                dias: {
-                  rangoDias1: {
-                    value: 'Lunes y Martes',
-                    hrSalida: '15:00',
-                    guia: {
-                      nameGuia: 'Verónica',
-                      hrRecoGuia: '14:45',
-                      lgRecoGuia: "C/ San Fernando 44 [Parada bus Telepizza]",
-                    },
-
-                  },
-                  rangoDias2: {
-                    value: 'Miércoles, Jueves y Viernes',
-                    hrSalida: '16:30',
-                    guia: {
-                      nameGuia: 'Verónica',
-                      hrRecoGuia: '16:15',
-                      lgRecoGuia: "C/ San Fernando 44 [Parada bus Telepizza]",
-                    },
-                  },
-                },
-              },
-              rangoMes2: {
-                value: 'Resto del año',
-                dias: {
-                  rangoDias1: {
-                    value: 'Lunes Martes y Jueves',
-                    hrSalida: '16:30',
-                    guia: {
-                      nameGuia: 'Verónica',
-                      hrRecoGuia: '16:15',
-                      lgRecoGuia: "C/ San Fernando 44 [Parada bus Telepizza]",
-                    },
-                  },
-                  rangoDias2: {
-                    value: 'Miércoles y Viernes',
-                    hrSalida: '16:30',
-                    guia: {
-                      nameGuia: 'Verónica',
-                      hrRecoGuia: '16:15',
-                      lgRecoGuia: "C/ San Fernando 44 [Parada bus Telepizza]",
-                    },
-                  },
-                },
-              },
-            },
-          },
-        },
-      },
-      ruta_r2: {
-        value: 'Ruta R2',
-        turno: {
-          entrada: {
-            value: 'Turno mañana<br>(Entrada)',
-            hrEntrada: '09:00',
-            guia: {
-              nameGuia: 'Elena Mar.',
-              hrRecoGuia: '08:00',
-              lgRecoGuia: "Viene del IES",
-            },
-          },
-          salida: {
-            value: 'Turno tarde<br>(Salida)',
-            mes: {
-              rangoMes1: {
-                value: 'Septiembre y Junio',
-                dias: {
-                  rangoDias1: {
-                    value: 'Lunes, Martes y Jueves',
-                    hrSalida: '15:00',
-                    guia: {
-                      nameGuia: 'Elena Mar.',
-                      hrRecoGuia: '14:45',
-                      lgRecoGuia: "Va ella al colegio",
-                    },
-                  },
-                  rangoDias2: {
-                    value: 'Miércoles y Viernes',
-                    hrSalida: '15:00',
-                    guia: {
-                      nameGuia: 'Elena Mar.',
-                      hrRecoGuia: '15:00',
-                      lgRecoGuia: "Va ella al colegio",
-                    },
-                  },
-                },
-              },
-              rangoMes2: {
-                value: 'Resto del año',
-                dias: {
-                  rangoDias1: {
-                    value: 'Todos los días',
-                    hrSalida: '16:30',
-                    guia: {
-                      nameGuia: 'Elena Mar.',
-                      hrRecoGuia: '16:10',
-                      lgRecoGuia: "Va ella al colegio",
-                    },
-                  },
-                },
-              },
-            },
-          },
-        },
-      },
-      ruta_r3: {
-        value: 'Ruta R3',
-        turno: {
-          entrada: {
-            value: 'Turno mañana<br>(Entrada)',
-            hrEntrada: '09:00',
-            guia: {
-              nameGuia: 'Elena Lob.',
-              hrRecoGuia: '07:50',
-              lgRecoGuia: "En el IES VILA-ROJA",
-            },
-          },
-          salida: {
-            value: 'Turno tarde<br>(Salida)',
-            mes: {
-              rangoMes1: {
-                value: 'Septiembre y Junio',
-                dias: {
-                  rangoDias1: {
-                    value: 'Todos los días',
-                    hrSalida: '15:00',
-                    guia: {
-                      nameGuia: 'Elena Lob.',
-                      hrRecoGuia: '14:50',
-                      lgRecoGuia: "Va ella al colegio",
-                    },
-                  },
-                },
-
-              },
-              rangoMes2: {
-                value: 'Resto del año',
-                dias: {
-                  rangoDias1: {
-                    value: 'Todos los días',
-                    hrSalida: '16:30',
-                    guia: {
-                      nameGuia: 'Elena Mar.',
-                      hrRecoGuia: '16:20',
-                      lgRecoGuia: "Va ella al colegio",
-                    },
-                  },
-                },
-
-              },
-            },
-          },
-        },
-      },
-    },
   },
   'ies_gilabert': { //R1, R2, R3, R7
     info: {
@@ -601,163 +758,6 @@ const coleBaseInfo_ARR = {
       },
     }
   },
-  'ceip_penyagolosa': {   //COMPLETO
-    info: {
-      name: 'CEIP Penyagolosa',
-      address: 'C/ Rio Mijares 1<br>[Burriana]',
-      linkMaps: 'https://maps.app.goo.gl/9Yuuj7sxzKodRhge9',
-      contact: '964 73 83 55',
-    },
-    rutas: {
-      ruta_r1: {
-        value: 'Ruta R1',
-        turno: {
-          entrada: {
-            value: 'Turno mañana<br>(Entrada)',
-            hrEntrada:'09:00',
-            guia: {
-              nameGuia: 'Lourdes',
-              hrRecoGuia: '08:00',
-              lgRecoGuia: 'En el IES Jaume I<br>[Burriana]',
-            },
-          },
-          salida: {
-            value: 'Turno tarde<br>(Salida)',
-            mes: {
-              rangoMes1: {
-                value: 'Septiembre y Junio',
-                dias: {
-                  rangoDias1: {
-                    value: 'Todos los días',
-                    hrSalida: '13:00',
-                    guia: {
-                      nameGuia: 'Lourdes',
-                      hrRecoGuia: '12:45',
-                      lgRecoGuia: 'Parada Bus IES Llombai<br>[Burriana]',
-                    },
-                  },
-                },
-              },
-              rangoMes2: {
-                value: 'Resto del año',
-                dias: {
-                  rangoDias1: {
-                    value: 'Todos los días',
-                    hrSalida: '17:00',
-                    guia: {
-                      nameGuia: 'Lourdes',
-                      hrRecoGuia: '16:45',
-                      lgRecoGuia: 'Parada Bus IES Llombai<br>[Burriana]',
-                    },
-                  },
-                },
-              },
-            },
-          },
-        },
-      },
-    }
-  },
-  'ceip_mestre_canos': {    //R1
-    info: {
-      name: 'CEIP Mestre Canos',
-      address: 'Av. Del Mar 35<br>[Castellón]',
-      linkMaps: 'https://maps.app.goo.gl/NQy22sJ8FsGhcoU29',
-      contact: '636 41 81 48',
-    },
-    rutas: {
-      ruta_r1: {
-        value: 'Ruta R1',
-        turno: {
-          entrada: {
-            value: 'Turno mañana<br>(Entrada)',
-            hrEntrada:'09:00',
-            guia: {
-              nameGuia: 'Silvia',
-              hrRecoGuia: '08:45',
-              lgRecoGuia: 'Va ella al Colegio',
-            },
-          },
-          salida: {
-            value: 'Turno tarde<br>(Salida)',
-            mes: {
-              rangoMes1: {
-                value: 'Septiembre',
-                dias: {
-                  rangoDias1: {
-                    value: 'Todos los días',
-                    hrSalida: '15:00',
-                    guia: {
-                      nameGuia: 'Silvia',
-                      hrRecoGuia: '14:15',
-                      lgRecoGuia: 'Av. Hermanos Bou 61 [Castellón]<br>Parada Bus Parque Infantil "La Fuente"',
-                    },
-                  },
-                },
-              },
-              rangoMes2: {
-                value: 'Resto del año',
-                dias: {
-                  rangoDias1: {
-                    value: 'Todos los días',
-                    hrSalida: '16:20',
-                    guia: {
-                      nameGuia: 'Silvia',
-                      hrRecoGuia: '16:15',
-                      lgRecoGuia: 'Av. Hermanos Bou 61 [Castellón]<br>Parada Bus Parque Infantil "La Fuente"',
-                    },
-                  },
-                },
-              },
-            },
-          },
-        },
-      },
-    }
-  },
-  'citd_penyeta_roja': {    //C
-    info: {
-      name: 'CITD Penyeta Roja',
-      address: 'C/ Penyeta Roja Oest (210)',
-      linkMaps: 'https://maps.app.goo.gl/L9GFDuhrzBE9nVfc8',
-      contact: '964 35 98 37',
-    },
-    rutas: {
-      ruta_r3: {
-        value: 'Ruta C',
-        turno: {
-          entrada: {
-            value: 'Turno mañana<br>(Entrada)',
-            hrEntrada:'08:30',
-            guia: {
-              nameGuia: 'Isabel Ram',
-              hrRecoGuia: '07:00',
-              lgRecoGuia: 'Av. Barcelona 20<br>Enfrente parada bus<br>Residencia ancianos',
-            },
-          },
-          salida: {
-            value: 'Turno tarde<br>(Salida)',
-            mes: {
-              rangoMes1: {
-                value: 'Todo el año',
-                dias: {
-                  rangoDias1: {
-                    value: 'Todos los días',
-                    hrSalida: '15:30',
-                    guia: {
-                      nameGuia: 'Isabel Ram',
-                      hrRecoGuia: '15:00',
-                      lgRecoGuia: 'Recoge todas las guias 1 bus, preguntar',
-                    },
-                  },
-                },
-              },
-            },
-          },
-        },
-      },
-    }
-  },
   'ies_ximen_urrea_alcalaten': {    //A
     info: {
       name: "IES Ximen D'Urrea",
@@ -855,7 +855,6 @@ const coleBaseInfo_ARR = {
       },
     }
   },
-
 
 };
 export { coleBaseInfo_ARR };

@@ -93,12 +93,16 @@ function changeStyle(element, styles) {
 const styleGeneral = (selectId) => {
   Object.assign(selectId.style, STYLES);
   selectId.disabled = true;
+
 }
 
 //Funcion para habilitar y cambiar el estilo del boton reset
 const styleResetButton = (selectId) => {
   Object.assign(selectId.style, STYLES_RESET);
   selectId.disabled = false;
+  selectId.style.pointerEvents = 'auto';
+  selectId.style.boxShadow = '0 0 10px rgb(255, 86, 86)';
+  selectId.style.color = 'hsl(0, 100%, 58%)';
 }
 
 //Funcion para guardar el valor del option seleccionado en el objeto GLOBAL_V
