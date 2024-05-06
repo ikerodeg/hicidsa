@@ -431,6 +431,116 @@ const paradasRutas = {
         hrFin: '08:30'
       }
     },
+    'ies_gilabert-ruta_r2-entrada': {
+      stops: [
+        {
+          name: 'C/ Proyecto 11<br>[Moncofar] 🔗',
+          descript: '📍 Parada bus ambulatorio',
+          linkMaps: 'https://maps.app.goo.gl/o9FKy7sNALqszsrK6',
+        },
+        {
+          name: 'C/ Onda esq. Av. Cientific Avel-li Corm<br>[Moncofar] 🔗',
+          descript: '📍 Rotonda Ancla enfrente Mercadona',
+          linkMaps: 'https://maps.app.goo.gl/i2o5QLPJQ27zPkev8',
+        },
+        {
+          name: 'Travesía San Pedro 10<br>[Moncofar] 🔗',
+          descript: '📍 Parada de Bus (Escorchadors)',
+          linkMaps: 'https://maps.app.goo.gl/6EoZfJmXV7x4CxEx6',
+        },
+        {
+          name: 'Camí de la Vall 108<br>[Moncofar] 🔗',
+          descript: '📍 Parada de Bus',
+          linkMaps: 'https://maps.app.goo.gl/aJUQHst3sX7FCfMW6',
+        },
+        {
+          name: 'C/ Sant Vicent 78<br>[Nules] 🔗',
+          descript: '📍 IES Gilabert',
+          linkMaps: 'https://maps.app.goo.gl/taNUMQohjLNfU7s7A',
+        },
+      ],
+      observaciones: '',
+      linkRutaMaps: 'https://maps.app.goo.gl',
+      parteTrabajo: {
+        hrInicio: '06:00',
+        hrFin: '08:30'
+      }
+    },
+    'ies_gilabert-ruta_r3-entrada': {
+      stops: [
+        {
+          name: 'C/ Proyecto 11<br>[Moncofar] 🔗',
+          descript: '📍 Parada bus ambulatorio',
+          linkMaps: 'https://maps.app.goo.gl/o9FKy7sNALqszsrK6',
+        },
+        {
+          name: 'C/ Onda esq. Av. Cientific Avel-li Corm<br>[Moncofar] 🔗',
+          descript: '📍 Rotonda Ancla enfrente Mercadona',
+          linkMaps: 'https://maps.app.goo.gl/i2o5QLPJQ27zPkev8',
+        },
+        {
+          name: 'Travesía San Pedro 10<br>[Moncofar] 🔗',
+          descript: '📍 Parada de Bus (Escorchadors)',
+          linkMaps: 'https://maps.app.goo.gl/6EoZfJmXV7x4CxEx6',
+        },
+        {
+          name: 'Camí de la Vall 108<br>[Moncofar] 🔗',
+          descript: '📍 Parada de Bus',
+          linkMaps: 'https://maps.app.goo.gl/aJUQHst3sX7FCfMW6',
+        },
+        {
+          name: 'C/ Sant Vicent 78<br>[Nules] 🔗',
+          descript: '📍 IES Gilabert',
+          linkMaps: 'https://maps.app.goo.gl/taNUMQohjLNfU7s7A',
+        },
+      ],
+      observaciones: '',
+      linkRutaMaps: 'https://maps.app.goo.gl',
+      parteTrabajo: {
+        hrInicio: '06:00',
+        hrFin: '08:30'
+      }
+    },
+    'ies_gilabert-ruta_r7-entrada': {
+      stops: [
+        {
+          name: 'C/ Onda esq. Av. Cientific Avel-li Corm<br>[Moncofar] 🔗',
+          descript: '📍 Rotonda Ancla enfrente Mercadona',
+          linkMaps: 'https://maps.app.goo.gl/i2o5QLPJQ27zPkev8',
+        },
+        {
+          name: 'Av. Mare Nostrum 57<br>[Playa Moncofar] 🔗',
+          descript: '📍 Paso de cebra del canal',
+          linkMaps: 'https://maps.app.goo.gl/asa2kuaZ7AbdcH1W8',
+        },
+        {
+          name: 'Av. Mare Nostrum 143<br>[Playa Moncofar] 🔗',
+          descript: '📍 Enfrente Oficina de turismo',
+          linkMaps: 'https://maps.app.goo.gl/RzWeVetwSwp1r6bXA',
+        },
+        {
+          name: 'Av. del puerto<br>[Playa Moncofar] 🔗',
+          descript: '📍 Enfrente Ermita, junto Kebab',
+          linkMaps: 'https://maps.app.goo.gl/MW4aVbwaYrsdX6VD8',
+        },
+        {
+          name: 'Camí de la Vall 108<br>[Moncofar] 🔗',
+          descript: '📍 Parada de Bus',
+          linkMaps: 'https://maps.app.goo.gl/aJUQHst3sX7FCfMW6',
+        },
+        {
+          name: 'C/ Sant Vicent 78<br>[Nules] 🔗',
+          descript: '📍 IES Gilabert',
+          linkMaps: 'https://maps.app.goo.gl/taNUMQohjLNfU7s7A',
+        },
+      ],
+      observaciones: '',
+      linkRutaMaps: 'https://maps.app.goo.gl',
+      parteTrabajo: {
+        hrInicio: '06:00',
+        hrFin: '08:30'
+      }
+    },
     'ies_gilabert-ruta_r1-salida-rangoMes1-rangoDias1': {
       stops: [
         {
@@ -583,6 +693,191 @@ const paradasRutas = {
       parteTrabajo: {
         hrInicio: '13:30',
         hrFin: '16:00'
+      }
+    },
+    'ies_gilabert-ruta_r2-salida-rangoMes1-rangoDias1': {
+      stops: [
+        {
+          name: 'C/ Sant Vicent 78<br>[Nules] 🔗',
+          descript: '📍 IES Gilabert',
+          linkMaps: 'https://maps.app.goo.gl/taNUMQohjLNfU7s7A',
+        },
+        {
+          name: 'Camí de la Vall 108<br>[Moncofar] 🔗',
+          descript: '📍 Parada de Bus',
+          linkMaps: 'https://maps.app.goo.gl/aJUQHst3sX7FCfMW6',
+        },
+        {
+          name: 'C/ Proyecto 11<br>[Moncofar] 🔗',
+          descript: '📍 Parada bus ambulatorio',
+          linkMaps: 'https://maps.app.goo.gl/o9FKy7sNALqszsrK6',
+        },
+        {
+          name: 'C/ Onda esq. Av. Cientific Avel-li Corm<br>[Moncofar] 🔗',
+          descript: '📍 Rotonda Ancla enfrente Mercadona',
+          linkMaps: 'https://maps.app.goo.gl/i2o5QLPJQ27zPkev8',
+        },
+        {
+          name: 'Travesía San Pedro 10<br>[Moncofar] 🔗',
+          descript: '📍 Parada de Bus (Escorchadors)',
+          linkMaps: 'https://maps.app.goo.gl/6EoZfJmXV7x4CxEx6',
+        },
+      ],
+      observaciones: '',
+      linkRutaMaps: 'https://maps.app.goo.gl',
+      parteTrabajo: {
+        hrInicio: '13:30',
+        hrFin: '15:30'
+      }
+    },
+    'ies_gilabert-ruta_r3-salida-rangoMes1-rangoDias1': {
+      stops: [
+        {
+          name: 'C/ Sant Vicent 78<br>[Nules] 🔗',
+          descript: '📍 IES Gilabert',
+          linkMaps: 'https://maps.app.goo.gl/taNUMQohjLNfU7s7A',
+        },
+        {
+          name: 'Camí de la Vall 108<br>[Moncofar] 🔗',
+          descript: '📍 Parada de Bus',
+          linkMaps: 'https://maps.app.goo.gl/aJUQHst3sX7FCfMW6',
+        },
+        {
+          name: 'C/ Proyecto 11<br>[Moncofar] 🔗',
+          descript: '📍 Parada bus ambulatorio',
+          linkMaps: 'https://maps.app.goo.gl/o9FKy7sNALqszsrK6',
+        },
+        {
+          name: 'C/ Onda esq. Av. Cientific Avel-li Corm<br>[Moncofar] 🔗',
+          descript: '📍 Rotonda Ancla enfrente Mercadona',
+          linkMaps: 'https://maps.app.goo.gl/i2o5QLPJQ27zPkev8',
+        },
+        {
+          name: 'Travesía San Pedro 10<br>[Moncofar] 🔗',
+          descript: '📍 Parada de Bus (Escorchadors)',
+          linkMaps: 'https://maps.app.goo.gl/6EoZfJmXV7x4CxEx6',
+        },
+      ],
+      observaciones: '',
+      linkRutaMaps: 'https://maps.app.goo.gl',
+      parteTrabajo: {
+        hrInicio: '15:00',
+        hrFin: '16:30'
+      }
+    },
+    'ies_gilabert-ruta_r3-salida-rangoMes1-rangoDias2': {
+      stops: [
+        {
+          name: 'C/ Sant Vicent 78<br>[Nules] 🔗',
+          descript: '📍 IES Gilabert',
+          linkMaps: 'https://maps.app.goo.gl/taNUMQohjLNfU7s7A',
+        },
+        {
+          name: 'Camí de la Vall 108<br>[Moncofar] 🔗',
+          descript: '📍 Parada de Bus',
+          linkMaps: 'https://maps.app.goo.gl/aJUQHst3sX7FCfMW6',
+        },
+        {
+          name: 'C/ Proyecto 11<br>[Moncofar] 🔗',
+          descript: '📍 Parada bus ambulatorio',
+          linkMaps: 'https://maps.app.goo.gl/o9FKy7sNALqszsrK6',
+        },
+        {
+          name: 'C/ Onda esq. Av. Cientific Avel-li Corm<br>[Moncofar] 🔗',
+          descript: '📍 Rotonda Ancla enfrente Mercadona',
+          linkMaps: 'https://maps.app.goo.gl/i2o5QLPJQ27zPkev8',
+        },
+        {
+          name: 'Travesía San Pedro 10<br>[Moncofar] 🔗',
+          descript: '📍 Parada de Bus (Escorchadors)',
+          linkMaps: 'https://maps.app.goo.gl/6EoZfJmXV7x4CxEx6',
+        },
+      ],
+      observaciones: '',
+      linkRutaMaps: 'https://maps.app.goo.gl',
+      parteTrabajo: {
+        hrInicio: '13:30',
+        hrFin: '15:30'
+      }
+    },
+    'ies_gilabert-ruta_r7-salida-rangoMes1-rangoDias1': {
+      stops: [
+        {
+          name: 'C/ Sant Vicent 78<br>[Nules] 🔗',
+          descript: '📍 IES Gilabert',
+          linkMaps: 'https://maps.app.goo.gl/taNUMQohjLNfU7s7A',
+        },
+        {
+          name: 'Camí de la Vall 108<br>[Moncofar] 🔗',
+          descript: '📍 Parada de Bus',
+          linkMaps: 'https://maps.app.goo.gl/aJUQHst3sX7FCfMW6',
+        },
+        {
+          name: 'C/ Onda esq. Av. Cientific Avel-li Corm<br>[Moncofar] 🔗',
+          descript: '📍 Rotonda Ancla enfrente Mercadona',
+          linkMaps: 'https://maps.app.goo.gl/i2o5QLPJQ27zPkev8',
+        },
+        {
+          name: 'Av. Mare Nostrum 57<br>[Playa Moncofar] 🔗',
+          descript: '📍 Paso de cebra del canal',
+          linkMaps: 'https://maps.app.goo.gl/asa2kuaZ7AbdcH1W8',
+        },
+        {
+          name: 'Av. Mare Nostrum 143<br>[Playa Moncofar] 🔗',
+          descript: '📍 Enfrente Oficina de turismo',
+          linkMaps: 'https://maps.app.goo.gl/RzWeVetwSwp1r6bXA',
+        },
+        {
+          name: 'Av. del puerto<br>[Playa Moncofar] 🔗',
+          descript: '📍 Enfrente Ermita, junto Kebab',
+          linkMaps: 'https://maps.app.goo.gl/MW4aVbwaYrsdX6VD8',
+        },
+      ],
+      observaciones: '',
+      linkRutaMaps: 'https://maps.app.goo.gl',
+      parteTrabajo: {
+        hrInicio: '14:30',
+        hrFin: '16:30'
+      }
+    },
+    'ies_gilabert-ruta_r7-salida-rangoMes1-rangoDias2': {
+      stops: [
+        {
+          name: 'C/ Sant Vicent 78<br>[Nules] 🔗',
+          descript: '📍 IES Gilabert',
+          linkMaps: 'https://maps.app.goo.gl/taNUMQohjLNfU7s7A',
+        },
+        {
+          name: 'Camí de la Vall 108<br>[Moncofar] 🔗',
+          descript: '📍 Parada de Bus',
+          linkMaps: 'https://maps.app.goo.gl/aJUQHst3sX7FCfMW6',
+        },
+        {
+          name: 'C/ Onda esq. Av. Cientific Avel-li Corm<br>[Moncofar] 🔗',
+          descript: '📍 Rotonda Ancla enfrente Mercadona',
+          linkMaps: 'https://maps.app.goo.gl/i2o5QLPJQ27zPkev8',
+        },
+        {
+          name: 'Av. Mare Nostrum 57<br>[Playa Moncofar] 🔗',
+          descript: '📍 Paso de cebra del canal',
+          linkMaps: 'https://maps.app.goo.gl/asa2kuaZ7AbdcH1W8',
+        },
+        {
+          name: 'Av. Mare Nostrum 143<br>[Playa Moncofar] 🔗',
+          descript: '📍 Enfrente Oficina de turismo',
+          linkMaps: 'https://maps.app.goo.gl/RzWeVetwSwp1r6bXA',
+        },
+        {
+          name: 'Av. del puerto<br>[Playa Moncofar] 🔗',
+          descript: '📍 Enfrente Ermita, junto Kebab',
+          linkMaps: 'https://maps.app.goo.gl/MW4aVbwaYrsdX6VD8',
+        },
+      ],
+      observaciones: '',
+      linkRutaMaps: 'https://maps.app.goo.gl',
+      parteTrabajo: {
+        hrInicio: '13:30',
+        hrFin: '15:30'
       }
     },
   },
@@ -1000,7 +1295,285 @@ const paradasRutas = {
         hrFin: '17:15'
       }
     },
-  }
+  },
+  'citd_penyeta_roja': {
+    id: 'citd_penyeta_roja',
+    'citd_penyeta_roja-ruta_r3-entrada': {
+      stops: [
+        {
+          name: "C/ L'Alcora 215<br>[Almazora] 🔗",
+          descript: '📍 Parada bus "Báscula"',
+          linkMaps: 'https://maps.app.goo.gl/j9TVzpY62QEgcRTt7',
+        },
+        {
+          name: 'C/ Trinidad 20<br>[Almazora] 🔗',
+          descript: '📍 Parada Bus Caja Rural',
+          linkMaps: 'https://maps.app.goo.gl/LNvYEdqddazc6x4KA',
+        },
+        {
+          name: 'Av. Castellón 176<br>[Almazora] 🔗',
+          descript: '📍 Parada Bus Ascensores Manelso',
+          linkMaps: 'https://maps.app.goo.gl/De54gq3DdPRjrxJv5',
+        },
+        {
+          name: 'Av. Puerto 1<br>[El Grao] 🔗',
+          descript: '📍 Parada Bus Hotel Turcosa',
+          linkMaps: 'https://maps.app.goo.gl/8X8yZfi8ueUQdsBG6',
+        },
+        {
+          name: 'Av. Ferrandis Salvador 21<br>[El Grao] 🔗',
+          descript: '📍 Parada Bus Mercadona',
+          linkMaps: 'https://maps.app.goo.gl/5WtaHQanRbLhFJtZ7',
+        },
+        {
+          name: 'Cam. Serradal 10<br>[El Grao] 🔗',
+          descript: '📍 Parada Bus',
+          linkMaps: 'https://maps.app.goo.gl/pJbEFCL8uRGRzBpe9',
+        },
+        {
+          name: 'Cam. Serradal 163<br>[El Grao] 🔗',
+          descript: '📍 Parada Bus paso a nivel tren',
+          linkMaps: 'https://maps.app.goo.gl/sTVf6QNMfGPgEZtj6',
+        },
+        {
+          name: 'C/ Penyeta Roja Oest (210)<br>[Castellón] 🔗',
+          descript: '📍 CITD-IES Penyeta Roja',
+          linkMaps: 'https://maps.app.goo.gl/L9GFDuhrzBE9nVfc8',
+        },
+      ],
+      observaciones: '',
+      linkRutaMaps: 'https://maps.app.goo.gl',
+      parteTrabajo: {
+        hrInicio: '07:00',
+        hrFin: '09:00'
+      }
+    },
+    'citd_penyeta_roja-ruta_r3-salida-rangoMes1-rangoDias1': {
+      stops: [
+        {
+          name: 'C/ Penyeta Roja Oest (210)<br>[Castellón] 🔗',
+          descript: '📍 CITD-IES Penyeta Roja',
+          linkMaps: 'https://maps.app.goo.gl/L9GFDuhrzBE9nVfc8',
+        },
+        {
+          name: 'Av. Ribesalbes s/n<br>[Castellón] 🔗',
+          descript: '📍 Pistas de atletismo Gaetá Huguet',
+          linkMaps: 'https://maps.app.goo.gl/kD7ja5Fi59bQRFB27',
+        },
+        {
+          name: "C/ L'Alcora 215<br>[Almazora] 🔗",
+          descript: '📍 Parada bus "Báscula"',
+          linkMaps: 'https://maps.app.goo.gl/j9TVzpY62QEgcRTt7',
+        },
+        {
+          name: 'C/ Trinidad 20<br>[Almazora] 🔗',
+          descript: '📍 Parada Bus Caja Rural',
+          linkMaps: 'https://maps.app.goo.gl/LNvYEdqddazc6x4KA',
+        },
+        {
+          name: 'Av. Castellón 176<br>[Almazora] 🔗',
+          descript: '📍 Parada Bus Ascensores Manelso',
+          linkMaps: 'https://maps.app.goo.gl/De54gq3DdPRjrxJv5',
+        },
+        {
+          name: 'Av. Puerto 1<br>[El Grao] 🔗',
+          descript: '📍 Parada Bus Hotel Turcosa',
+          linkMaps: 'https://maps.app.goo.gl/8X8yZfi8ueUQdsBG6',
+        },
+        {
+          name: 'Av. Ferrandis Salvador 21<br>[El Grao] 🔗',
+          descript: '📍 Parada Bus Mercadona',
+          linkMaps: 'https://maps.app.goo.gl/5WtaHQanRbLhFJtZ7',
+        },
+        {
+          name: 'Cam. Serradal 10<br>[El Grao] 🔗',
+          descript: '📍 Parada Bus',
+          linkMaps: 'https://maps.app.goo.gl/pJbEFCL8uRGRzBpe9',
+        },
+        {
+          name: 'Cam. Serradal 163<br>[El Grao] 🔗',
+          descript: '📍 Parada Bus paso a nivel tren',
+          linkMaps: 'https://maps.app.goo.gl/sTVf6QNMfGPgEZtj6',
+        },
+      ],
+      observaciones: 'Dentro del colegio esperar en 3ª posición, en el arbol donde comienza la valla',
+      linkRutaMaps: 'https://maps.app.goo.gl',
+      parteTrabajo: {
+        hrInicio: '14:45',
+        hrFin: '17:00'
+      }
+    },
+  },
+  'ies_ximen_urrea_alcalaten': {
+    id: 'ies_ximen_urrea_alcalaten',
+    'ies_ximen_urrea_alcalaten-ruta_r1-entrada': {
+      stops: [
+        {
+          name: 'Av. Fernando de León 28<br>[Lucena del Cid] 🔗',
+          descript: '📍 Parada bus gasolinera Repsol',
+          linkMaps: 'https://maps.app.goo.gl/LZifTtFzsWLjocnb6',
+        },
+        {
+          name: 'Ctra. Castellón Lucena 11B<br>[Figueroles] 🔗',
+          descript: '📍 Parada bus',
+          linkMaps: 'https://maps.app.goo.gl/yQ4nv5SrDU6z9Sw89',
+        },
+        {
+          name: 'Av. Corts Valencianes 9<br>[Alcora] 🔗',
+          descript: "📍 IES L'Alcalatén",
+          linkMaps: 'https://maps.app.goo.gl/T2CeAD82e3qRgnGZ6',
+        },
+        {
+          name: 'Av. Castellón 33<br>[Alcora] 🔗',
+          descript: "📍 IES Ximen D'Urrea",
+          linkMaps: 'https://maps.app.goo.gl/gStQzDrLVrXeoiaCA',
+        },
+        
+      
+      ],
+      observaciones: 'Recoge a dos guías',
+      linkRutaMaps: 'https://maps.app.goo.gl',
+      parteTrabajo: {
+        hrInicio: '06:00',
+        hrFin: '08:30'
+      }
+    },
+    'ies_ximen_urrea_alcalaten-ruta_r1-salida-rangoMes1-rangoDias1': {
+      stops: [
+        {
+          name: 'Av. Corts Valencianes 9<br>[Alcora] 🔗',
+          descript: "📍 IES L'Alcalatén",
+          linkMaps: 'https://maps.app.goo.gl/T2CeAD82e3qRgnGZ6',
+        },
+        {
+          name: 'Av. Castellón 33<br>[Alcora] 🔗',
+          descript: "📍 IES Ximen D'Urrea",
+          linkMaps: 'https://maps.app.goo.gl/gStQzDrLVrXeoiaCA',
+        },
+        {
+          name: 'CV-190<br>[Alcora] 🔗',
+          descript: "📍 Frente entrada pantano",
+          linkMaps: 'https://maps.app.goo.gl/V1Y4Zg5mAmdfBrgw6',
+        },
+        {
+          name: 'La Foia - Ctra. Lucena<br>[Alcora] 🔗',
+          descript: "📍 Parada de bus",
+          linkMaps: 'https://maps.app.goo.gl/HrnZhGPmetjeJraB7',
+        },
+        {
+          name: 'Ctra. Castellón Lucena 11B<br>[Figueroles] 🔗',
+          descript: '📍 Parada bus',
+          linkMaps: 'https://maps.app.goo.gl/yQ4nv5SrDU6z9Sw89',
+        },
+        {
+          name: 'Av. Fernando de León 28<br>[Lucena del Cid] 🔗',
+          descript: '📍 Parada bus gasolinera Repsol',
+          linkMaps: 'https://maps.app.goo.gl/LZifTtFzsWLjocnb6',
+        },
+        
+      
+      ],
+      observaciones: '',
+      linkRutaMaps: 'https://maps.app.goo.gl',
+      parteTrabajo: {
+        hrInicio: '13:30',
+        hrFin: '15:00'
+      }
+    },
+  },
+  'ies_valldalba': {
+    id: 'ies_valldalba',
+    'ies_valldalba-ruta_r1-entrada': {
+      stops: [
+        {
+          name: 'CV-160 cruce Cami Costur<br>[Villafamés] 🔗',
+          descript: '📍Masia Burga',
+          linkMaps: 'https://maps.app.goo.gl/amUKXBEU5eeVNqq37',
+        },
+        {
+          name: 'Av. Valencia 1<br>[Villafamés] 🔗',
+          descript: '📍Al lado contenedores',
+          linkMaps: 'https://maps.app.goo.gl/BaJyUyLPaQ413PM38',
+        },
+        {
+          name: 'CV-162<br>[Villafamés] 🔗',
+          descript: '📍Parada bus entrada Urb. La Foia',
+          linkMaps: 'https://maps.app.goo.gl/eeraqGCu1jFwZv3H8',
+        },
+        {
+          name: "C/ en Proyecto N 12 14[Vall d'Alba] 🔗",
+          descript: "📍IES Vall D'alba",
+          linkMaps: 'https://maps.app.goo.gl/X2ZExpdoTx7SoppC9',
+        },
+      ],
+      observaciones: '',
+      linkRutaMaps: 'https://maps.app.goo.gl',
+      parteTrabajo: {
+        hrInicio: '07:30',
+        hrFin: '09:30'
+      }
+    },
+    'ies_valldalba-ruta_r1-salida-rangoMes1-rangoDias1': {
+      stops: [
+        {
+          name: "C/ en Proyecto N 12 14[Vall d'Alba] 🔗",
+          descript: "📍IES Vall D'alba",
+          linkMaps: 'https://maps.app.goo.gl/X2ZExpdoTx7SoppC9',
+        },
+        {
+          name: 'CV-162<br>[Villafamés] 🔗',
+          descript: '📍Parada bus entrada Urb. La Foia',
+          linkMaps: 'https://maps.app.goo.gl/eeraqGCu1jFwZv3H8',
+        },
+        {
+          name: 'Av. Valencia 1<br>[Villafamés] 🔗',
+          descript: '📍Al lado contenedores',
+          linkMaps: 'https://maps.app.goo.gl/BaJyUyLPaQ413PM38',
+        },
+        {
+          name: 'CV-160 cruce Cami Costur<br>[Villafamés] 🔗',
+          descript: '📍Masia Burga',
+          linkMaps: 'https://maps.app.goo.gl/amUKXBEU5eeVNqq37',
+        },
+      ],
+      observaciones: '',
+      linkRutaMaps: 'https://maps.app.goo.gl',
+      parteTrabajo: {
+        hrInicio: '15:30',
+        hrFin: '16:45'
+      }
+    },
+    'ies_valldalba-ruta_r1-salida-rangoMes1-rangoDias2': {
+      stops: [
+        {
+          name: "C/ en Proyecto N 12 14[Vall d'Alba] 🔗",
+          descript: "📍IES Vall D'alba",
+          linkMaps: 'https://maps.app.goo.gl/X2ZExpdoTx7SoppC9',
+        },
+        {
+          name: 'CV-162<br>[Villafamés] 🔗',
+          descript: '📍Parada bus entrada Urb. La Foia',
+          linkMaps: 'https://maps.app.goo.gl/eeraqGCu1jFwZv3H8',
+        },
+        {
+          name: 'Av. Valencia 1<br>[Villafamés] 🔗',
+          descript: '📍Al lado contenedores',
+          linkMaps: 'https://maps.app.goo.gl/BaJyUyLPaQ413PM38',
+        },
+        {
+          name: 'CV-160 cruce Cami Costur<br>[Villafamés] 🔗',
+          descript: '📍Masia Burga',
+          linkMaps: 'https://maps.app.goo.gl/amUKXBEU5eeVNqq37',
+        },
+      ],
+      observaciones: '',
+      linkRutaMaps: 'https://maps.app.goo.gl',
+      parteTrabajo: {
+        hrInicio: '14:30',
+        hrFin: '16:00'
+      }
+    },
+  },
 }
 
 export { paradasRutas };

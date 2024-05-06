@@ -310,7 +310,7 @@ const coleBaseInfo_ARR = {
       },
     },
   },
-  'ies_gilabert': { //R1
+  'ies_gilabert': { //R1, R2, R3, R7
     info: {
       name: 'IES Gilabert',
       address: 'Av. Marqués Santa Cruz 42<br>[Nules]',
@@ -360,10 +360,130 @@ const coleBaseInfo_ARR = {
             },
           },
         },
-      }
+      },
+      ruta_r2: {
+        value: 'Ruta R2',
+        turno: {
+          entrada: {
+            value: 'Turno mañana<br>(Entrada)',
+            hrEntrada: '08:00',
+            guia: {
+              nameGuia: 'Nuria',
+              hrRecoGuia: '07:00',
+              lgRecoGuia: 'Parada bus Autoescuela Nules<br>[Nules]',
+            },
+          },
+          salida: {
+            value: 'Turno tarde<br>(Salida)',
+            mes: {
+              rangoMes1: {
+                value: 'Todo el año',
+                dias: {
+                  rangoDias1: {
+                    value: 'Todos los días',
+                    hrSalida: '14:15',
+                    guia: {
+                      nameGuia: 'Nuria',
+                      hrRecoGuia: '14:00',
+                      lgRecoGuia: "Va ella al Instituto",
+                    },
+
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+      ruta_r3: {
+        value: 'Ruta R3',
+        turno: {
+          entrada: {
+            value: 'Turno mañana<br>(Entrada)',
+            hrEntrada: '08:00',
+            guia: {
+              nameGuia: 'Maria',
+              hrRecoGuia: '07:20',
+              lgRecoGuia: 'Parada bus Ambulatorio<br>[Moncófar]',
+            },
+          },
+          salida: {
+            value: 'Turno tarde<br>(Salida)',
+            mes: {
+              rangoMes1: {
+                value: 'Todo el año',
+                dias: {
+                  rangoDias1: {
+                    value: 'Lunes, Martes y Jueves',
+                    hrSalida: '15:15',
+                    guia: {
+                      nameGuia: 'Maria',
+                      hrRecoGuia: '14:45',
+                      lgRecoGuia: "Va ella al Instituto",
+                    },
+
+                  },
+                  rangoDias2: {
+                    value: 'Miércoles y Viernes',
+                    hrSalida: '14:15',
+                    guia: {
+                      nameGuia: 'Maria',
+                      hrRecoGuia: '13:45',
+                      lgRecoGuia: "Va ella al Instituto",
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+      ruta_r7: {
+        value: 'Ruta R7',
+        turno: {
+          entrada: {
+            value: 'Turno mañana<br>(Entrada)',
+            hrEntrada: '08:00',
+            guia: {
+              nameGuia: 'Rosa',
+              hrRecoGuia: '06:50',
+              lgRecoGuia: '1º Parada bus entrando a Nules por rotonda Guardia Civil',
+            },
+          },
+          salida: {
+            value: 'Turno tarde<br>(Salida)',
+            mes: {
+              rangoMes1: {
+                value: 'Todo el año',
+                dias: {
+                  rangoDias1: {
+                    value: 'Lunes y Martes',
+                    hrSalida: '15:15',
+                    guia: {
+                      nameGuia: 'Rosa',
+                      hrRecoGuia: '14:50',
+                      lgRecoGuia: "1º Parada bus entrando a Nules por rotonda Guardia Civil",
+                    },
+
+                  },
+                  rangoDias2: {
+                    value: 'Miércoles, Jueves y Viernes',
+                    hrSalida: '14:15',
+                    guia: {
+                      nameGuia: 'Rosa',
+                      hrRecoGuia: '13:50',
+                      lgRecoGuia: "1º Parada bus entrando a Nules por rotonda Guardia Civil",
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
     },
   },
-  'ies_jaume_i' : {
+  'ies_jaume_i': {   //R1, R4
     info: {
       name: 'IES Jaume I',
       address: 'Av. Transport 2<br>[Burriana]',
@@ -481,7 +601,7 @@ const coleBaseInfo_ARR = {
       },
     }
   },
-  'ceip_penyagolosa' : {
+  'ceip_penyagolosa': {   //COMPLETO
     info: {
       name: 'CEIP Penyagolosa',
       address: 'C/ Rio Mijares 1<br>[Burriana]',
@@ -538,7 +658,7 @@ const coleBaseInfo_ARR = {
       },
     }
   },
-  'ceip_mestre_canos' : {
+  'ceip_mestre_canos': {    //R1
     info: {
       name: 'CEIP Mestre Canos',
       address: 'Av. Del Mar 35<br>[Castellón]',
@@ -585,6 +705,146 @@ const coleBaseInfo_ARR = {
                       nameGuia: 'Silvia',
                       hrRecoGuia: '16:15',
                       lgRecoGuia: 'Av. Hermanos Bou 61 [Castellón]<br>Parada Bus Parque Infantil "La Fuente"',
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+    }
+  },
+  'citd_penyeta_roja': {    //C
+    info: {
+      name: 'CITD Penyeta Roja',
+      address: 'C/ Penyeta Roja Oest (210)',
+      linkMaps: 'https://maps.app.goo.gl/L9GFDuhrzBE9nVfc8',
+      contact: '964 35 98 37',
+    },
+    rutas: {
+      ruta_r3: {
+        value: 'Ruta C',
+        turno: {
+          entrada: {
+            value: 'Turno mañana<br>(Entrada)',
+            hrEntrada:'08:30',
+            guia: {
+              nameGuia: 'Isabel Ram',
+              hrRecoGuia: '07:00',
+              lgRecoGuia: 'Av. Barcelona 20<br>Enfrente parada bus<br>Residencia ancianos',
+            },
+          },
+          salida: {
+            value: 'Turno tarde<br>(Salida)',
+            mes: {
+              rangoMes1: {
+                value: 'Todo el año',
+                dias: {
+                  rangoDias1: {
+                    value: 'Todos los días',
+                    hrSalida: '15:30',
+                    guia: {
+                      nameGuia: 'Isabel Ram',
+                      hrRecoGuia: '15:00',
+                      lgRecoGuia: 'Recoge todas las guias 1 bus, preguntar',
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+    }
+  },
+  'ies_ximen_urrea_alcalaten': {    //A
+    info: {
+      name: "IES Ximen D'Urrea",
+      address: 'Av. Castellón 33<br>[Alcora]',
+      linkMaps: 'https://maps.app.goo.gl/gStQzDrLVrXeoiaCA',
+      contact: '964 73 89 40',
+    },
+    rutas: {
+      ruta_r1: {
+        value: 'IES Alcora-Lucena (A)',
+        turno: {
+          entrada: {
+            value: 'Turno mañana<br>(Entrada)',
+            hrEntrada:'08:00',
+            guia: {
+              nameGuia: 'Inma',
+              hrRecoGuia: '07:00',
+              lgRecoGuia: 'Parada Bus monumento cruz C/Maestro Fabregat',
+            },
+          },
+          salida: {
+            value: 'Turno tarde<br>(Salida)',
+            mes: {
+              rangoMes1: {
+                value: 'Todo el año',
+                dias: {
+                  rangoDias1: {
+                    value: 'Todos los días',
+                    hrSalida: '14:15',
+                    guia: {
+                      nameGuia: 'Inma',
+                      hrRecoGuia: '13:30',
+                      lgRecoGuia: 'Parada Bus monumento cruz C/Maestro Fabregat',
+                    },
+    
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+    }
+  },
+  'ies_valldalba': {    //R1
+    info: {
+      name: "IES Vall D'alba",
+      address: "C/ en Proyecto N 12 14<br>[Vall d'Alba]",
+      linkMaps: 'https://maps.app.goo.gl/X2ZExpdoTx7SoppC9',
+      contact: '964 73 97 50',
+    },
+    rutas: {
+      ruta_r1: {
+        value: 'Ruta R1',
+        turno: {
+          entrada: {
+            value: 'Turno mañana<br>(Entrada)',
+            hrEntrada:'08:30',
+            guia: {
+              nameGuia: 'Laura Fal',
+              hrRecoGuia: '07:45',
+              lgRecoGuia: 'C/ Sant Miquel 2<br>[Villafamés]',
+            },
+          },
+          salida: {
+            value: 'Turno tarde<br>(Salida)',
+            mes: {
+              rangoMes1: {
+                value: 'Todo el año',
+                dias: {
+                  rangoDias1: {
+                    value: 'Lunes, Martes y Jueves',
+                    hrSalida: '15:55',
+                    guia: {
+                      nameGuia: 'Laura Fal',
+                      hrRecoGuia: '15:40',
+                      lgRecoGuia: 'C/ Sant Miquel 2<br>[Villafamés]',
+                    },
+    
+                  },
+                  rangoDias2: {
+                    value: 'Miércoles y Viernes',
+                    hrSalida: '15:00',
+                    guia: {
+                      nameGuia: 'Laura Fal',
+                      hrRecoGuia: '14:40',
+                      lgRecoGuia: 'C/ Sant Miquel 2<br>[Villafamés]',
                     },
                   },
                 },
