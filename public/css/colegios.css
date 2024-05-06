@@ -10,9 +10,11 @@
   --txt-sdw: 0 0 3px black,
             1px 1px 1px hsl(0, 0%, 29%),
             1px 1px 2px hsl(0, 0%, 11%);
-  --brdr-styl: solid 1px rgb(0, 132, 255);
+            --h2clr: hsl(212, 100%, 70%);
+  --brdr-styl: solid 1px hsl(209, 100%, 50%);
   --sz-bx: clamp( calc(0.7 * 412px), 70vw, 640px);
   --mrgn-btwn: clamp(30px, 8vw, 500px);
+  --size-slcts: 3em;
 }  
 
 /* ------------------------- HTML ------------------------- */
@@ -64,7 +66,7 @@ a:any-link {
   margin-block-start: var(--mrgn-btwn);
 
   select {
-    block-size: 7vh;
+    block-size: var(--size-slcts);
     border-radius: 0.3em;
     background-color: var(--bg-clr-sct);
     background-image: var(--bg-img-slct);
@@ -104,8 +106,8 @@ a:any-link {
     h2 {
       text-shadow: var(--txt-sdw);
       padding-block-end: clamp(8px, 3vw, 20px);
-      border-block-end: 1px solid hsl(212, 100%, 70%);
-      color: hsl(212, 100%, 70%);
+      border-block-end: 1px solid var(--h2clr);
+      color: var(--h2clr);
       text-shadow: 0 0 1px black;
     }
 
@@ -217,3 +219,13 @@ a:any-link {
   }
 }
 
+
+/* ---------------------------- footer ---------------------------- */
+footer p{
+  inline-size: fit-content;
+  margin-inline: auto;
+  margin-block-start: 8em;
+  padding-block-end: 2em;
+  font-size: 0.8rem;
+  color: var(--h2clr);
+}
