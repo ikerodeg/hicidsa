@@ -47,6 +47,8 @@ const GLOBAL_V = {
 // -------------------------------- FUNCION CARGA PAGINA ----------------------------------
 
 window.onload = function () {
+  DOM_ELEMENTS.BOTON_RESET.style.pointerEvents = 'none';
+  DOM_ELEMENTS.BOTON_RESET.style.boxShadow = 'none';
 
   // Crea un <OPTION> por cada objeto del array coleBaseInfo_ARR con un id ,value y name igual al colegio
   createOptionsForColegios(SELECTS_ID.SELECT_COLEGIOS, coleBaseInfo_ARR);
