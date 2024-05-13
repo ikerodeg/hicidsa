@@ -302,66 +302,6 @@ const paradasRutas = {
       }
     },
   },
-  'ceip_regina_violant': {
-    id: 'ceip_regina_violant',
-    'ceip_regina_violant-ruta_r1-entrada': {value: 'en construccion'},
-    'ceip_regina_violant-ruta_r2-entrada': {value: 'en construccion'},
-    'ceip_regina_violant-ruta_r3-entrada': {
-      stops: [
-        {
-          name: 'Cno. Catalans 17<br>[Playa Almassora] 🔗',
-          descript: '📍 Parada de Bus',
-          linkMaps: 'https://maps.app.goo.gl',
-        },
-        {
-          name: 'Cno. L´Om Blanc 28<br>[Playa Almassora] 🔗',
-          descript: '📍 Parada de Bus',
-          linkMaps: 'https://maps.app.goo.gl',
-        },
-        {
-          name: 'Cno. L´Om Blanc 78<br>[Playa Almassora] 🔗',
-          descript: '📍 Parada de Bus',
-          linkMaps: 'https://maps.app.goo.gl',
-        },
-        {
-          name: 'Cno. L´Om Blanc 100<br>[Playa Almassora] 🔗',
-          descript: '📍 Parada de Bus',
-          linkMaps: 'https://maps.app.goo.gl',
-        },
-        {
-          name: 'Cno. Ben Afeli<br>[Playa Almassora] 🔗',
-          descript: '📍 Urb. Miramar 17',
-          linkMaps: 'https://maps.app.goo.gl',
-        },
-        {
-          name: 'Paseo Marítimo 135<br>[Playa Almassora] 🔗',
-          descript: '📍 Frente Iglesia',
-          linkMaps: 'https://maps.app.goo.gl',
-        },
-        {
-          name: 'CEIP Regina Violant<br>[Almassora] 🔗',
-          descript: '📍 Parada Final',
-          linkMaps: 'https://maps.app.goo.gl',
-        },
-      ],
-      observaciones: '',
-      linkRutaMaps: 'https://maps.app.goo.gl',
-      parteTrabajo: {
-        hrInicio: '08:00',
-        hrFin: '09:30'
-      }
-    },
-    'ceip_regina_violant-ruta_r1-salida-rangoMes1-rangoDias1': {value: 'en construccion'},
-    'ceip_regina_violant-ruta_r1-salida-rangoMes1-rangoDias2': {value: 'en construccion'},
-    'ceip_regina_violant-ruta_r1-salida-rangoMes2-rangoDias1': {value: 'en construccion'},
-    'ceip_regina_violant-ruta_r1-salida-rangoMes2-rangoDias2': {value: 'en construccion'},
-    'ceip_regina_violant-ruta_r2-salida-rangoMes1-rangoDias1': {value: 'en construccion'},
-    'ceip_regina_violant-ruta_r2-salida-rangoMes1-rangoDias2': {value: 'en construccion'},
-    'ceip_regina_violant-ruta_r2-salida-rangoMes2-rangoDias1': {value: 'en construccion'},
-    'ceip_regina_violant-ruta_r3-salida-rangoMes1-rangoDias1': {value: 'en construccion'},
-    'ceip_regina_violant-ruta_r3-salida-rangoMes2-rangoDias1': {value: 'en construccion'},
-
-  },
   'ies_gilabert': { 
     id: 'ies_gilabert',
     'ies_gilabert-ruta_r1-entrada': {
@@ -883,6 +823,186 @@ const paradasRutas = {
   },
   'ies_jaume_i': {
     id: 'ies_jaume_i',
+    'ies_jaume_i-ruta_puerto-entrada': {
+      stops: [
+        {
+          name: 'Camino Xurros<br>[Burriana] 🔗',
+          descript: '📍 Chalet amarillo',
+          linkMaps: 'https://maps.app.goo.gl/CR2xXfjMq9tYhXXk6',
+        },
+        {
+          name: 'Camino Margen 140<br>[Burriana] 🔗',
+          descript: '📍 Chalet',
+          linkMaps: 'https://maps.app.goo.gl/VirscgDQMLttYgJA6',
+        },
+        {
+          name: "Camí la Serratella 324<br>[Burriana]🔗",
+          descript: '📍 Fuente',
+          linkMaps: 'https://maps.app.goo.gl/n5xzSRWZ7RDR8hs59',
+        },
+        {
+          name: "Camí la Serratella 270<br>[Burriana]🔗",
+          descript: '📍 Señal naranja',
+          linkMaps: 'https://maps.app.goo.gl/eavi6VEwfk5uG6oS6',
+        },
+        {
+          name: "C/ Les Barques 5<br>[Burriana]🔗",
+          descript: '📍 Parada bus Lidia',
+          linkMaps: 'https://maps.app.goo.gl/Rp4NMoShyHpPHUUC8',
+        },
+        {
+          name: "Cami Grao 22<br>[Burriana]🔗",
+          descript: '📍 Parada bus',
+          linkMaps: 'https://maps.app.goo.gl/u3UX6RG8Hb8tLYy58',
+        },
+        {
+          name: "Av. Mediterranea 74<br>[Burriana]🔗",
+          descript: '📍 Parada bus Hotel Aloha',
+          linkMaps: 'https://maps.app.goo.gl/pTVz1wtmbt3qSiRJ7',
+        },
+        {
+          name: "Av. Mediterranea 42<br>[Burriana]🔗",
+          descript: '📍 Parada bus Rest. Savarin',
+          linkMaps: 'https://maps.app.goo.gl/JBqfyGMQCYhoMCgf6',
+        },
+        {
+          name: "Av. Jaume Chicharro 91<br>[Burriana]🔗",
+          descript: '📍 Parada bus vial lateral',
+          linkMaps: 'https://maps.app.goo.gl/pfUHxHioeuvcNjA39',
+        },
+        {
+          name: "Av. Transport 2<br>[Burriana]🔗",
+          descript: '📍 IES Jaume I',
+          linkMaps: 'https://maps.app.goo.gl/F5hXjrGikHhYgAya6',
+        },
+      ],
+      observaciones: '🚨 Variación de ruta por obras!<br><a href="https://maps.app.goo.gl/bhRvTomZeG9aJBSZ7">Ruta 1/2 🔗</a><br><a href="https://maps.app.goo.gl/etYnHjDwZSAgtnV37">Ruta 2/2 🔗</a>',
+      linkRutaMaps: 'ruta Maps',
+      parteTrabajo: {
+        hrInicio: '06:30',
+        hrFin: '08:30'
+      }
+    },
+    'ies_jaume_i-ruta_puerto-salida-rangoMes1-rangoDias1': {
+      stops: [
+        {
+          name: 'Camino Xurros<br>[Burriana] 🔗',
+          descript: '📍 Chalet amarillo',
+          linkMaps: 'https://maps.app.goo.gl/CR2xXfjMq9tYhXXk6',
+        },
+        {
+          name: 'Camino Margen 140<br>[Burriana] 🔗',
+          descript: '📍 Chalet',
+          linkMaps: 'https://maps.app.goo.gl/VirscgDQMLttYgJA6',
+        },
+        {
+          name: "Camí la Serratella 324<br>[Burriana]🔗",
+          descript: '📍 Fuente',
+          linkMaps: 'https://maps.app.goo.gl/n5xzSRWZ7RDR8hs59',
+        },
+        {
+          name: "Camí la Serratella 270<br>[Burriana]🔗",
+          descript: '📍 Señal naranja',
+          linkMaps: 'https://maps.app.goo.gl/eavi6VEwfk5uG6oS6',
+        },
+        {
+          name: "C/ Les Barques 5<br>[Burriana]🔗",
+          descript: '📍 Parada bus Lidia',
+          linkMaps: 'https://maps.app.goo.gl/Rp4NMoShyHpPHUUC8',
+        },
+        {
+          name: "Cami Grao 22<br>[Burriana]🔗",
+          descript: '📍 Parada bus',
+          linkMaps: 'https://maps.app.goo.gl/u3UX6RG8Hb8tLYy58',
+        },
+        {
+          name: "Av. Mediterranea 74<br>[Burriana]🔗",
+          descript: '📍 Parada bus Hotel Aloha',
+          linkMaps: 'https://maps.app.goo.gl/pTVz1wtmbt3qSiRJ7',
+        },
+        {
+          name: "Av. Mediterranea 42<br>[Burriana]🔗",
+          descript: '📍 Parada bus Rest. Savarin',
+          linkMaps: 'https://maps.app.goo.gl/JBqfyGMQCYhoMCgf6',
+        },
+        {
+          name: "Av. Jaume Chicharro 91<br>[Burriana]🔗",
+          descript: '📍 Parada bus vial lateral',
+          linkMaps: 'https://maps.app.goo.gl/pfUHxHioeuvcNjA39',
+        },
+        {
+          name: "Av. Transport 2<br>[Burriana]🔗",
+          descript: '📍 IES Jaume I',
+          linkMaps: 'https://maps.app.goo.gl/F5hXjrGikHhYgAya6',
+        },
+      ],
+      observaciones: '🚨 Variación de ruta por obras!<br><a href="https://maps.app.goo.gl/bhRvTomZeG9aJBSZ7">Ruta 1/2 🔗</a><br><a href="https://maps.app.goo.gl/etYnHjDwZSAgtnV37">Ruta 2/2 🔗</a>',
+      linkRutaMaps: 'https://maps.app.goo.gl',
+      parteTrabajo: {
+        hrInicio: '13:30',
+        hrFin: '15:30'
+      }
+    },
+    'ies_jaume_i-ruta_puerto-salida-rangoMes1-rangoDias2': {
+      stops: [
+        {
+          name: 'Camino Xurros<br>[Burriana] 🔗',
+          descript: '📍 Chalet amarillo',
+          linkMaps: 'https://maps.app.goo.gl/CR2xXfjMq9tYhXXk6',
+        },
+        {
+          name: 'Camino Margen 140<br>[Burriana] 🔗',
+          descript: '📍 Chalet',
+          linkMaps: 'https://maps.app.goo.gl/VirscgDQMLttYgJA6',
+        },
+        {
+          name: "Camí la Serratella 324<br>[Burriana]🔗",
+          descript: '📍 Fuente',
+          linkMaps: 'https://maps.app.goo.gl/n5xzSRWZ7RDR8hs59',
+        },
+        {
+          name: "Camí la Serratella 270<br>[Burriana]🔗",
+          descript: '📍 Señal naranja',
+          linkMaps: 'https://maps.app.goo.gl/eavi6VEwfk5uG6oS6',
+        },
+        {
+          name: "C/ Les Barques 5<br>[Burriana]🔗",
+          descript: '📍 Parada bus Lidia',
+          linkMaps: 'https://maps.app.goo.gl/Rp4NMoShyHpPHUUC8',
+        },
+        {
+          name: "Cami Grao 22<br>[Burriana]🔗",
+          descript: '📍 Parada bus',
+          linkMaps: 'https://maps.app.goo.gl/u3UX6RG8Hb8tLYy58',
+        },
+        {
+          name: "Av. Mediterranea 74<br>[Burriana]🔗",
+          descript: '📍 Parada bus Hotel Aloha',
+          linkMaps: 'https://maps.app.goo.gl/pTVz1wtmbt3qSiRJ7',
+        },
+        {
+          name: "Av. Mediterranea 42<br>[Burriana]🔗",
+          descript: '📍 Parada bus Rest. Savarin',
+          linkMaps: 'https://maps.app.goo.gl/JBqfyGMQCYhoMCgf6',
+        },
+        {
+          name: "Av. Jaume Chicharro 91<br>[Burriana]🔗",
+          descript: '📍 Parada bus vial lateral',
+          linkMaps: 'https://maps.app.goo.gl/pfUHxHioeuvcNjA39',
+        },
+        {
+          name: "Av. Transport 2<br>[Burriana]🔗",
+          descript: '📍 IES Jaume I',
+          linkMaps: 'https://maps.app.goo.gl/F5hXjrGikHhYgAya6',
+        },
+      ],
+      observaciones: '🚨 Variación de ruta por obras!<br><a href="https://maps.app.goo.gl/bhRvTomZeG9aJBSZ7">Ruta 1/2 🔗</a><br><a href="https://maps.app.goo.gl/etYnHjDwZSAgtnV37">Ruta 2/2 🔗</a>',
+      linkRutaMaps: 'https://maps.app.goo.gl',
+      parteTrabajo: {
+        hrInicio: '14:30',
+        hrFin: '16:30'
+      }
+    },
     'ies_jaume_i-ruta_r1-entrada': {
       stops: [
         {
@@ -1110,6 +1230,224 @@ const paradasRutas = {
     },
 
   },
+  'ceip_germans_ochando': {
+    id: 'ceip_germans_ochando',
+    'ceip_germans_ochando-ruta_r1-entrada': {
+      stops: [
+        {
+          name: 'Cami Catalans 17<br>[Playa Alamazora] 🔗',
+          descript: '📍Parada de Bus chalet palmeras',
+          linkMaps: 'https://maps.app.goo.gl/XkDYHVHog2JnYvuXA',
+        },
+        {
+          name: 'Cami Catalans 4<br>[Playa Alamazora] 🔗',
+          descript: '📍Callejón último chalet naranja',
+          linkMaps: 'https://maps.app.goo.gl/zycxNB3yaz8L2Z5AA',
+        },
+        {
+          name: "Cami l'Om Blanc 94<br>[Playa Alamazora] 🔗",
+          descript: '📍Marquesina parada de bus',
+          linkMaps: 'https://maps.app.goo.gl/xrhtVfefNHH7NdFMA',
+        },
+        {
+          name: "Cami Benafelí 61<br>[Playa Alamazora] 🔗",
+          descript: '📍Parada de bus',
+          linkMaps: 'https://maps.app.goo.gl/2jxRR7qLoMrXYyLN6',
+        },
+        {
+          name: "Cami Benafelí 33<br>[Playa Alamazora] 🔗",
+          descript: '📍Parada de bus',
+          linkMaps: 'https://maps.app.goo.gl/UVrpD8XyF8xaKw5eA',
+        },
+        {
+          name: "Cami de la Mar 28<br>[Playa Alamazora] 🔗",
+          descript: '📍Esq. Camí del Fondo',
+          linkMaps: 'https://maps.app.goo.gl/Y9jpTCiG8gXfp2KR7',
+        },
+        {
+          name: "Cami de la Mar<br>[Playa Alamazora] 🔗",
+          descript: '📍Parada bus justo pasar la Ermita',
+          linkMaps: 'https://maps.app.goo.gl/8ttjUpDsp5hGhBNi9',
+        },
+        {
+          name: "C/ en Proyecto esq.<br>C/ Benasal<br>[Almazora] 🔗",
+          descript: '📍CEIP Germans Ochando',
+          linkMaps: 'https://maps.app.goo.gl/8ttjUpDsp5hGhBNi9',
+        },
+        
+      
+      ],
+      observaciones: '',
+      linkRutaMaps: 'https://maps.app.goo.gl',
+      parteTrabajo: {
+        hrInicio: '08:00',
+        hrFin: '09:30'
+      }
+    },
+    'ceip_germans_ochando-ruta_r1-salida-rangoMes1-rangoDias1': {
+      stops: [
+        {
+          name: "C/ en Proyecto esq.<br>C/ Benasal<br>[Almazora] 🔗",
+          descript: '📍CEIP Germans Ochando',
+          linkMaps: 'https://maps.app.goo.gl/8ttjUpDsp5hGhBNi9',
+        },
+        {
+          name: 'Cami Catalans 17<br>[Playa Alamazora] 🔗',
+          descript: '📍Parada de Bus chalet palmeras',
+          linkMaps: 'https://maps.app.goo.gl/XkDYHVHog2JnYvuXA',
+        },
+        {
+          name: 'Cami Catalans 4<br>[Playa Alamazora] 🔗',
+          descript: '📍Callejón último chalet naranja',
+          linkMaps: 'https://maps.app.goo.gl/zycxNB3yaz8L2Z5AA',
+        },
+        {
+          name: "Cami l'Om Blanc 94<br>[Playa Alamazora] 🔗",
+          descript: '📍Marquesina parada de bus',
+          linkMaps: 'https://maps.app.goo.gl/xrhtVfefNHH7NdFMA',
+        },
+        {
+          name: "Cami Benafelí 61<br>[Playa Alamazora] 🔗",
+          descript: '📍Parada de bus',
+          linkMaps: 'https://maps.app.goo.gl/2jxRR7qLoMrXYyLN6',
+        },
+        {
+          name: "Cami Benafelí 33<br>[Playa Alamazora] 🔗",
+          descript: '📍Parada de bus',
+          linkMaps: 'https://maps.app.goo.gl/UVrpD8XyF8xaKw5eA',
+        },
+        {
+          name: "Cami de la Mar 28<br>[Playa Alamazora] 🔗",
+          descript: '📍Esq. Camí del Fondo',
+          linkMaps: 'https://maps.app.goo.gl/Y9jpTCiG8gXfp2KR7',
+        },
+        {
+          name: "Cami de la Mar<br>[Playa Alamazora] 🔗",
+          descript: '📍Parada bus justo pasar la Ermita',
+          linkMaps: 'https://maps.app.goo.gl/8ttjUpDsp5hGhBNi9',
+        },
+      ],
+      observaciones: '',
+      linkRutaMaps: 'https://maps.app.goo.gl',
+      parteTrabajo: {
+        hrInicio: '14:30',
+        hrFin: '16:15'
+      }
+    },
+    'ceip_germans_ochando-ruta_r1-salida-rangoMes2-rangoDias1': {
+      stops: [
+        {
+          name: "C/ en Proyecto esq.<br>C/ Benasal<br>[Almazora] 🔗",
+          descript: '📍CEIP Germans Ochando',
+          linkMaps: 'https://maps.app.goo.gl/8ttjUpDsp5hGhBNi9',
+        },
+        {
+          name: 'Cami Catalans 17<br>[Playa Alamazora] 🔗',
+          descript: '📍Parada de Bus chalet palmeras',
+          linkMaps: 'https://maps.app.goo.gl/XkDYHVHog2JnYvuXA',
+        },
+        {
+          name: 'Cami Catalans 4<br>[Playa Alamazora] 🔗',
+          descript: '📍Callejón último chalet naranja',
+          linkMaps: 'https://maps.app.goo.gl/zycxNB3yaz8L2Z5AA',
+        },
+        {
+          name: "Cami l'Om Blanc 94<br>[Playa Alamazora] 🔗",
+          descript: '📍Marquesina parada de bus',
+          linkMaps: 'https://maps.app.goo.gl/xrhtVfefNHH7NdFMA',
+        },
+        {
+          name: "Cami Benafelí 61<br>[Playa Alamazora] 🔗",
+          descript: '📍Parada de bus',
+          linkMaps: 'https://maps.app.goo.gl/2jxRR7qLoMrXYyLN6',
+        },
+        {
+          name: "Cami Benafelí 33<br>[Playa Alamazora] 🔗",
+          descript: '📍Parada de bus',
+          linkMaps: 'https://maps.app.goo.gl/UVrpD8XyF8xaKw5eA',
+        },
+        {
+          name: "Cami de la Mar 28<br>[Playa Alamazora] 🔗",
+          descript: '📍Esq. Camí del Fondo',
+          linkMaps: 'https://maps.app.goo.gl/Y9jpTCiG8gXfp2KR7',
+        },
+        {
+          name: "Cami de la Mar<br>[Playa Alamazora] 🔗",
+          descript: '📍Parada bus justo pasar la Ermita',
+          linkMaps: 'https://maps.app.goo.gl/8ttjUpDsp5hGhBNi9',
+        },
+      ],
+      observaciones: '',
+      linkRutaMaps: 'https://maps.app.goo.gl',
+      parteTrabajo: {
+        hrInicio: '16:00',
+        hrFin: '17:45'
+      }
+    },
+  },
+  'ceip_mestre_canos': {
+    id: 'ceip_mestre_canos',
+    'ceip_mestre_canos-ruta_r1-entrada': {
+      stops: [
+        {
+          name: 'Av. Mar 27<br>[Castellón] 🔗',
+          descript: '📍 Parada Bus',
+          linkMaps: 'https://maps.app.goo.gl/iADq9zy92eG7NRWS7',
+        },
+        {
+          name: 'C/ Rio Ter 1<br>[Castellón] 🔗',
+          descript: '📍 Colegio Provisional',
+          linkMaps: 'https://maps.app.goo.gl/FWpiqJG4V3onj3zU8',
+        },
+      ],
+      observaciones: 'El colegio se ha trasladado a los barracones de la calle Rio Ter 1 por obras',
+      linkRutaMaps: 'https://maps.app.goo.gl',
+      parteTrabajo: {
+        hrInicio: '08:15',
+        hrFin: '09:30'
+      }
+    },
+    'ceip_mestre_canos-ruta_r1-salida-rangoMes1-rangoDias1': {
+      stops: [
+        {
+          name: 'C/ Rio Ter 1<br>[Castellón] 🔗',
+          descript: '📍 Colegio Provisional',
+          linkMaps: 'https://maps.app.goo.gl/FWpiqJG4V3onj3zU8',
+        },
+        {
+          name: 'Av. Mar 27<br>[Castellón] 🔗',
+          descript: '📍 Parada Bus',
+          linkMaps: 'https://maps.app.goo.gl/iADq9zy92eG7NRWS7',
+        },
+      ],
+      observaciones: 'El colegio se ha trasladado a los barracones de la calle Rio Ter 1 por obras',
+      linkRutaMaps: 'https://maps.app.goo.gl',
+      parteTrabajo: {
+        hrInicio: '14:30',
+        hrFin: '15:30'
+      }
+    },
+    'ceip_mestre_canos-ruta_r1-salida-rangoMes2-rangoDias1': {
+      stops: [
+        {
+          name: 'C/ Rio Ter 1<br>[Castellón] 🔗',
+          descript: '📍 Colegio Provisional',
+          linkMaps: 'https://maps.app.goo.gl/FWpiqJG4V3onj3zU8',
+        },
+        {
+          name: 'Av. Mar 27<br>[Castellón] 🔗',
+          descript: '📍 Parada Bus',
+          linkMaps: 'https://maps.app.goo.gl/iADq9zy92eG7NRWS7',
+        },
+      ],
+      observaciones: 'El colegio se ha trasladado a los barracones de la calle Rio Ter 1 por obras',
+      linkRutaMaps: 'https://maps.app.goo.gl',
+      parteTrabajo: {
+        hrInicio: '15:30',
+        hrFin: '17:15'
+      }
+    },
+  },
   'ceip_penyagolosa': {
     id: 'ceip_penyagolosa',
     'ceip_penyagolosa-ruta_r1-entrada': {
@@ -1233,65 +1571,210 @@ const paradasRutas = {
       }
     },
   },
-  'ceip_mestre_canos': {
-    id: 'ceip_mestre_canos',
-    'ceip_mestre_canos-ruta_r1-entrada': {
+  'ceip_sant_agusti': {
+    id: 'ceip_sant_agusti',
+    'ceip_sant_agusti-ruta_r1-entrada': {
       stops: [
         {
-          name: 'Av. Mar 27<br>[Castellón] 🔗',
-          descript: '📍 Parada Bus',
-          linkMaps: 'https://maps.app.goo.gl/iADq9zy92eG7NRWS7',
+          name: 'Av. Benicassim 🔗',
+          descript: '📍Parada bus Castalia',
+          linkMaps: 'https://maps.app.goo.gl/FMGiUmSMgBTXYXEVA',
         },
         {
-          name: 'C/ Rio Ter 1<br>[Castellón] 🔗',
-          descript: '📍 Colegio Provisional',
-          linkMaps: 'https://maps.app.goo.gl/FWpiqJG4V3onj3zU8',
+          name: 'Ronda de la Magdalena 105 🔗',
+          descript: '📍Parada bus<br>Bar Rojo Negro',
+          linkMaps: 'https://maps.app.goo.gl/UU9hRzEzHCZPAe5K9',
+        },
+        {
+          name: 'Ronda de la Magdalena 63 🔗',
+          descript: '📍Parada bus<br>Bar Rojo Negro',
+          linkMaps: 'https://maps.app.goo.gl/P1Bj4tYGtjNtaZdg9',
+        },
+        {
+          name: 'Ronda de la Magdalena 32 🔗',
+          descript: '📍Parada bus<br>CEIP Cervantes',
+          linkMaps: 'https://maps.app.goo.gl/JGZEh8jqDX59ByJ96',
+        },
+        {
+          name: 'Av. Cardenal Costa 56 🔗',
+          descript: '📍Parada bus<br>Ford',
+          linkMaps: 'https://maps.app.goo.gl/XPiG7s4e41m1YoHL7',
+        },
+        {
+          name: 'Av. Sos Baynat 🔗',
+          descript: '📍Parada bus<br>Antes rotonda',
+          linkMaps: 'https://maps.app.goo.gl/jJn5JiyDgfRarY7r9',
+        },
+        {
+          name: 'Cuadra Borriolenc 🔗',
+          descript: '📍Parada bus<br>Cementerio',
+          linkMaps: 'https://maps.app.goo.gl/oWRGvtTVX7cbqzBL7',
+        },
+        {
+          name: 'Cuadra Borriolenc 10 🔗',
+          descript: '📍Parada bus<br>Baden',
+          linkMaps: 'https://maps.app.goo.gl/nEA47i75yu9KkYgb9',
+        },
+        {
+          name: 'Camí dels Mestrets 🔗',
+          descript: '📍Guardería Arco-iris',
+          linkMaps: 'https://maps.app.goo.gl/S93eaHyfbHLA9d4E6',
+        },
+        {
+          name: 'Cuadra Colomer 2 🔗',
+          descript: '📍Parada bus',
+          linkMaps: 'https://maps.app.goo.gl/a6x3iQmTyy3fLn7b8',
+        },
+        {
+          name: 'C/ Escuelas 2<br>[Castellón] 🔗',
+          descript: '📍CEIP Sant Agustí',
+          linkMaps: 'https://maps.app.goo.gl/qgPE8NUrRh1zNBet5',
         },
       ],
-      observaciones: 'El colegio se ha trasladado a los barracones de la calle Rio Ter 1 por obras',
+      observaciones: '',
       linkRutaMaps: 'https://maps.app.goo.gl',
       parteTrabajo: {
-        hrInicio: '08:15',
-        hrFin: '09:30'
+        hrInicio: '08:20',
+        hrFin: '09:45'
       }
     },
-    'ceip_mestre_canos-ruta_r1-salida-rangoMes1-rangoDias1': {
+    'ceip_sant_agusti-ruta_r1-salida-rangoMes1-rangoDias1': {
       stops: [
         {
-          name: 'C/ Rio Ter 1<br>[Castellón] 🔗',
-          descript: '📍 Colegio Provisional',
-          linkMaps: 'https://maps.app.goo.gl/FWpiqJG4V3onj3zU8',
+          name: 'C/ Escuelas 2<br>[Castellón] 🔗',
+          descript: '📍CEIP Sant Agustí',
+          linkMaps: 'https://maps.app.goo.gl/qgPE8NUrRh1zNBet5',
         },
         {
-          name: 'Av. Mar 27<br>[Castellón] 🔗',
-          descript: '📍 Parada Bus',
-          linkMaps: 'https://maps.app.goo.gl/iADq9zy92eG7NRWS7',
+          name: 'Camí dels Mestrets 🔗',
+          descript: '📍Guardería Arco-iris',
+          linkMaps: 'https://maps.app.goo.gl/S93eaHyfbHLA9d4E6',
+        },
+        {
+          name: 'Cuadra Colomer 2 🔗',
+          descript: '📍Parada bus',
+          linkMaps: 'https://maps.app.goo.gl/a6x3iQmTyy3fLn7b8',
+        },
+        {
+          name: 'Av. Benicassim 🔗',
+          descript: '📍Parada bus Castalia',
+          linkMaps: 'https://maps.app.goo.gl/FMGiUmSMgBTXYXEVA',
+        },
+        {
+          name: 'Ronda de la Magdalena 105 🔗',
+          descript: '📍Parada bus<br>Bar Rojo Negro',
+          linkMaps: 'https://maps.app.goo.gl/UU9hRzEzHCZPAe5K9',
+        },
+        {
+          name: 'Ronda de la Magdalena 63 🔗',
+          descript: '📍Parada bus<br>Bar Rojo Negro',
+          linkMaps: 'https://maps.app.goo.gl/P1Bj4tYGtjNtaZdg9',
+        },
+        {
+          name: 'Ronda de la Magdalena 32 🔗',
+          descript: '📍Parada bus<br>CEIP Cervantes',
+          linkMaps: 'https://maps.app.goo.gl/JGZEh8jqDX59ByJ96',
+        },
+        {
+          name: 'Av. Cardenal Costa 56 🔗',
+          descript: '📍Parada bus<br>Ford',
+          linkMaps: 'https://maps.app.goo.gl/XPiG7s4e41m1YoHL7',
+        },
+        {
+          name: 'Av. Sos Baynat 🔗',
+          descript: '📍Parada bus<br>Antes rotonda',
+          linkMaps: 'https://maps.app.goo.gl/jJn5JiyDgfRarY7r9',
+        },
+        {
+          name: 'Cuadra Borriolenc 🔗',
+          descript: '📍Parada bus<br>Cementerio',
+          linkMaps: 'https://maps.app.goo.gl/oWRGvtTVX7cbqzBL7',
+        },
+        {
+          name: 'Cuadra Borriolenc 10 🔗',
+          descript: '📍Parada bus<br>Baden',
+          linkMaps: 'https://maps.app.goo.gl/nEA47i75yu9KkYgb9',
+        },
+        {
+          name: 'Av. Hermanos Bou 26 🔗',
+          descript: '📍Parada bus',
+          linkMaps: 'https://maps.app.goo.gl/fhQ16KpFHTPDfiMy7',
         },
       ],
-      observaciones: 'El colegio se ha trasladado a los barracones de la calle Rio Ter 1 por obras',
+      observaciones: '',
       linkRutaMaps: 'https://maps.app.goo.gl',
       parteTrabajo: {
-        hrInicio: '14:30',
-        hrFin: '15:30'
+        hrInicio: '13:45',
+        hrFin: '15:45'
       }
     },
-    'ceip_mestre_canos-ruta_r1-salida-rangoMes2-rangoDias1': {
+    'ceip_sant_agusti-ruta_r1-salida-rangoMes2-rangoDias1': {
       stops: [
         {
-          name: 'C/ Rio Ter 1<br>[Castellón] 🔗',
-          descript: '📍 Colegio Provisional',
-          linkMaps: 'https://maps.app.goo.gl/FWpiqJG4V3onj3zU8',
+          name: 'C/ Escuelas 2<br>[Castellón] 🔗',
+          descript: '📍CEIP Sant Agustí',
+          linkMaps: 'https://maps.app.goo.gl/qgPE8NUrRh1zNBet5',
         },
         {
-          name: 'Av. Mar 27<br>[Castellón] 🔗',
-          descript: '📍 Parada Bus',
-          linkMaps: 'https://maps.app.goo.gl/iADq9zy92eG7NRWS7',
+          name: 'Camí dels Mestrets 🔗',
+          descript: '📍Guardería Arco-iris',
+          linkMaps: 'https://maps.app.goo.gl/S93eaHyfbHLA9d4E6',
+        },
+        {
+          name: 'Cuadra Colomer 2 🔗',
+          descript: '📍Parada bus',
+          linkMaps: 'https://maps.app.goo.gl/a6x3iQmTyy3fLn7b8',
+        },
+        {
+          name: 'Av. Benicassim 🔗',
+          descript: '📍Parada bus Castalia',
+          linkMaps: 'https://maps.app.goo.gl/FMGiUmSMgBTXYXEVA',
+        },
+        {
+          name: 'Ronda de la Magdalena 105 🔗',
+          descript: '📍Parada bus<br>Bar Rojo Negro',
+          linkMaps: 'https://maps.app.goo.gl/UU9hRzEzHCZPAe5K9',
+        },
+        {
+          name: 'Ronda de la Magdalena 63 🔗',
+          descript: '📍Parada bus<br>Bar Rojo Negro',
+          linkMaps: 'https://maps.app.goo.gl/P1Bj4tYGtjNtaZdg9',
+        },
+        {
+          name: 'Ronda de la Magdalena 32 🔗',
+          descript: '📍Parada bus<br>CEIP Cervantes',
+          linkMaps: 'https://maps.app.goo.gl/JGZEh8jqDX59ByJ96',
+        },
+        {
+          name: 'Av. Cardenal Costa 56 🔗',
+          descript: '📍Parada bus<br>Ford',
+          linkMaps: 'https://maps.app.goo.gl/XPiG7s4e41m1YoHL7',
+        },
+        {
+          name: 'Av. Sos Baynat 🔗',
+          descript: '📍Parada bus<br>Antes rotonda',
+          linkMaps: 'https://maps.app.goo.gl/jJn5JiyDgfRarY7r9',
+        },
+        {
+          name: 'Cuadra Borriolenc 🔗',
+          descript: '📍Parada bus<br>Cementerio',
+          linkMaps: 'https://maps.app.goo.gl/oWRGvtTVX7cbqzBL7',
+        },
+        {
+          name: 'Cuadra Borriolenc 10 🔗',
+          descript: '📍Parada bus<br>Baden',
+          linkMaps: 'https://maps.app.goo.gl/nEA47i75yu9KkYgb9',
+        },
+        {
+          name: 'Av. Hermanos Bou 26 🔗',
+          descript: '📍Parada bus',
+          linkMaps: 'https://maps.app.goo.gl/fhQ16KpFHTPDfiMy7',
         },
       ],
-      observaciones: 'El colegio se ha trasladado a los barracones de la calle Rio Ter 1 por obras',
+      observaciones: '',
       linkRutaMaps: 'https://maps.app.goo.gl',
       parteTrabajo: {
-        hrInicio: '15:30',
+        hrInicio: '15:15',
         hrFin: '17:15'
       }
     },
@@ -1404,82 +1887,65 @@ const paradasRutas = {
       }
     },
   },
-  'ies_ximen_urrea_alcalaten': {
-    id: 'ies_ximen_urrea_alcalaten',
-    'ies_ximen_urrea_alcalaten-ruta_r1-entrada': {
+  'ceip_regina_violant': {
+    id: 'ceip_regina_violant',
+    'ceip_regina_violant-ruta_r1-entrada': {value: 'en construccion'},
+    'ceip_regina_violant-ruta_r2-entrada': {value: 'en construccion'},
+    'ceip_regina_violant-ruta_r3-entrada': {
       stops: [
         {
-          name: 'Av. Fernando de León 28<br>[Lucena del Cid] 🔗',
-          descript: '📍 Parada bus gasolinera Repsol',
-          linkMaps: 'https://maps.app.goo.gl/LZifTtFzsWLjocnb6',
+          name: 'Cno. Catalans 17<br>[Playa Almassora] 🔗',
+          descript: '📍 Parada de Bus',
+          linkMaps: 'https://maps.app.goo.gl',
         },
         {
-          name: 'Ctra. Castellón Lucena 11B<br>[Figueroles] 🔗',
-          descript: '📍 Parada bus',
-          linkMaps: 'https://maps.app.goo.gl/yQ4nv5SrDU6z9Sw89',
+          name: 'Cno. L´Om Blanc 28<br>[Playa Almassora] 🔗',
+          descript: '📍 Parada de Bus',
+          linkMaps: 'https://maps.app.goo.gl',
         },
         {
-          name: 'Av. Corts Valencianes 9<br>[Alcora] 🔗',
-          descript: "📍 IES L'Alcalatén",
-          linkMaps: 'https://maps.app.goo.gl/T2CeAD82e3qRgnGZ6',
+          name: 'Cno. L´Om Blanc 78<br>[Playa Almassora] 🔗',
+          descript: '📍 Parada de Bus',
+          linkMaps: 'https://maps.app.goo.gl',
         },
         {
-          name: 'Av. Castellón 33<br>[Alcora] 🔗',
-          descript: "📍 IES Ximen D'Urrea",
-          linkMaps: 'https://maps.app.goo.gl/gStQzDrLVrXeoiaCA',
-        },
-        
-      
-      ],
-      observaciones: 'Recoge a dos guías',
-      linkRutaMaps: 'https://maps.app.goo.gl',
-      parteTrabajo: {
-        hrInicio: '06:00',
-        hrFin: '08:30'
-      }
-    },
-    'ies_ximen_urrea_alcalaten-ruta_r1-salida-rangoMes1-rangoDias1': {
-      stops: [
-        {
-          name: 'Av. Corts Valencianes 9<br>[Alcora] 🔗',
-          descript: "📍 IES L'Alcalatén",
-          linkMaps: 'https://maps.app.goo.gl/T2CeAD82e3qRgnGZ6',
+          name: 'Cno. L´Om Blanc 100<br>[Playa Almassora] 🔗',
+          descript: '📍 Parada de Bus',
+          linkMaps: 'https://maps.app.goo.gl',
         },
         {
-          name: 'Av. Castellón 33<br>[Alcora] 🔗',
-          descript: "📍 IES Ximen D'Urrea",
-          linkMaps: 'https://maps.app.goo.gl/gStQzDrLVrXeoiaCA',
+          name: 'Cno. Ben Afeli<br>[Playa Almassora] 🔗',
+          descript: '📍 Urb. Miramar 17',
+          linkMaps: 'https://maps.app.goo.gl',
         },
         {
-          name: 'CV-190<br>[Alcora] 🔗',
-          descript: "📍 Frente entrada pantano",
-          linkMaps: 'https://maps.app.goo.gl/V1Y4Zg5mAmdfBrgw6',
+          name: 'Paseo Marítimo 135<br>[Playa Almassora] 🔗',
+          descript: '📍 Frente Iglesia',
+          linkMaps: 'https://maps.app.goo.gl',
         },
         {
-          name: 'La Foia - Ctra. Lucena<br>[Alcora] 🔗',
-          descript: "📍 Parada de bus",
-          linkMaps: 'https://maps.app.goo.gl/HrnZhGPmetjeJraB7',
+          name: 'CEIP Regina Violant<br>[Almassora] 🔗',
+          descript: '📍 Parada Final',
+          linkMaps: 'https://maps.app.goo.gl',
         },
-        {
-          name: 'Ctra. Castellón Lucena 11B<br>[Figueroles] 🔗',
-          descript: '📍 Parada bus',
-          linkMaps: 'https://maps.app.goo.gl/yQ4nv5SrDU6z9Sw89',
-        },
-        {
-          name: 'Av. Fernando de León 28<br>[Lucena del Cid] 🔗',
-          descript: '📍 Parada bus gasolinera Repsol',
-          linkMaps: 'https://maps.app.goo.gl/LZifTtFzsWLjocnb6',
-        },
-        
-      
       ],
       observaciones: '',
       linkRutaMaps: 'https://maps.app.goo.gl',
       parteTrabajo: {
-        hrInicio: '13:30',
-        hrFin: '15:00'
+        hrInicio: '08:00',
+        hrFin: '09:30'
       }
     },
+    'ceip_regina_violant-ruta_r1-salida-rangoMes1-rangoDias1': {value: 'en construccion'},
+    'ceip_regina_violant-ruta_r1-salida-rangoMes1-rangoDias2': {value: 'en construccion'},
+    'ceip_regina_violant-ruta_r1-salida-rangoMes2-rangoDias1': {value: 'en construccion'},
+    'ceip_regina_violant-ruta_r1-salida-rangoMes2-rangoDias2': {value: 'en construccion'},
+    'ceip_regina_violant-ruta_r2-salida-rangoMes1-rangoDias1': {value: 'en construccion'},
+    'ceip_regina_violant-ruta_r2-salida-rangoMes1-rangoDias2': {value: 'en construccion'},
+    'ceip_regina_violant-ruta_r2-salida-rangoMes2-rangoDias1': {value: 'en construccion'},
+    'ceip_regina_violant-ruta_r3-salida-rangoMes1-rangoDias1': {value: 'en construccion'},
+    'ceip_regina_violant-ruta_r3-salida-rangoMes2-rangoDias1': {value: 'en construccion'},
+
   },
   'ies_valldalba': {
     id: 'ies_valldalba',
@@ -1571,6 +2037,83 @@ const paradasRutas = {
       parteTrabajo: {
         hrInicio: '14:30',
         hrFin: '16:00'
+      }
+    },
+  },
+  'ies_ximen_urrea_alcalaten': {
+    id: 'ies_ximen_urrea_alcalaten',
+    'ies_ximen_urrea_alcalaten-ruta_r1-entrada': {
+      stops: [
+        {
+          name: 'Av. Fernando de León 28<br>[Lucena del Cid] 🔗',
+          descript: '📍 Parada bus gasolinera Repsol',
+          linkMaps: 'https://maps.app.goo.gl/LZifTtFzsWLjocnb6',
+        },
+        {
+          name: 'Ctra. Castellón Lucena 11B<br>[Figueroles] 🔗',
+          descript: '📍 Parada bus',
+          linkMaps: 'https://maps.app.goo.gl/yQ4nv5SrDU6z9Sw89',
+        },
+        {
+          name: 'Av. Corts Valencianes 9<br>[Alcora] 🔗',
+          descript: "📍 IES L'Alcalatén",
+          linkMaps: 'https://maps.app.goo.gl/T2CeAD82e3qRgnGZ6',
+        },
+        {
+          name: 'Av. Castellón 33<br>[Alcora] 🔗',
+          descript: "📍 IES Ximen D'Urrea",
+          linkMaps: 'https://maps.app.goo.gl/gStQzDrLVrXeoiaCA',
+        },
+        
+      
+      ],
+      observaciones: 'Recoge a dos guías',
+      linkRutaMaps: 'https://maps.app.goo.gl',
+      parteTrabajo: {
+        hrInicio: '06:00',
+        hrFin: '08:30'
+      }
+    },
+    'ies_ximen_urrea_alcalaten-ruta_r1-salida-rangoMes1-rangoDias1': {
+      stops: [
+        {
+          name: 'Av. Corts Valencianes 9<br>[Alcora] 🔗',
+          descript: "📍 IES L'Alcalatén",
+          linkMaps: 'https://maps.app.goo.gl/T2CeAD82e3qRgnGZ6',
+        },
+        {
+          name: 'Av. Castellón 33<br>[Alcora] 🔗',
+          descript: "📍 IES Ximen D'Urrea",
+          linkMaps: 'https://maps.app.goo.gl/gStQzDrLVrXeoiaCA',
+        },
+        {
+          name: 'CV-190<br>[Alcora] 🔗',
+          descript: "📍 Frente entrada pantano",
+          linkMaps: 'https://maps.app.goo.gl/V1Y4Zg5mAmdfBrgw6',
+        },
+        {
+          name: 'La Foia - Ctra. Lucena<br>[Alcora] 🔗',
+          descript: "📍 Parada de bus",
+          linkMaps: 'https://maps.app.goo.gl/HrnZhGPmetjeJraB7',
+        },
+        {
+          name: 'Ctra. Castellón Lucena 11B<br>[Figueroles] 🔗',
+          descript: '📍 Parada bus',
+          linkMaps: 'https://maps.app.goo.gl/yQ4nv5SrDU6z9Sw89',
+        },
+        {
+          name: 'Av. Fernando de León 28<br>[Lucena del Cid] 🔗',
+          descript: '📍 Parada bus gasolinera Repsol',
+          linkMaps: 'https://maps.app.goo.gl/LZifTtFzsWLjocnb6',
+        },
+        
+      
+      ],
+      observaciones: '',
+      linkRutaMaps: 'https://maps.app.goo.gl',
+      parteTrabajo: {
+        hrInicio: '13:30',
+        hrFin: '15:00'
       }
     },
   },

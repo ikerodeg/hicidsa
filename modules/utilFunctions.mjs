@@ -1,3 +1,8 @@
+// -------------------------- ESTILOS PARA LOS SELECTS ---------------------------
+const INIT_STYLES = {
+  boxShadow: '2px 2px 6px white, -2px -2px 6px white, 2px -2px 6px white, -2px 2px 6px white',
+};
+
 const STYLES = {
   backgroundImage: 'none',
   background: 'hsl(0, 0%, 10%)',
@@ -15,6 +20,45 @@ function hideElements(elements) {
   elements.forEach((element) => {
     element.style.display = 'none';
   });
+};
+
+const initialStyle = (selectId) => {
+  Object.assign(selectId.style, INIT_STYLES);
+};
+
+//Funcion para cambiar estilos de los <select> una vez seleccionado
+const styleGeneral = (selectId) => {
+  Object.assign(selectId.style, STYLES);
+  selectId.disabled = true;
+  selectId.style.boxShadow = 'inherit'
+}
+
+//Funcion para habilitar y cambiar el estilo del boton reset
+const styleResetButton = (selectId) => {
+  Object.assign(selectId.style, STYLES_RESET);
+  selectId.disabled = false;
+  selectId.style.pointerEvents = 'auto';
+  selectId.style.boxShadow = '0 0 10px rgb(255, 86, 86)';
+  selectId.style.color = 'hsl(0, 100%, 58%)';
+}
+
+//Funcioón que añade un estilo al select
+const putInitialStyle = (selectId, callback) => {
+  //Añade un estilo del <select> 
+  callback(selectId);
+};
+
+//Funcion que cambia el estilo de un elemento
+const changeStyles = (selectId, callback) => {
+  //Cambia el estilo del <select> después de la selección y lo desabilita
+  callback(selectId);
+};
+
+// -------------------------- CREACION DE LISTAS PARA SELECTS ---------------------------
+//Funcion que muestra un <select> y añade options
+const showNewSelect = (selectId, object, createOptionsFunction) => {
+  selectId.style.display = "block";
+  createOptionsFunction(selectId, object);
 };
 
 //Funcion para crear opciones para el select Colegios
@@ -83,28 +127,13 @@ function createOptionsForDias(selectId, objeto) {
   });
 };
 
-//Funcioón que cambia el stilo y desabilita la seleccion
-function changeStyle(element, styles) {
-  Object.assign(element.style, styles);
+// ------------- BUSQUEDA DE COLEGIO SELECCIONADO EN EL ARRAY COLEGIOS ----------------
+//Funcion para buscar el colEgio seleccionado dentro del array de colegios
+const buscaColeSeleccionado = (coleId, arrayColes) => {
+  return arrayColes[coleId] || `Colegio no encontrado!`;
 };
 
-
-//Funcion para cambiar estilos de los <select> una vez seleccionado
-const styleGeneral = (selectId) => {
-  Object.assign(selectId.style, STYLES);
-  selectId.disabled = true;
-
-}
-
-//Funcion para habilitar y cambiar el estilo del boton reset
-const styleResetButton = (selectId) => {
-  Object.assign(selectId.style, STYLES_RESET);
-  selectId.disabled = false;
-  selectId.style.pointerEvents = 'auto';
-  selectId.style.boxShadow = '0 0 10px rgb(255, 86, 86)';
-  selectId.style.color = 'hsl(0, 100%, 58%)';
-}
-
+// ---------------- GUARDADO DE ELECCIONES EN EL OBJETO GLOBAL ---------------------------
 //Funcion para guardar el valor del option seleccionado en el objeto GLOBAL_V
 const savingSelectedData = (newValue, objectPropertyAll, objecPropertySpecific, globalObject) => {
   console.log(`Seleccionado: ${newValue}`);
@@ -124,21 +153,9 @@ const savingSelectedData = (newValue, objectPropertyAll, objecPropertySpecific, 
   console.log(`ALL_SELECTIONS: ${globalObject[objectPropertyAll]}`);
 };
 
-//Funcion que cambia el estilo de un elemento
-const changeStyles = (selectId, callback) => {
-  //Cambia el estilo del <select> después de la selección y lo desabilita
-  callback(selectId);
-};
 
-//Funcion que muestra un <select> y añade options
-const showNewSelect = (selectId, object, createOptionsFunction) => {
-  selectId.style.display = "block";
-  createOptionsFunction(selectId, object);
-};
 
-//Funcion para buscar el colgio seleccionado dentro del array de colegios
-const buscaColeSeleccionado = (coleId, arrayColes) => {
-  return arrayColes[coleId] || `Colegio no encontrado!`;
-};
 
-export { buscaColeSeleccionado, hideElements, createOptionsForColegios, createOptionsForRutas, createOptionsForTurnos,createOptionsForMeses, createOptionsForDias, changeStyle, showNewSelect, changeStyles, savingSelectedData, styleResetButton, styleGeneral };
+
+
+export { buscaColeSeleccionado, hideElements, createOptionsForColegios, createOptionsForRutas, createOptionsForTurnos,createOptionsForMeses, createOptionsForDias, initialStyle, putInitialStyle, showNewSelect, changeStyles, savingSelectedData, styleResetButton, styleGeneral };

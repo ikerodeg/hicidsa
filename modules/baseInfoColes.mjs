@@ -1,4 +1,62 @@
 const coleBaseInfo_ARR = {
+  'ceip_germans_ochando': {   //COMPLETO
+    info: {
+      name: 'CEIP Germans Ochando',
+      address: 'C/ en Proyecto esq.<br>C/ Benasal<br>[Almazora]',
+      linkMaps: 'https://maps.app.goo.gl/x6SbEzeJ95WGdcup8',
+      contact: '964 73 87 90',
+    },
+    rutas: {
+      ruta_r1: {
+        value: 'Ruta Única',
+        turno: {
+          entrada: {
+            value: 'Turno mañana<br>(Entrada)',
+            hrEntrada:'09:00',
+            guia: {
+              nameGuia: 'Sandra',
+              hrRecoGuia: '08:15',
+              lgRecoGuia: 'Cami Catalans 17<br>Parada de bus',
+            },
+          },
+          salida: {
+            value: 'Turno tarde<br>(Salida)',
+            mes: {
+              rangoMes1: {
+                value: 'Septiembre y Junio',
+                dias: {
+                  rangoDias1: {
+                    value: 'Todos los días',
+                    hrSalida: '15:00',
+                    guia: {
+                      nameGuia: 'Sandra',
+                      hrRecoGuia: '14:50',
+                      lgRecoGuia: 'Va ella al colegio',
+                    },
+    
+                  },
+                },
+              },
+              rangoMes2: {
+                value: 'Resto del año',
+                dias: {
+                  rangoDias1: {
+                    value: 'Todos los días',
+                    hrSalida: '16:30',
+                    guia: {
+                      nameGuia: 'Sandra',
+                      hrRecoGuia: '16:20',
+                      lgRecoGuia: 'Va ella al colegio',
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+    }
+  },
   'ceip_mestre_canos': {    //R1
     info: {
       name: 'CEIP Mestre Canos',
@@ -65,7 +123,7 @@ const coleBaseInfo_ARR = {
     },
     rutas: {
       ruta_r1: {
-        value: 'Ruta R1',
+        value: 'Ruta Única',
         turno: {
           entrada: {
             value: 'Turno mañana<br>(Entrada)',
@@ -295,6 +353,63 @@ const coleBaseInfo_ARR = {
       },
     },
   },
+  'ceip_sant_agusti': {
+    info: {
+      name: 'CEIP Sant Agustí',
+      address: 'C/ Escuelas 2<br>[Castellón]',
+      linkMaps: 'https://maps.app.goo.gl/qgPE8NUrRh1zNBet5',
+      contact: '964 73 95 60',
+    },
+    rutas: {
+      ruta_r1: {
+        value: 'Ruta única',
+        turno: {
+          entrada: {
+            value: 'Turno mañana<br>(Entrada)',
+            hrEntrada:'09:00',
+            guia: {
+              nameGuia: 'Elena',
+              hrRecoGuia: '08:15',
+              lgRecoGuia: '<a href="https://maps.app.goo.gl/jHZgoaUUzQmiXrru6">Edificio Prop 🔗</a>',
+            },
+          },
+          salida: {
+            value: 'Turno tarde<br>(Salida)',
+            mes: {
+              rangoMes1: {
+                value: 'Septiembre y Junio',
+                dias: {
+                  rangoDias1: {
+                    value: 'Todos los días',
+                    hrSalida: '14:15',
+                    guia: {
+                      nameGuia: 'Elena',
+                      hrRecoGuia: '13:45',
+                      lgRecoGuia: '<a href="https://maps.app.goo.gl/jHZgoaUUzQmiXrru6">Edificio Prop 🔗</a>',
+                    },
+                  },
+                },
+              },
+              rangoMes2: {
+                value: 'Resto del año',
+                dias: {
+                  rangoDias1: {
+                    value: 'Todos los días',
+                    hrSalida: '16:00',
+                    guia: {
+                      nameGuia: 'Elena',
+                      hrRecoGuia: '15:40',
+                      lgRecoGuia: '<a href="https://maps.app.goo.gl/jHZgoaUUzQmiXrru6">Edificio Prop 🔗</a>',
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+    }
+  },
   'citd_penyeta_roja': {    //C
     info: {
       name: 'CITD Penyeta Roja',
@@ -495,7 +610,7 @@ const coleBaseInfo_ARR = {
                 dias: {
                   rangoDias1: {
                     value: 'Lunes, Martes y Jueves',
-                    hrSalida: '15:15',
+                    hrSalida: '15:00',
                     guia: {
                       nameGuia: 'Rosa',
                       hrRecoGuia: '15:00',
@@ -505,7 +620,7 @@ const coleBaseInfo_ARR = {
                   },
                   rangoDias2: {
                     value: 'Miércoles y Viernes',
-                    hrSalida: '14:15',
+                    hrSalida: '14:00',
                     guia: {
                       nameGuia: 'Rosa',
                       hrRecoGuia: '14:00',
@@ -538,7 +653,7 @@ const coleBaseInfo_ARR = {
                 dias: {
                   rangoDias1: {
                     value: 'Todos los días',
-                    hrSalida: '14:15',
+                    hrSalida: '14:00',
                     guia: {
                       nameGuia: 'Nuria',
                       hrRecoGuia: '14:00',
@@ -572,7 +687,7 @@ const coleBaseInfo_ARR = {
                 dias: {
                   rangoDias1: {
                     value: 'Lunes, Martes y Jueves',
-                    hrSalida: '15:15',
+                    hrSalida: '15:00',
                     guia: {
                       nameGuia: 'Maria',
                       hrRecoGuia: '14:45',
@@ -582,7 +697,7 @@ const coleBaseInfo_ARR = {
                   },
                   rangoDias2: {
                     value: 'Miércoles y Viernes',
-                    hrSalida: '14:15',
+                    hrSalida: '14:00',
                     guia: {
                       nameGuia: 'Maria',
                       hrRecoGuia: '13:45',
@@ -615,7 +730,7 @@ const coleBaseInfo_ARR = {
                 dias: {
                   rangoDias1: {
                     value: 'Lunes y Martes',
-                    hrSalida: '15:15',
+                    hrSalida: '15:00',
                     guia: {
                       nameGuia: 'Rosa',
                       hrRecoGuia: '14:50',
@@ -625,7 +740,7 @@ const coleBaseInfo_ARR = {
                   },
                   rangoDias2: {
                     value: 'Miércoles, Jueves y Viernes',
-                    hrSalida: '14:15',
+                    hrSalida: '14:00',
                     guia: {
                       nameGuia: 'Rosa',
                       hrRecoGuia: '13:50',
@@ -640,7 +755,7 @@ const coleBaseInfo_ARR = {
       },
     },
   },
-  'ies_jaume_i': {   //R1, R4
+  'ies_jaume_i': {   //PUERTO, R1, R4
     info: {
       name: 'IES Jaume I',
       address: 'Av. Transport 2<br>[Burriana]',
@@ -648,6 +763,49 @@ const coleBaseInfo_ARR = {
       contact: '964 73 89 35',
     },
     rutas: {
+      ruta_puerto: {
+        value: 'Ruta Puerto',
+        turno: {
+          entrada: {
+            value: 'Turno mañana<br>(Entrada)',
+            hrEntrada:'08:15',
+            guia: {
+              nameGuia: 'Cristina',
+              hrRecoGuia: '07:15',
+              lgRecoGuia: '<a href="https://maps.app.goo.gl/kVKHqjWb21MMxvmB7">Ronda Pere IV 47,🔗<br> [Burriana]</a><br>Parada de bus',
+            },
+          },
+          salida: {
+            value: 'Turno tarde<br>(Salida)',
+            mes: {
+              rangoMes1: {
+                value: 'Todo el año',
+                dias: {
+                  rangoDias1: {
+                    value: 'Lunes, Martes y Miércoles',
+                    hrSalida: '14:00',
+                    guia: {
+                      nameGuia: 'Cristina',
+                      hrRecoGuia: '14:00',
+                      lgRecoGuia: 'Va ella al instituto',
+                    },
+    
+                  },
+                  rangoDias2: {
+                    value: 'Jueves y Viernes',
+                    hrSalida: '15:00',
+                    guia: {
+                      nameGuia: 'Cristina',
+                      hrRecoGuia: '15:00',
+                      lgRecoGuia: 'Va ella al instituto',
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
       ruta_r1: {
         value: 'Ruta R1',
         turno: {
@@ -758,50 +916,6 @@ const coleBaseInfo_ARR = {
       },
     }
   },
-  'ies_ximen_urrea_alcalaten': {    //A
-    info: {
-      name: "IES Ximen D'Urrea",
-      address: 'Av. Castellón 33<br>[Alcora]',
-      linkMaps: 'https://maps.app.goo.gl/gStQzDrLVrXeoiaCA',
-      contact: '964 73 89 40',
-    },
-    rutas: {
-      ruta_r1: {
-        value: 'IES Alcora-Lucena (A)',
-        turno: {
-          entrada: {
-            value: 'Turno mañana<br>(Entrada)',
-            hrEntrada:'08:00',
-            guia: {
-              nameGuia: 'Inma',
-              hrRecoGuia: '07:00',
-              lgRecoGuia: 'Parada Bus monumento cruz C/Maestro Fabregat',
-            },
-          },
-          salida: {
-            value: 'Turno tarde<br>(Salida)',
-            mes: {
-              rangoMes1: {
-                value: 'Todo el año',
-                dias: {
-                  rangoDias1: {
-                    value: 'Todos los días',
-                    hrSalida: '14:15',
-                    guia: {
-                      nameGuia: 'Inma',
-                      hrRecoGuia: '13:30',
-                      lgRecoGuia: 'Parada Bus monumento cruz C/Maestro Fabregat',
-                    },
-    
-                  },
-                },
-              },
-            },
-          },
-        },
-      },
-    }
-  },
   'ies_valldalba': {    //R1
     info: {
       name: "IES Vall D'alba",
@@ -846,6 +960,50 @@ const coleBaseInfo_ARR = {
                       hrRecoGuia: '14:40',
                       lgRecoGuia: 'C/ Sant Miquel 2<br>[Villafamés]',
                     },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+    }
+  },
+  'ies_ximen_urrea_alcalaten': {    //A
+    info: {
+      name: "IES Ximen D'Urrea",
+      address: 'Av. Castellón 33<br>[Alcora]',
+      linkMaps: 'https://maps.app.goo.gl/gStQzDrLVrXeoiaCA',
+      contact: '964 73 89 40',
+    },
+    rutas: {
+      ruta_r1: {
+        value: 'IES Alcora-Lucena (A)',
+        turno: {
+          entrada: {
+            value: 'Turno mañana<br>(Entrada)',
+            hrEntrada:'08:00',
+            guia: {
+              nameGuia: 'Inma',
+              hrRecoGuia: '07:00',
+              lgRecoGuia: 'Parada Bus monumento cruz C/Maestro Fabregat',
+            },
+          },
+          salida: {
+            value: 'Turno tarde<br>(Salida)',
+            mes: {
+              rangoMes1: {
+                value: 'Todo el año',
+                dias: {
+                  rangoDias1: {
+                    value: 'Todos los días',
+                    hrSalida: '14:15',
+                    guia: {
+                      nameGuia: 'Inma',
+                      hrRecoGuia: '13:30',
+                      lgRecoGuia: 'Parada Bus monumento cruz C/Maestro Fabregat',
+                    },
+    
                   },
                 },
               },
