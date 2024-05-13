@@ -4,7 +4,7 @@ import { guias_CEIP_ReginaViolant, guias_IES_Betxi } from "../../modules/guiasIn
 import { parte_IES_Betxi } from "../../modules/partesTrabajo.mjs";
 import { paradasRutas } from "../../modules/rutasColes.mjs";
 import { coleStructure } from "../../modules/generatorsFunc.mjs";
-import { hideElements, createOptionsForColegios, createOptionsForRutas, createOptionsForTurnos, createOptionsForMeses, createOptionsForDias, changeStyle, showNewSelect, changeStyles, savingSelectedData, styleResetButton, styleGeneral, buscaColeSeleccionado } from "../../modules/utilFunctions.mjs";
+import { hideElements, createOptionsForColegios, createOptionsForRutas, createOptionsForTurnos, createOptionsForMeses, createOptionsForDias, showNewSelect, changeStyles, savingSelectedData, styleResetButton, styleGeneral, initialStyle, putInitialStyle, buscaColeSeleccionado } from "../../modules/utilFunctions.mjs";
 
 
 //-------------------------------- ID'S DE ELEMENTOS --------------------------------------
@@ -47,8 +47,13 @@ const GLOBAL_V = {
 // -------------------------------- FUNCION CARGA PAGINA ----------------------------------
 
 window.onload = function () {
+
+  //Desabilita el boton de reset de inicio
   DOM_ELEMENTS.BOTON_RESET.style.pointerEvents = 'none';
   DOM_ELEMENTS.BOTON_RESET.style.boxShadow = 'none';
+
+  //Aplica estilos al select
+  putInitialStyle(SELECTS_ID.SELECT_COLEGIOS, initialStyle);
 
   // Crea un <OPTION> por cada objeto del array coleBaseInfo_ARR con un id ,value y name igual al colegio
   createOptionsForColegios(SELECTS_ID.SELECT_COLEGIOS, coleBaseInfo_ARR);
@@ -76,6 +81,11 @@ window.onload = function () {
 
     //Habilita el <select> RUTAS y añade un <option> por cada ruta disponible
     showNewSelect(SELECTS_ID.SELECT_RUTAS, GLOBAL_V.COLE_BASE_INFO_MATCH.rutas, createOptionsForRutas);
+    
+    //Aplica estilos al select
+    if (!SELECTS_ID.SELECT_RUTAS.disabled === true) {
+      putInitialStyle(SELECTS_ID.SELECT_RUTAS, initialStyle);
+    }
   });
 
   // ----------------------------------- DETECCION <SELECT> RUTA -------------------  
@@ -88,6 +98,9 @@ window.onload = function () {
 
     //Habilita el <select> TURNO y añade un <option> por cada ruta disponible
     showNewSelect(SELECTS_ID.SELECT_TURNOS, TURNOS, createOptionsForTurnos)
+
+    //Aplica estilos al select
+    putInitialStyle(SELECTS_ID.SELECT_TURNOS, initialStyle);
 
   });
 
@@ -131,6 +144,9 @@ window.onload = function () {
         showNewSelect(SELECTS_ID.SELECT_DIAS, GLOBAL_V.COLE_BASE_INFO_MATCH.rutas[GLOBAL_V.SELECTED_RUTA_id].turno[GLOBAL_V.SELECTED_TURNO_id].mes[GLOBAL_V.SELECTED_MES_VARIANT_id].dias, createOptionsForDias);
         console.log(GLOBAL_V.SELECTED_MES_VARIANT_id);
         console.log(GLOBAL_V.ALL_SELECTIONS);
+
+        //Aplica estilos al select
+        putInitialStyle(SELECTS_ID.SELECT_DIAS, initialStyle);
       }
 
     }  //Si que hay una variante de mes porque existe y no es igual a 'Todo el año'
@@ -139,6 +155,9 @@ window.onload = function () {
 
       //Habilita el <select> MES y añade un <option> por cada Rango disponible
       showNewSelect(SELECTS_ID.SELECT_MES, GLOBAL_V.COLE_BASE_INFO_MATCH.rutas[GLOBAL_V.SELECTED_RUTA_id].turno[GLOBAL_V.SELECTED_TURNO_id].mes, createOptionsForMeses);
+
+      //Aplica estilos al select
+      putInitialStyle(SELECTS_ID.SELECT_MES, initialStyle);
 
     }  
 
@@ -154,6 +173,11 @@ window.onload = function () {
 
     //Habilita el <select> RUTAS
     SELECTS_ID.SELECT_RUTAS.style.display = 'block';
+
+    //Aplica estilos al select
+    if (!SELECTS_ID.SELECT_RUTAS.disabled === true) {
+      putInitialStyle(SELECTS_ID.SELECT_RUTAS, initialStyle);
+    }
 
     //Añade un <option> por cada RUTA disponible
     createOptionsForMeses(SELECTS_ID.SELECT_RUTAS, GLOBAL_V.COLE_BASE_INFO_MATCH.rutas);
@@ -173,6 +197,9 @@ window.onload = function () {
     //Habilita el <select> DIA y añade un <option> por cada Rango disponible
     showNewSelect(SELECTS_ID.SELECT_DIAS, GLOBAL_V.COLE_BASE_INFO_MATCH.rutas[GLOBAL_V.SELECTED_RUTA_id].turno[GLOBAL_V.SELECTED_TURNO_id].mes[GLOBAL_V.SELECTED_MES_VARIANT_id].dias, createOptionsForDias);
     }
+
+    //Aplica estilos al select
+    putInitialStyle(SELECTS_ID.SELECT_DIAS, initialStyle);
 
   });
 

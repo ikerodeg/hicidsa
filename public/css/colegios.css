@@ -78,7 +78,6 @@ a:any-link {
     font-weight: 600;
     color: var(--main-txt-clr);
     text-shadow: var(--txt-sdw);
-    box-shadow: 1px 1px 3px hsl(0, 0%, 8%);
 
     option {
       color: hsl(0, 0%, 0%);
