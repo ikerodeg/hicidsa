@@ -1,35 +1,89 @@
+/* ------------------------- variables personalizadas ------------------------- */
+:root{
+  --main-bg-clr: hsl(0, 0%, 0%);
+  --main-txt-clr: hsl(0, 0%, 100%);
+  --main-bg-img: repeating-linear-gradient(90deg, rgb(30, 30, 30) 0px, rgb(30, 30, 30) 42px,rgb(32, 32, 32) 42px, rgb(32, 32, 32) 84px,rgb(33, 33, 33) 84px, rgb(33, 33, 33) 126px,rgb(31, 31, 31) 126px, rgb(31, 31, 31) 168px,rgb(31, 31, 31) 168px, rgb(31, 31, 31) 210px,rgb(32, 32, 32) 210px, rgb(32, 32, 32) 252px,rgb(34, 34, 34) 252px, rgb(34, 34, 34) 294px,rgb(33, 33, 33) 294px, rgb(33, 33, 33) 336px);
+  --txt-sdw: 0 0 3px black,
+            3px 3px 2px hsl(0, 0%, 29%),
+            3px 3px 4px hsl(0, 0%, 11%);
+            --h2clr: hsl(212, 100%, 70%);
+}  
+
+/* ------------------------- HTML ------------------------- */
+
 html {
-  background-color: black;
-  color: white;
+  background-color: var(--main-bg-clr);
+  background-image: var(--main-bg-img);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--main-txt-clr);
+  font-family: 'Courier New', Courier, monospace;
 }
 
-.main {
-  inline-size: 80vw;
-  padding: 1em;
-  margin-block-start: 20vh;
-  margin-inline: auto;
-}
-
-.colegios__section, .urbanas__section {
-  block-size: 10vh;
-  border-radius: 0.5em;
-  border: 4px double white;
-  margin-inline: auto;
-  align-content: center;
-  padding: 2em;
-}
-
-.colegios__section{
-  margin-block-end: 3em;
-}
 
 a:any-link {
-  color: white;
+  color: var(--main-txt-clr);
   text-decoration: none;
 }
 
-a {
-  text-align: center;
-  font-size: 2rem;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+/* ------------------------- TITULO HEADER H1 ------------------------- */
+/* 
+.header {
+  position: relative;
+  margin-inline: auto;
+  padding-block: 1vh;
+
+  .header__h1{
+    block-size: 10dvh;
+    margin-block: 0;
+    background-image: url("../assets/img/logo1.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: drop-shadow(5px 5px 2px hsla(0, 0%, 31%, 0.959));
+  }
+}   */
+
+/* ------------------------------- SECTIONS ------------------------------- */
+.main {
+  .main__section{
+    block-size: 32.3dvh;
+    text-align: center;
+    font-weight: 800;
+    font-size: 3rem;
+
+    .main__link{
+      display: block;
+      block-size: 100%;
+      align-content: center;
+      text-shadow: var(--txt-sdw);
+    }
+  }
+
+  .main__section--colegios{
+    background-color: black;
+    background-image: url("../assets/img/trasnEscolar07.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .main__section--urbanas{
+    background-color: black;
+    background-image: url("../assets/img/interurbanas05.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 2.5rem;
+  }
+
+  .main__section--vd{
+    background-color: hsla(0, 0%, 0%, 0.089);
+    filter: blur(4px);
+  }
+
 }
+
+

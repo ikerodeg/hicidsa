@@ -1,9 +1,7 @@
 // --------------------------- IMPORTACIÓN DE MODULOS ------------------------------------
 import { coleBaseInfo_ARR } from "../../modules/baseInfoColes.mjs";
-import { guias_CEIP_ReginaViolant, guias_IES_Betxi } from "../../modules/guiasInfoColes.mjs";
-import { parte_IES_Betxi } from "../../modules/partesTrabajo.mjs";
 import { paradasRutas } from "../../modules/rutasColes.mjs";
-import { coleStructure } from "../../modules/generatorsFunc.mjs";
+import { coleStructure } from "../../modules/genColeStruc.mjs";
 import { hideElements, createOptionsForColegios, createOptionsForRutas, createOptionsForTurnos, createOptionsForMeses, createOptionsForDias, showNewSelect, changeStyles, savingSelectedData, styleResetButton, styleGeneral, initialStyle, putInitialStyle, buscaColeSeleccionado } from "../../modules/utilFunctions.mjs";
 
 
@@ -217,7 +215,7 @@ window.onload = function () {
       DOM_ELEMENTS.SECTION_SELECTS.style.display = 'none';
       // Añade la info dentro del section
       DOM_ELEMENTS.SECTION_COLEGIO_INFO.innerHTML = coleStructure(GLOBAL_V.COLE_BASE_INFO_MATCH, GLOBAL_V, paradasRutas);
-    }, 1800)
+    }, 1800);
 
   });
 
