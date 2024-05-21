@@ -1,99 +1,82 @@
-function headerLineaBaseInfo(lineaBaseInfoMatch, globalObject) {
+function headerLineaBaseInfo(globalObject, lineaBaseInfoMatch) {
   return  `
-    <section class="section-infoLinea">
-      <h2>${lineaBaseInfoMatch.info.name}</h2>
-      <h2>${lineaBaseInfoMatch.rutas[globalObject.SELECTED_DIAS_id].buses[globalObject.SELECTED_BUS_id].value}</h2>
-      <h3>Inicio Línea</h3>
-      <p class="section__p"><a target="_blank" href='${'#'}'>${lineaBaseInfoMatch.rutas[globalObject.SELECTED_DIAS_id].buses[globalObject.SELECTED_BUS_id].turno[globalObject.SELECTED_TURNO_id].lgInicio} 🔗</a></p>
-      <h3>Fin Línea</h3>
-      <p class="section__p"><a target="_blank" href='${'#'}'>${lineaBaseInfoMatch.rutas[globalObject.SELECTED_DIAS_id].buses[globalObject.SELECTED_BUS_id].turno[globalObject.SELECTED_TURNO_id].lgFin} 🔗</a></p>
-    </section>
+      <header class="header__baseInfo">
+        <h2>Línea</h2>
+        <p class="p__code">${lineaBaseInfoMatch.maquina.codeLineaLabo} - ${lineaBaseInfoMatch.maquina.codeLineaIni}</p>
+        <h3 class="header__h3">${lineaBaseInfoMatch.info.value}</h3>
+        <h3 class="header__h3 header__h3--bus">❮ ${lineaBaseInfoMatch.rutas[globalObject.SELECTED_DIAS_id].buses[globalObject.SELECTED_BUS_id].value} ❯</h3>
+      </header>
   `
 };
 
-function articleNombreRutaHora(globalObject, coleBaseInfoMatch){
+function articleLineaJornada(globalObject, lineaBaseInfoMatch){
   return `
-    <article>
-      <h2>${coleBaseInfoMatch.rutas[globalObject.SELECTED_RUTA_id].value}</h2>
-      <p class="section__p" id='inOut_h4'>${coleBaseInfoMatch.rutas[globalObject.SELECTED_RUTA_id].turno[globalObject.SELECTED_TURNO_id].value}</p>
+    <article class="article__jornada">
+      <h2>Inicio Jornada</h2>
+      <p class="article__p">📍 <a target="_blank" href='${'#'}'>${lineaBaseInfoMatch.rutas[globalObject.SELECTED_DIAS_id].buses[globalObject.SELECTED_BUS_id].turno[globalObject.SELECTED_TURNO_id].lgInicio} 🔗</a></p>
+      <p class="horas__p">${lineaBaseInfoMatch.rutas[globalObject.SELECTED_DIAS_id].buses[globalObject.SELECTED_BUS_id].turno[globalObject.SELECTED_TURNO_id].hrInicio}</p>
+      <h2>Relevo / Fin Jornada</h2>
+      <p class="article__p">📍 <a target="_blank" href='${'#'}'>${lineaBaseInfoMatch.rutas[globalObject.SELECTED_DIAS_id].buses[globalObject.SELECTED_BUS_id].turno[globalObject.SELECTED_TURNO_id].lgRelevo} 🔗</a></p>
+      <p class="horas__p">${lineaBaseInfoMatch.rutas[globalObject.SELECTED_DIAS_id].buses[globalObject.SELECTED_BUS_id].turno[globalObject.SELECTED_TURNO_id].hrRelevo}</p>
     </article>
   `
 };
 
-function articleRutaMesDias(globalObject, coleBaseInfoMatch){
-  if (coleBaseInfoMatch.rutas[globalObject.SELECTED_RUTA_id].turno[globalObject.SELECTED_TURNO_id].mes) {
-    return `
-    <article>
-      <h4 class="mes_h4" id='mes_h4'>${coleBaseInfoMatch.rutas[globalObject.SELECTED_RUTA_id].turno[globalObject.SELECTED_TURNO_id].mes[globalObject.SELECTED_MES_VARIANT_id].value}</h4>
-      <h4 class="dias" id='dias'>${coleBaseInfoMatch.rutas[globalObject.SELECTED_RUTA_id].turno[globalObject.SELECTED_TURNO_id].mes[globalObject.SELECTED_MES_VARIANT_id].dias[globalObject.SELECTED_DIAS_id].value}</h4>
+function articleLineaBilletes(globalObject, lineaBaseInfoMatch){
+  return `
+    <article class="article__billetes">
+      <h2>Códigos Billetes</h2>
+      <p class="article__p"><span class="span__icon">🎟️</span> interurbano</p>
+      <p class="article__p"><span class="span__key">${lineaBaseInfoMatch.maquina.bInterUrbano}</span> ${lineaBaseInfoMatch.maquina.bInterUrbanoPrec}</p>
+      <p class="article__p"><span class="span__icon">🎟️</span> urbano</p>
+      <p class="article__p"><span class="span__key">${lineaBaseInfoMatch.maquina.bUrbano}</span> ${lineaBaseInfoMatch.maquina.bUrbanoPrec}</p>
+      <p class="article__p"><span class="span__icon">🎟️</span> jubilados</p>
+      <p class="article__p"><span class="span__key">${lineaBaseInfoMatch.maquina.bJubilados}</span> ${lineaBaseInfoMatch.maquina.bJubiladosPrec}</p>
+      <p class="article__p"><span class="span__icon">🎟️</span> < 3 años</p>
+      <p class="article__p"><span class="span__key">${lineaBaseInfoMatch.maquina.bmenores}</span> ${lineaBaseInfoMatch.maquina.bmenoresPrec}</p>
+      <p class="article__p"><span class="span__icon">🎟️</span> < 7 años</p>
+      <p class="article__p"><span class="span__key">${lineaBaseInfoMatch.maquina.bhasta7}</span> ${lineaBaseInfoMatch.maquina.bhasta7Prec}</p>
+      <p class="article__p"><span class="span__icon">🎟️</span> transbordo</p>
+      <p class="article__p"><span class="span__key">${lineaBaseInfoMatch.maquina.bTransbordo}</span> ${lineaBaseInfoMatch.maquina.bTransbordoPrec}</p>
+      <p class="article__p"><span class="span__icon">🎟️</span> desc. general</p>
+      <p class="article__p"><span class="span__key">${lineaBaseInfoMatch.maquina.bDescGeneral}</span> ${lineaBaseInfoMatch.maquina.bDescGeneralPrec}</p>
+      <p class="article__p"><span class="span__icon">🎟️</span> desc. especial</p>
+      <p class="article__p"><span class="span__key">${lineaBaseInfoMatch.maquina.bDescEspecial}</span> ${lineaBaseInfoMatch.maquina.bDescEspecialPrec}</p>
     </article>
   `
-  } else {
-    console.log(`NO hay mes ni dias disponibles`);
-    return ``
-  }
-
 };
 
-function articleRutaHoras(globalObject, coleBaseInfoMatch){
-
-  if (coleBaseInfoMatch.rutas[globalObject.SELECTED_RUTA_id].turno[globalObject.SELECTED_TURNO_id].mes) {
-    return `
-      <article>
-        <p class="horas__p">${coleBaseInfoMatch.rutas[globalObject.SELECTED_RUTA_id].turno[globalObject.SELECTED_TURNO_id].mes[globalObject.SELECTED_MES_VARIANT_id].dias[globalObject.SELECTED_DIAS_id].hrSalida}</p>
-      </article>
-    `
-  } else {
-    return `
-      <article>
-        <p class="horas__p">${coleBaseInfoMatch.rutas[globalObject.SELECTED_RUTA_id].turno[globalObject.SELECTED_TURNO_id].hrEntrada}</p>
-      </article>
-    `
-
+function articleLineaHorarios(globalObject, lineaBaseInfoMatch){
+  let horarios = lineaBaseInfoMatch.rutas[globalObject.SELECTED_DIAS_id].buses[globalObject.SELECTED_BUS_id].turno[globalObject.SELECTED_TURNO_id].horarios;
+  let rows = '';
+  for(let i = 0; i < horarios.length; i+=2) {
+    let horario1 = horarios[i] ? horarios[i] : '';
+    let horario2 = horarios[i+1] ? horarios[i+1] : '';
+    rows += `
+      <tr>
+        <td>${horario1}</td>
+        <td>${horario2}</td>
+      </tr>
+    `;
   }
+  return `
+    <article class="article__horarios">
+      <h2>Horarios</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Castellon</th>
+            <th>Almazora</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${rows}
+        </tbody>
+      </table>
+    </article>
+  `;
 };
 
-function sectionRutaInfo(coleBaseInfoMatch, globalObject) {
-  if (coleBaseInfoMatch.rutas[globalObject.SELECTED_RUTA_id].turno[globalObject.SELECTED_TURNO_id].mes) {
-    return `
-      <section class="section-rutaInfo" id="sectionRutaInfo">
-        ${articleNombreRutaHora(globalObject, coleBaseInfoMatch)}
-        ${articleRutaMesDias(globalObject, coleBaseInfoMatch)}
-        ${articleRutaHoras(globalObject, coleBaseInfoMatch)}
-      </section>
-    `
-  } else {
-    return `
-      <section class="section-rutaInfo" id="sectionRutaInfo">
-        ${articleNombreRutaHora(globalObject, coleBaseInfoMatch)}
-        ${articleRutaHoras(globalObject, coleBaseInfoMatch)}
-      </section>
-    `
-  }
-
-};
-
-function sectionGuiaInfo(coleBaseInfoMatch, globalObject){
-  if (coleBaseInfoMatch.rutas[globalObject.SELECTED_RUTA_id].turno[globalObject.SELECTED_TURNO_id].mes) {
-    return `
-      <section class="section-guia">
-        <h2>Recogida Guía</h2>
-        <h3>${coleBaseInfoMatch.rutas[globalObject.SELECTED_RUTA_id].turno[globalObject.SELECTED_TURNO_id].mes[globalObject.SELECTED_MES_VARIANT_id].dias[globalObject.SELECTED_DIAS_id].guia.nameGuia}</h3>
-        <p class="section__p"><a target="_blank" href='linkMaps'>${coleBaseInfoMatch.rutas[globalObject.SELECTED_RUTA_id].turno[globalObject.SELECTED_TURNO_id].mes[globalObject.SELECTED_MES_VARIANT_id].dias[globalObject.SELECTED_DIAS_id].guia.lgRecoGuia}</a></p>
-        <p class="horas__p">${coleBaseInfoMatch.rutas[globalObject.SELECTED_RUTA_id].turno[globalObject.SELECTED_TURNO_id].mes[globalObject.SELECTED_MES_VARIANT_id].dias[globalObject.SELECTED_DIAS_id].guia.hrRecoGuia}</p>
-      </section>
-    `
-  } else {
-    return `
-      <section class="section-guia">
-        <h2>Recogida Guía</h2>
-        <h3>${coleBaseInfoMatch.rutas[globalObject.SELECTED_RUTA_id].turno[globalObject.SELECTED_TURNO_id].guia.nameGuia}</h3>
-        <p class="section__p"><a target="_blank" href='linkMaps'>${coleBaseInfoMatch.rutas[globalObject.SELECTED_RUTA_id].turno[globalObject.SELECTED_TURNO_id].guia.lgRecoGuia}</a></p>
-        <p class="horas__p">${coleBaseInfoMatch.rutas[globalObject.SELECTED_RUTA_id].turno[globalObject.SELECTED_TURNO_id].guia.hrRecoGuia}</p>
-      </section>
-    `
-  }
-};
 
 function sectionStops(globalObject, rutasObject){
   const stopsRuta = rutasObject[globalObject.SELECTED_COLEGIO_id][globalObject.ALL_SELECTIONS].stops.map ( (parada, index) => `<li><a href="${parada.linkMaps}">${index + 1}. ${parada.name}<br></a>${parada.descript}</li>`).join('');
@@ -142,11 +125,13 @@ function sectionPartesTrabajo(globalObject, rutasObject){
   `
 };
 
-function lineaStructure(coleBaseInfoMatch, globalObject, rutasObject) {
+function lineaStructure(globalObject, lineaBaseInfoMatch, rutasObject) {
 
   return  `
-    ${headerLineaBaseInfo(coleBaseInfoMatch, globalObject)}
-
+    ${headerLineaBaseInfo(globalObject, lineaBaseInfoMatch)}
+    ${articleLineaJornada(globalObject, lineaBaseInfoMatch)}
+    ${articleLineaBilletes(globalObject, lineaBaseInfoMatch)}
+    ${articleLineaHorarios(globalObject, lineaBaseInfoMatch)}
     `
 }
 
