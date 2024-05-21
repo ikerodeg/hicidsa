@@ -39,11 +39,11 @@ a:any-link {
 /* ------------------------- TITULO HEADER H1 ------------------------- */
 .header-main {
   position: relative;
-  inline-size: var(--sz-bx);
   margin-inline: auto;
+  inline-size: var(--sz-bx);
   padding-block-start: 5vh;
   margin-block-end: 8vh;
-
+  
   .header-main__img{
     inline-size: 70vw;
     display: block;
@@ -91,8 +91,8 @@ a:any-link {
   }
 }
 
-/* ------------------------- ZONA INFOCOLEGIOS ------------------------- */
-.colegioInfo__main {
+/* ------------------------- ZONA INFOCOLEGIOS INFOLINEAS ------------------------- */
+.colegioInfo__main, .lineaInfo__main {
   inline-size: var(--sz-bx);
   margin-inline: auto;
   margin-block: var(--mrgn-btwn);
@@ -125,6 +125,110 @@ a:any-link {
       font-weight: 800;
       text-shadow: 0 0 5px red;
     }  
+  }
+
+  .header__baseInfo, article {
+    border-radius: 0.3em;
+    border: var(--brdr-styl);
+    padding-inline: 2vw;
+    margin-block-end: 5vh;
+    background-color: var(--bg-clr-sct);
+    box-shadow: 0 0 8px hsl(216, 100%, 69%);
+
+    h2 {
+      text-shadow: var(--txt-sdw);
+      padding-block-end: clamp(8px, 3vw, 20px);
+      border-block-end: 1px solid var(--h2clr);
+      color: var(--h2clr);
+      text-shadow: 0 0 1px black;
+    }
+
+    .header__h3{
+      line-height: 2rem;
+      margin-block-end: 2em;
+      font-size: 1.4rem;
+    }
+
+    .header__h3--bus{
+      font-size: 1.8rem;
+      text-shadow: 0 0 5px red;
+    }
+
+    .p__code{
+      font-family: fantasy;
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+  }
+
+  .article__jornada{
+    h2:nth-of-type(even){
+      margin-block-start: 3em;
+    }
+
+    .horas__p {
+      font-size: 1.8rem;
+      font-weight: 600;
+      text-shadow: 0 0 5px red;
+    }
+  }
+
+  .article__billetes{
+    .span__key{
+      background-color: white;
+      color: black;
+      border: 1px solid black;
+      border-radius: 50%;
+      padding: 0.3em;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    .article__p:nth-child(odd){
+      text-shadow: 0 0 5px hsl(0, 44%, 55%);
+    }
+    
+    .article__p:nth-child(odd) .span__key{
+      text-shadow: none;
+    }
+    
+    .article__p:nth-of-type(odd){
+      font-size: 1.1rem;
+    }
+    
+    .article__p:nth-of-type(even){
+      margin-block-end: 3em;
+      padding-block: 1em;
+    }
+
+    .span__icon:nth-of-type(odd){
+      font-size: 1.5rem;
+    }
+
+  }
+
+  .article__horarios{
+    table{
+      margin-inline: auto;
+      margin-block-end: 2em;
+      border-radius: 1em;
+    }
+    thead th{
+      border: 1px dotted gray;
+      background-color: hsl(0, 0%, 21%);
+      padding: 0.5em;
+    }
+
+    tbody td{
+      border: 1px dotted gray;
+      background-color: hsl(0, 0%, 13%);
+      padding: 0.3em 0.5em;
+    }
+
+    tbody tr:first-of-type td:first-of-type{
+      background-color: rgba(0, 60, 255, 0.11);
+      color: rgb(221, 69, 69);
+    }
   }
 
   .section-parteTrabajo {
@@ -226,7 +330,7 @@ a:any-link {
 
 /* ---------------------------- footer ---------------------------- */
 .footer {
-  margin-block-start: 15em;
+  margin-block-start: 5em;
   margin-block-end: 2em;
   text-align: center;
 

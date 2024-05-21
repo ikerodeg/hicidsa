@@ -121,7 +121,7 @@ window.onload = function () {
         // Oculta los select del html
         DOM_ELEMENTS.SECTION_SELECTS.style.display = 'none';
         // Añade la info dentro del section
-        DOM_ELEMENTS.SECTION_LINEA_INFO.innerHTML = lineaStructure(GLOBAL_V.LINEA_BASE_INFO_MATCH, GLOBAL_V, paradasLinea);
+        DOM_ELEMENTS.SECTION_LINEA_INFO.innerHTML = lineaStructure(GLOBAL_V, GLOBAL_V.LINEA_BASE_INFO_MATCH, paradasLinea);
       }, 1800);
 
     });
