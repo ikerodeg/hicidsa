@@ -1,6 +1,6 @@
 // --------------------------- IMPORTACIÓN DE MODULOS ------------------------------------
 import { lineaBaseInfo_OBJ } from "../../modules/baseInfoLineas.mjs";
-import { paradasLinea } from "../../modules/rutasLineas.mjs";
+import { paradasLinea_OBJ } from "../../modules/rutasLineas.mjs";
 import { lineaStructure } from "../../modules/genLineaStruc.mjs";
 import { hideElements, createOptionsForColegios, createOptionsForRutas, createOptionsForTurnos, createOptionsForMeses, createOptionsForDias, showNewSelect, changeStyles, savingSelectedData, styleResetButton, styleGeneral, initialStyle, putInitialStyle, buscaColeSeleccionado } from "../../modules/utilFunctions.mjs";
 
@@ -58,7 +58,7 @@ window.onload = function () {
     console.log(`Colegio Encontrado ⬇️:`);
     console.log(GLOBAL_V.LINEA_BASE_INFO_MATCH);
 
-    console.log(`Coincidencia de Linea en paradasLinea: ${paradasLinea[GLOBAL_V.SELECTED_LINEA_id].id}`);
+    console.log(`Coincidencia de Linea en paradasLinea: ${paradasLinea_OBJ[GLOBAL_V.SELECTED_LINEA_id].id}`);
 
     // Desabilita el <select> y cambia su estilo
     changeStyles(SELECTS_ID.SELECT_LINEAS, styleGeneral);
@@ -121,7 +121,7 @@ window.onload = function () {
         // Oculta los select del html
         DOM_ELEMENTS.SECTION_SELECTS.style.display = 'none';
         // Añade la info dentro del section
-        DOM_ELEMENTS.SECTION_LINEA_INFO.innerHTML = lineaStructure(GLOBAL_V, GLOBAL_V.LINEA_BASE_INFO_MATCH, paradasLinea);
+        DOM_ELEMENTS.SECTION_LINEA_INFO.innerHTML = lineaStructure(GLOBAL_V, GLOBAL_V.LINEA_BASE_INFO_MATCH, paradasLinea_OBJ);
       }, 1800);
 
     });

@@ -216,6 +216,47 @@ a:any-link {
   }
 }
 
+.article__stops{
+  li{
+    inline-size: 90%;
+    list-style: none;
+    line-height: 1.5em;
+    margin-block-end: 1em;
+    padding-block-end: 1em;
+    border-block-end: 1px dotted gray;
+  
+  }
+  li:last-of-type{
+    border-block-end: none;
+  }
+
+}
+
+.article__partesTrabajo{
+  div{
+    border-block-end: 1px dotted hsl(0, 0%, 29%);
+  }
+
+  div:last-of-type{
+    border-block-end: none;
+  }
+
+  .article__p{
+    font-size: calc(var(--fntSz-main) + 1vh);
+  }
+
+  .article__p--hrs{
+    font-size: calc(var(--fntSz-main) + 2vh);
+    font-weight: 600;
+    text-shadow: var(--txtSdw-hrs);
+  }
+
+  .article__p--pluses{
+    font-size: calc(var(--fntSz-main) * 0.2vh);
+    font-weight: 600;
+    text-shadow: var(--txtSdw-hrs);
+  }
+}
 
 /* --------------------------- botón de reset -------------------------- */
 .buttons_zone {
