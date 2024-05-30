@@ -108,6 +108,7 @@ window.onload = function () {
   });
 
     // ----------------------------------- DETECCION <SELECT> TURNO -------------------  
+    /*
     SELECTS_ID.SELECT_TURNOS.addEventListener('change', (event) => {
       //Detecta seleccion hecha en el <select> y guarda el valor en las dos propiedades del objeto GLOBAL_V ALL_SELECTIONS y SELECTED_RUTA_id
       savingSelectedData(event.target.value, 'ALL_SELECTIONS', 'SELECTED_TURNO_id', GLOBAL_V);
@@ -124,7 +125,50 @@ window.onload = function () {
         DOM_ELEMENTS.SECTION_LINEA_INFO.innerHTML = lineaStructure(GLOBAL_V, GLOBAL_V.LINEA_BASE_INFO_MATCH, paradasLinea_OBJ);
       }, 1800);
 
+      console.log('SE HA LEIDO TODO EL TIMEOUT');
+
     });
+    */
+// ----------------------------------- DETECCION <SELECT> TURNO -------------------  
+SELECTS_ID.SELECT_TURNOS.addEventListener('change', async (event) => {
+  //Detecta seleccion hecha en el <select> y guarda el valor en las dos propiedades del objeto GLOBAL_V ALL_SELECTIONS y SELECTED_RUTA_id
+  savingSelectedData(event.target.value, 'ALL_SELECTIONS', 'SELECTED_TURNO_id', GLOBAL_V);
+
+  // Desabilita el <select> y cambia su estilo
+  changeStyles(SELECTS_ID.SELECT_TURNOS, styleGeneral);
+
+  // Crea una funcion con Delay para ingresar los datos dentro del html
+  await new Promise(resolve => setTimeout(resolve, 1800));
+
+  // Oculta los select del html
+  DOM_ELEMENTS.SECTION_SELECTS.style.display = 'none';
+  // Añade la info dentro del section
+  DOM_ELEMENTS.SECTION_LINEA_INFO.innerHTML = lineaStructure(GLOBAL_V, GLOBAL_V.LINEA_BASE_INFO_MATCH, paradasLinea_OBJ);
+
+  console.log('SE HA LEIDO TODO EL TIMEOUT');
+
+  // Obtén el elemento <ul> y el <span> por sus ID
+  const ulElement = document.getElementById('article__ul');
+  const spanElement = document.getElementById('toggle_arrow');
+
+  // Oculta el elemento <ul> por defecto
+  ulElement.style.display = 'none';
+
+  // Añade un evento de click al elemento <span>
+  spanElement.addEventListener('click', () => {
+    // Comprueba si el elemento <ul> está oculto
+    if (ulElement.style.display === 'none') {
+      // Si está oculto, muéstralo
+      ulElement.style.display = 'block';
+    } else {
+      // Si no está oculto, ocúltalo
+      ulElement.style.display = 'none';
+    }
+  });
+});
+
+
+
 
 
 
@@ -143,6 +187,7 @@ window.onload = function () {
     location.reload();
   });
 
-
 };
+
+
 

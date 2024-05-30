@@ -217,6 +217,11 @@ a:any-link {
 }
 
 .article__stops{
+
+  #toggle_arrow{
+    text-shadow: 0 0 10px red;
+  }
+
   li{
     inline-size: 90%;
     list-style: none;
