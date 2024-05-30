@@ -16,8 +16,8 @@ function articleLineaJornada(globalObject, lineaBaseInfoMatch){
       <p class="article__p">📍 <a target="_blank" href='${'https://maps.app.goo.gl/2jGinLz6hphgikEW9'}'>${lineaBaseInfoMatch.rutas[globalObject.SELECTED_DIAS_id].buses[globalObject.SELECTED_BUS_id].turno[globalObject.SELECTED_TURNO_id].lgInicio} 🔗</a></p>
       <p class="article__p article__p--hrs">${lineaBaseInfoMatch.rutas[globalObject.SELECTED_DIAS_id].buses[globalObject.SELECTED_BUS_id].turno[globalObject.SELECTED_TURNO_id].hrInicio}</p>
       <h2 class="article__h2">Relevo / Fin Jornada</h2>
-      <p class="article__p">📍 <a target="_blank" href='${'https://maps.app.goo.gl/Ham3U6XMtEsxbaJh7'}'>${lineaBaseInfoMatch.rutas[globalObject.SELECTED_DIAS_id].buses[globalObject.SELECTED_BUS_id].turno[globalObject.SELECTED_TURNO_id].lgRelevo} 🔗</a></p>
-      <p class="article__p article__p--hrs">${lineaBaseInfoMatch.rutas[globalObject.SELECTED_DIAS_id].buses[globalObject.SELECTED_BUS_id].turno[globalObject.SELECTED_TURNO_id].hrRelevo}</p>
+      <p class="article__p">📍 <a target="_blank" href='${'https://maps.app.goo.gl/Ham3U6XMtEsxbaJh7'}'>${lineaBaseInfoMatch.rutas[globalObject.SELECTED_DIAS_id].buses[globalObject.SELECTED_BUS_id].turno[globalObject.SELECTED_TURNO_id].lgFin} 🔗</a></p>
+      <p class="article__p article__p--hrs">${lineaBaseInfoMatch.rutas[globalObject.SELECTED_DIAS_id].buses[globalObject.SELECTED_BUS_id].turno[globalObject.SELECTED_TURNO_id].hrFin}</p>
     </article>
   `
 };
@@ -141,10 +141,10 @@ function articleLineaStops(globalObject, lineaBaseInfoMatch, rutasObject){
   const stopsRuta = rutasObject[globalObject.SELECTED_LINEA_id][globalObject.ALL_SELECTIONS].stops.map ( (parada, index) => `<li><a target="_blank" href="${parada.linkMaps}">${index + 1}. ${parada.name}<br></a>${parada.descript}</li>`).join('');
 
   return `
-    <article class="article__stops">
-      <h2 class="article__h2">Paradas Ruta</h2>
-      <ul class="article__ul">${stopsRuta}</ul>
-    </article>
+  <article class="article__stops">
+    <h2 class="article__h2">Paradas Ruta <span id="toggle_arrow">🔻</span></h2>
+    <ul class="article__ul" id="article__ul">${stopsRuta}</ul>
+  </article>
   `
 };
 
@@ -220,20 +220,3 @@ function lineaStructure(globalObject, lineaBaseInfoMatch, rutasObject) {
 }
 
 export { lineaStructure };
-
-
-/*
-function lineaStructure(coleBaseInfoMatch, globalObject, rutasObject) {
-
-  return  `
-    ${headerColeBaseInfo(coleBaseInfoMatch)}
-    ${sectionRutaInfo(coleBaseInfoMatch, globalObject)}
-    ${sectionGuiaInfo(coleBaseInfoMatch, globalObject)}
-    ${sectionStops(globalObject, rutasObject)}
-    ${sectionLinkRuta(globalObject, rutasObject)}
-    ${sectionObservaciones(globalObject, rutasObject)}
-    ${sectionPartesTrabajo(globalObject, rutasObject)}
-
-    `
-}
-*/
